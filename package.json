@@ -2,7 +2,7 @@
   "name": "smile-typing",
   "version": "0.1.4",
   "author": "groovy-mint <myebyeol_note@naver.com>",
-  "description": "Practice typing with your smile. https://smilefactory.ntws.kr, admin@ntws.kr",
+  "description": "Practice typing with your smile. https://sf.ntws.kr, admin@ntws.kr",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "build": {
     "productName": "Smile Typing Beta",
-    "appId": "com.smilefactory.smiletaja",
+    "appId": "com.smilefactory.smiletyping",
     "directories": {
       "output": "build"
     },
