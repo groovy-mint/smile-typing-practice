@@ -1,4 +1,4 @@
-# smile-taja
+# smile-typing-practice
 
 > smile taja prototype
 

@@ -19,7 +19,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "smile-taja",
+    "name": "smile-typing-practice",
     "version": "0.0.1",
     "author": "groovy-mint <myebyeol_note@naver.com>",
     "description": "smile taja prototype",
@@ -42,7 +42,7 @@ npm manifest:
       "postinstall": "npm run lint:fix"
     },
     "build": {
-      "productName": "smile-taja",
+      "productName": "smile-typing-practice",
       "appId": "com.smilefactory.smiletaja",
       "directories": {
         "output": "build"

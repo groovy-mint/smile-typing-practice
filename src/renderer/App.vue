@@ -30,7 +30,7 @@
   /* eslint-disable no-new */
 
   export default {
-    name: 'smile-taja',
+    name: 'smile-typing-practice',
     components: { 'menu-view': MainMenu, CloseIcon, MaximizeIcon, NormalIcon, MinimizeIcon },
     methods: { // Windows 운영체제 창 제어 모음
       closeApp: function () {
