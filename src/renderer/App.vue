@@ -1,0 +1,145 @@
+<template>
+  <div id="app">
+    <div id="windowControl">
+      <div v-if="seen">
+      <button @click="hideWindow"><MinimizeIcon /></button>
+      <button @click="setFullScreen" v-if="maximize"><MaximizeIcon /></button>
+      <button @click="unsetFullScreen" v-if="minimize"><NormalIcon /></button>
+      <button @click="closeApp"><CloseIcon /></button>
+      </div>
+    </div>
+    <div id="contentsViewWrapper">
+      <transition name="slide-up-fade" mode="out-in">
+        <router-view name="contentsView"></router-view>
+      </transition>
+    </div>
+    <div id="footerWrapper">
+      <p>SmileTyping :)<br>smilefactory 2021</p>
+    </div>
+  </div>
+</template>
+
+<script>
+  import MainMenu from './components/MainMenu'
+  import { remote } from 'electron'
+  import CloseIcon from 'vue-material-design-icons/Close.vue'
+  import MaximizeIcon from 'vue-material-design-icons/CropSquare.vue'
+  import NormalIcon from 'vue-material-design-icons/FullscreenExit.vue'
+  import MinimizeIcon from 'vue-material-design-icons/Minus.vue'
+
+  /* eslint-disable no-new */
+
+  export default {
+    name: 'smile-taja',
+    components: { 'menu-view': MainMenu, CloseIcon, MaximizeIcon, NormalIcon, MinimizeIcon },
+    methods: { // Windows 운영체제 창 제어 모음
+      closeApp: function () {
+        remote.getCurrentWindow().close()
+      },
+      setFullScreen: function () {
+        remote.getCurrentWindow().setFullScreen(true)
+        this.maximize = false
+        this.minimize = true
+      },
+      unsetFullScreen: function () {
+        remote.getCurrentWindow().setFullScreen(false)
+        this.maximize = true
+        this.minimize = false
+      },
+      hideWindow: function () {
+        remote.getCurrentWindow().minimize()
+      }
+    },
+    data () {
+      return {
+        seen: process.platform !== 'darwin', // 맥에서 Windows 창 제어 숨김
+        maximize: true,
+        minimize: false
+      }
+    }
+  }
+</script>
+
+<style>
+  /* CSS */
+  @font-face {
+    font-family: "NotoSansLight";
+    src: local("NotoSansLight"),
+    url("~@/assets/NotoSansCJKkr-Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "NotoSansRegular";
+    src: local("NotoSansRegular"),
+    url("~@/assets/NotoSansCJKkr-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "NotoSansDemiLight";
+    src: local("NotoSansRegular"),
+    url("~@/assets/NotoSansCJKkr-DemiLight.otf") format("opentype");
+  }
+  html{height:100%;}
+  body{
+    font-family: 'NotoSansRegular';
+    user-select: none;
+    margin:0;
+    background: linear-gradient( to right, #e8ebf2, #f2f3f7 );
+    cursor:default
+    }
+  #windowControl{padding:5px;text-align: right;position: fixed;width:100%;top:0;-webkit-app-region: drag;height: 30px;}
+  #windowControl>div{margin-right:10px;}
+  #windowControl button{background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
+  button svg{padding:1px;width:20px;margin:0 2.5px}
+  button:focus{ 	
+    border: none;
+    outline:none;
+    }
+  #windowControl button:hover{ 	
+    background: lightgray;
+    }
+  #contentsViewWrapper{
+    margin-top: 40px;
+  }
+  #footerWrapper{
+    display: none;
+    text-align: right;
+    position:fixed;
+    right:15px;
+    bottom:0px;
+  }
+  a{
+    color:black
+  }
+  .slide-fade-enter {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slide-fade-enter-active{
+  transition: all 0.2s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slide-up-fade-enter {
+  transform: translateX(0px);
+  opacity: 0;
+}
+
+.slide-up-fade-enter-active{
+  transition: all 0.2s ease;
+}
+.slide-up-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+</style>
