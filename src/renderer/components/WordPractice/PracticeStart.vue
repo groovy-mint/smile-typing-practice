@@ -19,13 +19,13 @@
       <span id="dict">{{ dict }}</span>
     </div>
     <div class="typeInfoBox">
-      <div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxwords">{{ maxwords }}</span></div>
-      <div><span>오타수</span><span id="failed">{{ failed }}</span><span>/</span><span id="maxwords">{{ maxwords }}</span></div>
-      <div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div>
+      <div><div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxwords">{{ maxwords }}</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
+      <div><div><span>오타수</span><span id="failed">{{ failed }}</span><span>/</span><span id="maxwords">{{ maxwords }}</span></div><progress class="progress" max="100" v-bind:value="failPerMax"></progress></div>
+      <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
-    <div class="typeKeyboardBox">
-      <KeyboardLayout :keyToPress="nowCode"/>
-    </div>
+    <!-- <div class="typeKeyboardBox">
+      <KeyboardLayout/>
+    </div> -->
   </div>
 </template>
 <script>
@@ -59,7 +59,9 @@ export default {
       dictNext2: '',
       passed: 0,
       maxwords: 100,
+      passPerMax: 0,
       failed: 0,
+      failPerMax: 0,
       accuracy: 100
     }
   },
@@ -125,7 +127,8 @@ export default {
         } else { // 오타처리
           this.prev1a = '<span style="color:lightcoral">' + answer + '</span>'
           this.failed = this.failed + 1
-          this.accuracy = 100 - this.maxwords * this.failed / 100
+          this.accuracy = (100 - this.failed * 100 / this.maxwords).toFixed(0)
+          this.failPerMax = this.failed * 100 / this.maxwords
         }
         this.passed = this.passed + 1 // 진행도 1 올림
         if (this.passed === this.maxwords) {
@@ -141,6 +144,8 @@ export default {
         this.dict = this.dictNext1
         this.dictNext1 = this.dictNext2
         this.dictNext2 = dictNext[0] // 단어 뜻 처리
+
+        this.passPerMax = this.passed * 100 / this.maxwords
       }
     }
   },
@@ -215,7 +220,7 @@ input:focus {outline:none;}
 .typeAnswerBox{
   font-family: "NotoSansLight";
   display: flex;
-  justify-content: center;
+  height: 55px;
 }
 .typeAnswerBox>div{
   width:300px;
@@ -264,6 +269,11 @@ input:focus {outline:none;}
   display: flex;
   justify-content: space-evenly;
 }
+.typeInfoBox>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .typeInfoBox div span:nth-child(1){
   font-family: "NotoSansLight";
   font-size: 1.5em;
@@ -273,6 +283,26 @@ input:focus {outline:none;}
   font-family: "NotoSansLight";
   font-size: 1.5em;
   margin-right: 2px;
+}
+progress {
+  display: block; /* default: inline-block */
+  border: 1px solid black;
+  background: none;
+  height:5px;
+  width: 140px;
+}
+progress::-moz-progress-bar {
+  background: none;
+}
+/* webkit */
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+progress::-webkit-progress-value {  
+  background: black;
+}
+.progress{
+  margin-top:5px
 }
 .typeKeyboardBox{
   margin-top: 10px;

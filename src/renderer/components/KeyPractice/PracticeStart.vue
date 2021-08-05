@@ -9,9 +9,9 @@
       <div><span id="next2">{{ next2 }}</span></div>
     </div>
     <div class="typeInfoBox">
-      <div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxkeys">{{ maxkeys }}</span></div>
-      <div><span>오타수</span><span id="failed">{{ failed }}</span></div>
-      <div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div>
+      <div><div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxkeys">{{ maxkeys }}</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
+      <div><div><span>오타수</span><span id="failed">{{ failed }}</span></div></div>
+      <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
     <div class="typeKeyboardBox">
       <KeyboardLayout :keyToPress="nowCode"/>
@@ -47,6 +47,7 @@ export default {
       nextCode2: '',
       passed: 0,
       maxkeys: 100,
+      passPerMax: 0,
       failed: 0,
       accuracy: 100
     }
@@ -117,10 +118,12 @@ export default {
           this.nowCode = this.nextCode1
           this.nextCode1 = this.nextCode2
           this.nextCode2 = nextCode[0]
+
+          this.passPerMax = this.passed * 100 / this.maxkeys
         } else {
           this.nowErr = 'red'
           this.failed = this.failed + 1
-          this.accuracy = 100 - this.maxkeys * this.failed / 100
+          this.accuracy = (100 - this.failed * 100 / this.maxkeys).toFixed(0)
         }
       }
     }
@@ -202,6 +205,11 @@ export default {
   display: flex;
   justify-content: space-evenly;
 }
+.typeInfoBox>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .typeInfoBox div span:nth-child(1){
   font-family: "NotoSansLight";
   font-size: 1.5em;
@@ -212,6 +220,28 @@ export default {
   font-size: 1.5em;
   margin-right: 2px;
 }
+
+progress {
+  display: block; /* default: inline-block */
+  border: 1px solid black;
+  background: none;
+  height:5px;
+  width: 140px;
+}
+progress::-moz-progress-bar {
+  background: none;
+}
+/* webkit */
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+progress::-webkit-progress-value {  
+  background: black;
+}
+.progress{
+  margin-top:5px
+}
+
 .typeKeyboardBox{
   margin-top: 40px;
 }
