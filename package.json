@@ -2,7 +2,7 @@
   "name": "smile-typing",
   "version": "0.1.4",
   "author": "groovy-mint <myebyeol_note@naver.com>",
-  "description": "Practice typing with your smile. https://sf.ntws.kr, admin@ntws.kr",
+  "description": "Practice typing with your smile. https://sclab.ntws.kr, admin@ntws.kr",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "build": {
     "productName": "Smile Typing Beta",
-    "appId": "com.smilefactory.smiletyping",
+    "appId": "com.smilecreativelab.smiletyping",
     "directories": {
       "output": "build"
     },
@@ -50,10 +50,10 @@
     },
     "dmg": {
       "title": "Smile Typing ${version}",
-      "background":"./build/icons/dmg_installer_background.tiff",
+      "background": "./build/icons/dmg_installer_background.tiff",
       "iconSize": 80,
       "iconTextSize": 12,
-      "contents":[
+      "contents": [
         {
           "x": 180,
           "y": 180,
@@ -66,9 +66,9 @@
           "path": "/Applications"
         }
       ],
-      "window":{
-        "width":700,
-        "height":430
+      "window": {
+        "width": 700,
+        "height": 430
       }
     },
     "win": {
@@ -80,6 +80,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "hangul-js": "^0.2.6",
     "material-design-icons": "^3.0.1",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",

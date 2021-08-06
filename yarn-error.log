@@ -43,7 +43,7 @@ npm manifest:
     },
     "build": {
       "productName": "smile-typing-practice",
-      "appId": "com.smilefactory.smiletyping",
+      "appId": "com.smilecreativelab.smiletyping",
       "directories": {
         "output": "build"
       },

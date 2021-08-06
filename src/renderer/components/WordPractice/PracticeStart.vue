@@ -32,6 +32,7 @@
 import Vue from 'vue'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import wordsData from '@/assets/wordPracticeData.json'
+import Hangul from 'hangul-js'
 import KeyboardLayout from './keyboardDubeol.vue'
 export default {
   components: { LeftIcon, KeyboardLayout },
@@ -98,6 +99,8 @@ export default {
       this.dict = dict1[0]
       this.dictNext1 = dict2[0]
       this.dictNext2 = dict3[0] // vue data 변수에 각 요소를 집어넣음.
+      console.log(Hangul.d(this.now, true))
+      console.log(Hangul.d(this.now, true)[0][1])
     },
     focusOnForm: function () {
       Vue.nextTick(() => // input이 생성될 때까지 기다리게 함
@@ -144,6 +147,9 @@ export default {
         this.dict = this.dictNext1
         this.dictNext1 = this.dictNext2
         this.dictNext2 = dictNext[0] // 단어 뜻 처리
+
+        console.log(Hangul.d(this.now, true))
+        console.log(Hangul.d(this.now, true)[0][1])
 
         this.passPerMax = this.passed * 100 / this.maxwords
       }

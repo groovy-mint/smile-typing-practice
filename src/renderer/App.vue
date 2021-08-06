@@ -14,7 +14,7 @@
       </transition>
     </div>
     <div id="footerWrapper">
-      <p>SmileTyping :)<br>smilefactory 2021</p>
+      <p>SmileTyping :)<br>S. C. Lab. 2021</p>
     </div>
   </div>
 </template>

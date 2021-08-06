@@ -4,7 +4,7 @@
     <h3>스마일 타자연습 프로그램 버전</h3>
     <span>0.1.4</span>
     <h3>서포트</h3>
-    <span>SmileFactory・2021<br>admin@ntws.kr<br>http://sf.ntws.kr</span>
+    <span>smilecreativelab・2021<br>admin@ntws.kr<br>http://sclab.ntws.kr</span>
     <h3>단어 자료 출처 및 라이센스</h3>
       <li>표준어: 표준국어대사전 (CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0/kr/)<br>https://stdict.korean.go.kr/ 누리집 일부 발췌 - 2021.7.27</li>
       <li>경상도 사투리: 위키낱말사전 (CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.ko)<br>분류:한국어 경상도 사투리 문서 및 하위문서 일부 발췌 - 2021.7.28</li>
