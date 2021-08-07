@@ -145,12 +145,13 @@ export default {
         this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
         this.prev1a = answer // 답안을 왼쪽으로 넘김
         var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
+        var ansLastChar = answer.length - 1 // 답안 글자의 마지막 글자 배열 순서
         if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
           this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxwords).toFixed(0)
           this.failPerMax = this.failed * 100 / this.maxwords
         }
-        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[srcLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
+        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[ansLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
         } else {
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
