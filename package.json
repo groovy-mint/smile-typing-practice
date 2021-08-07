@@ -1,6 +1,6 @@
 {
   "name": "smile-typing",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "author": "groovy-mint <myebyeol_note@naver.com>",
   "description": "Practice typing with your smile. https://sclab.ntws.kr, admin@ntws.kr",
   "license": "MIT",
@@ -103,7 +103,7 @@
     "chai": "^4.1.2",
     "chalk": "^2.4.1",
     "copy-webpack-plugin": "^4.5.1",
-    "cross-env": "^5.1.6",
+    "cross-env": "^7.0.3",
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
