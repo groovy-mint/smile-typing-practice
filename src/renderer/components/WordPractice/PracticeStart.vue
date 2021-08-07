@@ -142,41 +142,41 @@ export default {
         var dictNext = wordsData.words.map((item) => {
           return item.wordLevel[this.level].wordData[x].wordDict // 낱말 뜻 리젠
         })
-      }
-      this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
-      this.prev1a = answer // 답안을 왼쪽으로 넘김
-      var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
-      if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
-        this.failed = this.failed + 1
-        this.accuracy = (100 - this.failed * 100 / this.maxwords).toFixed(0)
-        this.failPerMax = this.failed * 100 / this.maxwords
-      }
-      if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[srcLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
-        this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
-      } else {
-        this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
-      }
-      this.passed = this.passed + 1 // 진행도 1 올림
-      if (this.passed === this.maxwords) {
-        this.$router.push('/word-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
-      }
-      this.prev2 = this.prev1 // 이전 제시어를 왼쪽으로 넘김
-      this.prev1 = this.now // 제시어를 왼쪽으로 넘김
-      this.nowSource = this.next1 // 다음 제시어를 제시어 원본으로 넘김
-      var tempSplit = this.next1.split('') // 제시어 원본 글자를 각각 배열화
-      this.now = [] // 제시어 초기화
-      for (var i = 0; i < tempSplit.length; i++) { // 제시어 배열 푸시
-        this.now.push({ id: i, style: 'black', char: tempSplit[i] })
-      }
-      this.next1 = this.next2 // 다다음 제시어를 왼쪽으로 넘김
-      this.next2 = nextWord[0] // 제시어 리젠
-      this.$refs.answer.value = '' // 입력란 공란화
+        this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
+        this.prev1a = answer // 답안을 왼쪽으로 넘김
+        var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
+        if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
+          this.failed = this.failed + 1
+          this.accuracy = (100 - this.failed * 100 / this.maxwords).toFixed(0)
+          this.failPerMax = this.failed * 100 / this.maxwords
+        }
+        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[srcLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
+          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
+        } else {
+          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
+        }
+        this.passed = this.passed + 1 // 진행도 1 올림
+        if (this.passed === this.maxwords) {
+          this.$router.push('/word-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
+        }
+        this.prev2 = this.prev1 // 이전 제시어를 왼쪽으로 넘김
+        this.prev1 = this.now // 제시어를 왼쪽으로 넘김
+        this.nowSource = this.next1 // 다음 제시어를 제시어 원본으로 넘김
+        var tempSplit = this.next1.split('') // 제시어 원본 글자를 각각 배열화
+        this.now = [] // 제시어 초기화
+        for (var i = 0; i < tempSplit.length; i++) { // 제시어 배열 푸시
+          this.now.push({ id: i, style: 'black', char: tempSplit[i] })
+        }
+        this.next1 = this.next2 // 다다음 제시어를 왼쪽으로 넘김
+        this.next2 = nextWord[0] // 제시어 리젠
+        this.$refs.answer.value = '' // 입력란 공란화
 
-      this.dict = this.dictNext1 // 다음 낱말 뜻 왼쪽으로 넘김
-      this.dictNext1 = this.dictNext2 // 다다음 낱말 뜻 왼쪽으로 넘김
-      this.dictNext2 = dictNext[0] // 낱말 뜻 리젠
+        this.dict = this.dictNext1 // 다음 낱말 뜻 왼쪽으로 넘김
+        this.dictNext1 = this.dictNext2 // 다다음 낱말 뜻 왼쪽으로 넘김
+        this.dictNext2 = dictNext[0] // 낱말 뜻 리젠
 
-      this.passPerMax = this.passed * 100 / this.maxwords // 진행도 계산
+        this.passPerMax = this.passed * 100 / this.maxwords // 진행도 계산
+      }
     },
     keyPressed: function () {
       var tempAnswer = this.$refs.answer.value.split('')
