@@ -19,8 +19,8 @@ export default{
       menuList: [
         { id: 0, text: '자리 연습', route: '/key-practice' },
         { id: 1, text: '단어 연습', route: '/word-practice' },
-        { id: 2, text: '문장 연습', route: '/stc-practice' },
-        { id: 3, text: '긴 글 연습', route: '/artc-practice' },
+        { id: 2, text: '문장 연습', route: '/sentence-practice' },
+        { id: 3, text: '긴 글 연습', route: '/article-practice' },
         { id: 4, text: '환경설정', route: '/typing-setting' }
       ]
     }

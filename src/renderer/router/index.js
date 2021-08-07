@@ -24,6 +24,11 @@ export default new Router({
           component: require('@/components/WordPractice').default
         },
         {
+          path: 'sentence-practice',
+          name: 'sentence-practice',
+          component: require('@/components/SentencePractice').default
+        },
+        {
           path: 'typing-setting',
           name: 'typing-setting',
           component: require('@/components/TypingSetting').default
