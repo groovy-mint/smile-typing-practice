@@ -16,8 +16,8 @@ export default{
       lvlList: [
         { id: 0, title: '속담', route: '/sentence-practice/start?lvl=0&title=속담' },
         { id: 1, title: '끄투 긴단어', route: '/sentence-practice/start?lvl=1&title=끄투 긴단어' },
-        { id: 2, title: '팬그램', route: '/sentence-practice/start?lvl=2&title=3단계' },
-        { id: 3, title: '수능 필적확인란', route: '/sentence-practice/start?lvl=3&title=4단계' },
+        { id: 2, title: '팬그램', route: '/sentence-practice/start?lvl=2&title=팬그램' },
+        { id: 3, title: '필적확인란', route: '/sentence-practice/start?lvl=3&title=필적확인란' },
         { id: 5, title: '뒤로', route: '*' }
       ]
     }
