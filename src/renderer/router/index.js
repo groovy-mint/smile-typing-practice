@@ -76,6 +76,26 @@ export default new Router({
       }
     },
     {
+      path: '/sentence-practice/start',
+      name: 'sentence-practice-start',
+      components: {
+        contentsView: require('@/components/SentencePractice/PracticeStart').default
+      },
+      props: {
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title })
+      }
+    },
+    {
+      path: '/sentence-practice/end',
+      name: 'sentence-practice-end',
+      components: {
+        contentsView: require('@/components/SentencePractice/PracticeEnd').default
+      },
+      props: {
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr })
+      }
+    },
+    {
       path: '/typing-setting/1',
       name: 'typing-setting-1',
       components: {
