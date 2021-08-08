@@ -21,7 +21,7 @@
     </div>
     <div class="typeInfoBox">
       <div><div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxsentences">{{ maxsentences }}</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
-      <div><div><span>타수</span><span id="passed"><!--FIXME 타수 표시 자리-->650</span><span>타/분</span></div><progress class="progress" max="100" v-bind:value="typePerMin"></progress></div>
+      <div><div><span>타수</span><span id="passed"><!--FIXME 타수 표시 자리-->{{typePerMin}}</span><span>타/분</span></div><progress class="progress" max="1000" v-bind:value="typePerMin"></progress></div>
       <div><div><span>틀린 문장</span><span id="failed">{{ failed }}</span><span>/</span><span id="maxsentences">{{ maxsentences }}</span></div><progress class="progress" max="100" v-bind:value="failPerMax"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
@@ -63,8 +63,12 @@ export default {
       noteNext1: '', // 다음 각주
       noteNext2: '', // 다다음 각주
       passed: 0, // 진행한 문장
-      maxsentences: 40, // 최대 문장
-      typePerMin: 650 * 100 / 1500,
+      maxsentences: 40, // 최대 문장 개수
+      pressedKeys: 0, // 정타수
+      keyBackspace: 0, // 백스페이스 타수
+      keyTime: 0, // 한 문장당 걸린 소요시간
+      intervalVar: '',
+      typePerMin: 0, // 타수
       passPerMax: 0, // 진행도
       failed: 0, // 틀린 문장
       failPerMax: 0, // 틀린 문장과 최대 문장 (프로그레스바 전용)
@@ -190,17 +194,18 @@ export default {
         this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
         this.prev1a = answer // 답안을 왼쪽으로 넘김
         var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
+        var ansLastChar = answer.length - 1 // 답안 글자의 마지막 글자 배열 순서
         if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
-          this.failed = this.failed + 1
+          this.failed = this.failed++
           this.accuracy = (100 - this.failed * 100 / this.maxsentences).toFixed(0)
           this.failPerMax = this.failed * 100 / this.maxsentences
         }
-        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[srcLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
+        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[ansLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
         } else {
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
         }
-        this.passed = this.passed + 1 // 진행도 1 올림
+        this.passed = this.passed++ // 진행도 1 올림
         if (this.passed === this.maxsentences) {
           this.$router.push('/sentence-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
         }
@@ -228,21 +233,39 @@ export default {
         this.noteNext5 = this.noteNext6 // 다다음 각주 왼쪽으로 넘김
         this.noteNext6 = noteNext[0] // 각주 리젠
 
+        this.pressedKeys = 0
+        this.keyBackspace = 0
+        this.keyTime = 0
+        clearInterval(this.intervalVar)
+
         this.passPerMax = this.passed * 100 / this.maxsentences // 진행도 계산
       }
     },
-    keyPressed: function () {
+    keyPressed: function (ev) {
+      this.pressedKeys = this.pressedKeys + 1
+      clearInterval(this.intervalVar)
+      if (ev.key === 'Backspace') {
+        this.keyBackspace = this.keyBackspace + 1
+      }
       var tempAnswer = this.$refs.answer.value.split('')
       tempAnswer.pop()
-      var leng = tempAnswer.length
-      if (this.now.length < (tempAnswer.length + 1)) {
+      var leng = this.now.length - 1
+      if (this.now.length < (tempAnswer.length + 1) || ev.key === 'Enter') { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김 + 엔터시 인터벌 클리어
         this.nextRound()
       } else {
+        this.intervalVar = setInterval(() => {
+          this.keyTime = this.keyTime + 10
+          this.typePerMin = ((this.pressedKeys - this.keyBackspace * 3) / this.keyTime * 60000).toFixed(0)
+        }, 10)
         for (var i = 0; i < leng; i++) { // 오타 검사
-          if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], (Hangul.d(tempAnswer[i], true)[0])) === false) {
-            this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
+          if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if
+            if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], Hangul.d(tempAnswer[i], true)[0]) === false) {
+              this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
+            } else {
+              this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
+            }
           } else {
-            this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
+            this.now.splice((i + 1), 1, { id: (i + 1), style: 'black', char: this.now[(i + 1)].char })
           }
         }
       }
@@ -256,6 +279,7 @@ export default {
   },
   beforeDestroy () {
     window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+    clearInterval(this.intervalVar)
   },
   created: function () {
     this.focusOnForm()
