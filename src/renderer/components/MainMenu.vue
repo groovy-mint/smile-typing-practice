@@ -2,7 +2,7 @@
   <div id="mainMenuWrapper">
     <ol>
       <li v-for="item in menuList" v-bind:menu="item" v-bind:key="item.id">
-        <span><router-link class="menuItem" v-bind:to="item.route">{{ item.text }}</router-link></span>
+        <span><router-link ondragstart="return false" class="menuItem" v-bind:to="item.route">{{ item.text }}</router-link></span>
       </li>
     </ol>
     <transition name="slide-fade" mode="out-in">

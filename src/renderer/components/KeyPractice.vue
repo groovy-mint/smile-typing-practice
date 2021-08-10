@@ -2,7 +2,7 @@
   <div id="subMenuWrapper">
     <ol>
       <li v-for="item in lvlList" v-bind:lvl="item" v-bind:key="item.id">
-        <span><router-link class="menuItem" v-bind:to="item.route">{{ item.title }}</router-link></span>
+        <span><router-link ondragstart="return false" class="menuItem" v-bind:to="item.route">{{ item.title }}</router-link></span>
       </li>
     </ol>
   </div>

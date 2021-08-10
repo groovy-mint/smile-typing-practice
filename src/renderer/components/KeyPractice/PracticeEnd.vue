@@ -1,6 +1,6 @@
 <template>
   <div id="resultWrapper">
-    <p class="mainMenuTitle"><router-link to="*"><LeftIcon/></router-link>자리 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>자리 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
     <p class="rate">{{ accuracyRate }}</p>
     <div class="rateBox">
       <div class="accuracyBox center">

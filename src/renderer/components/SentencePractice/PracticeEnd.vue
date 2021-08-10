@@ -1,10 +1,13 @@
 <template>
   <div id="resultWrapper">
-    <p class="mainMenuTitle"><router-link to="*"><LeftIcon/></router-link>문장 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>문장 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
     <p class="rate">{{ accuracyRate }}</p>
     <div class="rateBox">
       <div class="accuracyBox center">
         <span>정확도</span><br><span>{{ accuracy }}</span><span>%</span>
+      </div>
+      <div class="accuracyBox center">
+        <span>타수</span><br><span>{{ typnum }}</span><span>타</span>
       </div>
     </div>
     <p class="center">왼쪽 위의 갈매기표를 누르면 뒤로 갑니다.</p>
@@ -17,6 +20,10 @@ export default{
   components: { LeftIcon },
   props: {
     accuracy: {
+      type: String,
+      default: ''
+    },
+    typnum: {
       type: String,
       default: ''
     },
@@ -36,15 +43,10 @@ export default{
   },
   methods: {
     showResult: function () {
-      this.accuracy === '100' && this.level === '4' ? this.accuracyRate = '좋아요! 단어 연습을 해보는 게 어떨까요?'
-        : this.accuracy === '100' ? this.accuracyRate = '잘했어요! 다음 단계로 넘어가도 좋아요.'
-          : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 노력해봐요!'
-            // : this.accuracy <= '-3000' ? this.accuracyRate = '오타의 신이 되셨습니다. 축하해요.'
-            // : this.accuracy <= '-2000' ? this.accuracyRate = '진짜 뭐하세요ㅋㅋ 키보드 닳겠네'
-            // : this.accuracy <= '-1000' ? this.accuracyRate = '뭐가 불만이에요 도대체ㅠㅠ'
-            // : this.accuracy <= '-500' ? this.accuracyRate = '진심이세요?'
-            : this.accuracy <= '0' ? this.accuracyRate = '타자연습으로 장난치지 말아요..'
-              : this.accuracyRate = '늦어도 좋으니 천천히..'
+      this.accuracy === '100' ? this.accuracyRate = '아주 정확해요!'
+        : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 정확하게!'
+          : this.accuracy <= '0' ? this.accuracyRate = '타자연습으로 장난치지 말아요..'
+            : this.accuracyRate = '늦어도 좋으니 천천히..'
     }
   },
   beforeMount () {

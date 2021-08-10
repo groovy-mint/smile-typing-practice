@@ -52,7 +52,7 @@ export default new Router({
         contentsView: require('@/components/KeyPractice/PracticeEnd').default
       },
       props: {
-        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr })
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr, time: route.query.time })
       }
     },
     {
@@ -72,7 +72,7 @@ export default new Router({
         contentsView: require('@/components/WordPractice/PracticeEnd').default
       },
       props: {
-        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr })
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr, time: route.query.time })
       }
     },
     {
@@ -92,7 +92,7 @@ export default new Router({
         contentsView: require('@/components/SentencePractice/PracticeEnd').default
       },
       props: {
-        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr })
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr, typnum: route.query.typnum, time: route.query.time })
       }
     },
     {

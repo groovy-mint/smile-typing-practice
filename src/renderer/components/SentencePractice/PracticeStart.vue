@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link to="*"><LeftIcon/></router-link>문장 연습</p><p class="subMenuTitle">{{ title }}</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>문장 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeInnerWrapper">
         <div class="typePrevBox">
           <div><span id="prev1" v-for="item in prev1" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span></div>
@@ -64,11 +64,10 @@ export default {
       noteNext2: '', // 다다음 각주
       passed: 0, // 진행한 문장
       maxsentences: 40, // 최대 문장 개수
-      pressedKeys: 0, // 정타수
-      keyBackspace: 0, // 백스페이스 타수
       keyTime: 0, // 한 문장당 걸린 소요시간
       intervalVar: '',
       typePerMin: 0, // 타수
+      typePerMinTotal: 0, // 최종 타수
       passPerMax: 0, // 진행도
       failed: 0, // 틀린 문장
       failPerMax: 0, // 틀린 문장과 최대 문장 (프로그레스바 전용)
@@ -168,6 +167,10 @@ export default {
       )
     },
     nextRound: function () { // 다음 라운드: 엔터를 눌렀을 때의 행동
+      this.typePerMinTotal = this.typePerMinTotal + parseInt(this.typePerMin)
+      console.log((this.typePerMinTotal / this.maxsentences))
+      console.log(this.typePerMin)
+      clearInterval(this.intervalVar)
       var answer = this.$refs.answer.value
       answer = answer.trim()
       if (answer === '' || answer === ' ') { // 입력란 공백 체크
@@ -196,7 +199,7 @@ export default {
         var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
         var ansLastChar = answer.length - 1 // 답안 글자의 마지막 글자 배열 순서
         if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
-          this.failed = this.failed++
+          this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxsentences).toFixed(0)
           this.failPerMax = this.failed * 100 / this.maxsentences
         }
@@ -205,57 +208,56 @@ export default {
         } else {
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
         }
-        this.passed = this.passed++ // 진행도 1 올림
+        this.passed = this.passed + 1 // 진행도 1 올림
         if (this.passed === this.maxsentences) {
-          this.$router.push('/sentence-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
+          this.$router.push('/sentence-practice/end?acr=' + this.accuracy + '&typnum=' + (this.typePerMinTotal / this.maxsentences).toFixed(0) + '&title=' + this.title + '&lvl=' + this.level)
+        } else {
+          this.prev1 = this.now // 제시어를 위로 넘김
+          this.nowSource = this.next1 // 다음 제시어를 제시어 원본으로 넘김
+          var tempSplit = this.next1.split('') // 제시어 원본 글자를 각각 배열화
+          this.now = [] // 제시어 초기화
+          for (var i = 0; i < tempSplit.length; i++) { // 제시어 배열 푸시
+            this.now.push({ id: i, style: 'black', char: tempSplit[i] })
+          }
+          this.next1 = this.next2 // 다다음 제시어를 위로 넘김
+          this.next2 = this.next3 // 다다음 제시어를 위로 넘김
+          this.next3 = this.next4 // 다다음 제시어를 위로 넘김
+          this.next4 = this.next5 // 다다음 제시어를 위로 넘김
+          this.next5 = this.next6 // 다다음 제시어를 위로 넘김
+          this.next6 = nextSentence[0] // 제시어 리젠
+
+          this.$refs.answer.value = '' // 입력란 공란화
+
+          this.note = this.noteNext1 // 다음 각주 왼쪽으로 넘김
+          this.noteNext1 = this.noteNext2 // 다다음 각주 왼쪽으로 넘김
+          this.noteNext2 = this.noteNext3 // 다다음 각주 왼쪽으로 넘김
+          this.noteNext3 = this.noteNext4 // 다다음 각주 왼쪽으로 넘김
+          this.noteNext4 = this.noteNext5 // 다다음 각주 왼쪽으로 넘김
+          this.noteNext5 = this.noteNext6 // 다다음 각주 왼쪽으로 넘김
+          this.noteNext6 = noteNext[0] // 각주 리젠
+
+          this.keyTime = 0
+          clearInterval(this.intervalVar)
+
+          this.passPerMax = this.passed * 100 / this.maxsentences // 진행도 계산
         }
-        this.prev1 = this.now // 제시어를 위로 넘김
-        this.nowSource = this.next1 // 다음 제시어를 제시어 원본으로 넘김
-        var tempSplit = this.next1.split('') // 제시어 원본 글자를 각각 배열화
-        this.now = [] // 제시어 초기화
-        for (var i = 0; i < tempSplit.length; i++) { // 제시어 배열 푸시
-          this.now.push({ id: i, style: 'black', char: tempSplit[i] })
-        }
-        this.next1 = this.next2 // 다다음 제시어를 위로 넘김
-        this.next2 = this.next3 // 다다음 제시어를 위로 넘김
-        this.next3 = this.next4 // 다다음 제시어를 위로 넘김
-        this.next4 = this.next5 // 다다음 제시어를 위로 넘김
-        this.next5 = this.next6 // 다다음 제시어를 위로 넘김
-        this.next6 = nextSentence[0] // 제시어 리젠
-
-        this.$refs.answer.value = '' // 입력란 공란화
-
-        this.note = this.noteNext1 // 다음 각주 왼쪽으로 넘김
-        this.noteNext1 = this.noteNext2 // 다다음 각주 왼쪽으로 넘김
-        this.noteNext2 = this.noteNext3 // 다다음 각주 왼쪽으로 넘김
-        this.noteNext3 = this.noteNext4 // 다다음 각주 왼쪽으로 넘김
-        this.noteNext4 = this.noteNext5 // 다다음 각주 왼쪽으로 넘김
-        this.noteNext5 = this.noteNext6 // 다다음 각주 왼쪽으로 넘김
-        this.noteNext6 = noteNext[0] // 각주 리젠
-
-        this.pressedKeys = 0
-        this.keyBackspace = 0
-        this.keyTime = 0
-        clearInterval(this.intervalVar)
-
-        this.passPerMax = this.passed * 100 / this.maxsentences // 진행도 계산
       }
     },
     keyPressed: function (ev) {
-      this.pressedKeys = this.pressedKeys + 1
       clearInterval(this.intervalVar)
-      if (ev.key === 'Backspace') {
-        this.keyBackspace = this.keyBackspace + 1
+      if (ev.key === 'Enter') {
+        return
       }
       var tempAnswer = this.$refs.answer.value.split('')
+      var tempAnswer2 = Hangul.d(this.$refs.answer.value).length
       tempAnswer.pop()
       var leng = this.now.length - 1
-      if (this.now.length < (tempAnswer.length + 1) || ev.key === 'Enter') { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김 + 엔터시 인터벌 클리어
+      if (this.now.length < (tempAnswer.length + 1)) { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김
         this.nextRound()
       } else {
         this.intervalVar = setInterval(() => {
           this.keyTime = this.keyTime + 10
-          this.typePerMin = ((this.pressedKeys - this.keyBackspace * 3) / this.keyTime * 60000).toFixed(0)
+          this.typePerMin = (tempAnswer2 / this.keyTime * 60000).toFixed(0)
         }, 10)
         for (var i = 0; i < leng; i++) { // 오타 검사
           if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if

@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link to="*"><LeftIcon/></router-link>자리 연습</p><p class="subMenuTitle">{{ title }}</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>자리 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeAnswerBox">
       <div><span id="prev2">{{ prev2 }}</span></div>
       <div><span id="prev1">{{ prev1 }}</span></div>

@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link to="*"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
     <p>에베베 엘렐레 홀롤로!!!</p>
   </div>
 </template>
