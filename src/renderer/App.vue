@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <div id="windowControl">
+      <div id="windowControlOverlay">
+      </div>
       <div v-if="seen">
       <button @click="hideWindow"><MinimizeIcon /></button>
       <button @click="setFullScreen" v-if="maximize"><MaximizeIcon /></button>
@@ -85,8 +87,10 @@
     background: linear-gradient( to right, #e8ebf2, #f2f3f7 );
     cursor:default
     }
-  #windowControl{padding:5px;text-align: right;position: fixed;width:100%;top:0;-webkit-app-region: drag;height: 30px;}
-  #windowControl>div{margin-right:10px;}
+  #windowControlOverlay{-webkit-app-region: drag;height:40px;}
+  #windowControl{display:flex;z-index: 7;padding:5px;text-align: right;position: fixed;width:100%;top:0;height: 30px;}
+  #windowControl div:nth-child(1){width:100%}
+  #windowControl div:nth-child(2){margin-right:10px;min-width: 100px;}
   #windowControl button{background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
   button svg{padding:1px;width:20px;margin:0 2.5px}
   button:focus{ 	
