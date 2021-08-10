@@ -1,6 +1,6 @@
 {
   "name": "smile-typing",
-  "version": "0.1.7",
+  "version": "0.3.7",
   "author": "groovy-mint <myebyeol_note@naver.com>",
   "description": "Practice typing with your smile. https://sclab.ntws.kr, admin@ntws.kr",
   "license": "MIT",
@@ -73,6 +73,12 @@
     },
     "win": {
       "icon": "build/icons/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "installerSidebar": "build/icons/nsis_welcomepage.bmp",
+      "uninstallerSidebar": "build/icons/nsis_welcomepage.bmp"
     },
     "linux": {
       "icon": "build/icons"
