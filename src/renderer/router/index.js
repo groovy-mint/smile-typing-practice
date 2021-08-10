@@ -106,6 +106,13 @@ export default new Router({
       path: '/typing-setting/2',
       name: 'typing-setting-2',
       components: {
+        contentsView: require('@/components/TypingSetting/TypingReport').default
+      }
+    },
+    {
+      path: '/typing-setting/3',
+      name: 'typing-setting-3',
+      components: {
         contentsView: require('@/components/TypingSetting/ProgramInfo').default
       }
     },

@@ -21,7 +21,7 @@
     </div>
     <div class="typeInfoBox">
       <div><div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span id="maxsentences">{{ maxsentences }}</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
-      <div><div><span>타수</span><span id="passed"><!--FIXME 타수 표시 자리-->{{typePerMin}}</span><span>타/분</span></div><progress class="progress" max="1000" v-bind:value="typePerMin"></progress></div>
+      <div><div><span>타수</span><span id="passed"><!--FIXME 타수 표시 자리-->{{typePerMin}}</span><span>타/분</span></div><progress class="progress" max="1500" v-bind:value="typePerMin"></progress></div>
       <div><div><span>틀린 문장</span><span id="failed">{{ failed }}</span><span>/</span><span id="maxsentences">{{ maxsentences }}</span></div><progress class="progress" max="100" v-bind:value="failPerMax"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>

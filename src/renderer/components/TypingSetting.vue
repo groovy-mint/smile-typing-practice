@@ -15,7 +15,8 @@ export default{
     return {
       lvlList: [
         { id: 0, title: '일반', route: '/typing-setting/1' },
-        { id: 1, title: '정보', route: '/typing-setting/2' },
+        { id: 1, title: '기록', route: '/typing-setting/2' },
+        { id: 1, title: '정보', route: '/typing-setting/3' },
         { id: 2, title: '뒤로', route: '*' }
       ]
     }
