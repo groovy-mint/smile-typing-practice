@@ -17,8 +17,8 @@ export default{
         { id: 0, title: '표준어', route: '/word-practice/start?lvl=0&title=표준어' },
         { id: 1, title: '경상도 사투리', route: '/word-practice/start?lvl=1&title=경상도 사투리' },
         { id: 2, title: '유행어/밈', route: '/word-practice/start?lvl=2&title=유행어/밈' },
-        { id: 3, title: '끄투 한방단어', route: '/word-practice/start?lvl=3&title=끄투 한방단어' },
-        { id: 4, title: '비속어/욕설', route: '/word-practice/start?lvl=4&title=비속어/욕설' },
+        // { id: 3, title: '끄투 한방단어', route: '/word-practice/start?lvl=3&title=끄투 한방단어' },
+        // { id: 4, title: '비속어/욕설', route: '/word-practice/start?lvl=4&title=비속어/욕설' },
         { id: 6, title: '뒤로', route: '*' }
       ]
     }
