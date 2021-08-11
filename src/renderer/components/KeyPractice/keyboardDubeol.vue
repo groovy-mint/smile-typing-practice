@@ -69,7 +69,7 @@
       </div>
       <div class="keyboardRow" v-if="isNotDarwin">
         <div class="key">ctrl</div>
-        <div class="key">田</div>
+        <div class="key">◆</div>
         <div class="key">alt</div>
         <div class="key">漢</div>
         <div class="key keySpace keyFinger">Space</div>
