@@ -39,12 +39,12 @@
         remote.getCurrentWindow().close()
       },
       setFullScreen: function () {
-        remote.getCurrentWindow().setFullScreen(true)
+        remote.getCurrentWindow().maximize()
         this.maximize = false
         this.minimize = true
       },
       unsetFullScreen: function () {
-        remote.getCurrentWindow().setFullScreen(false)
+        remote.getCurrentWindow().unmaximize()
         this.maximize = true
         this.minimize = false
       },
