@@ -272,7 +272,8 @@ input:focus {outline:none;}
 .typeAnswerBox{
   font-family: "NotoSansLight";
   display: flex;
-  height: 55px;
+  height: 6vw;
+  justify-content: center;
 }
 .typeAnswerBox>div{
   width:300px;
