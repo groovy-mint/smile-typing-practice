@@ -78,9 +78,14 @@
       "oneClick": false,
       "perMachine": true,
       "installerSidebar": "build/icons/nsis_welcomepage.bmp",
-      "uninstallerSidebar": "build/icons/nsis_welcomepage.bmp"
+      "uninstallerSidebar": "build/icons/nsis_welcomepage.bmp",
+      "allowToChangeInstallationDirectory": true
     },
     "linux": {
+      "target": [
+        "deb",
+        "tar.gz"
+      ],
       "icon": "build/icons"
     }
   },
