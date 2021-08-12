@@ -19,9 +19,21 @@
       <a>끄기</a>
     </div>
     <div class="settingCon">
+      <b>자리 연습 최대 개수</b> <span>자리를 얼마나 연습할지 정합니다.</span><br>
+      <a>숫자</a>
+    </div>
+    <div class="settingCon">
+      <b>단어 연습 최대 개수</b> <span>단어를 얼마나 연습할지 정합니다.</span><br>
+      <a>숫자</a>
+    </div>
+    <div class="settingCon">
       <b>단어 연습 글자 정렬</b> <span>단어 연습의 제시어를 왼쪽으로 정렬할지 가운데로 정렬할지 결정합니다.</span><br>
       <a>가운데</a>
       <a>왼쪽</a>
+    </div>
+    <div class="settingCon">
+      <b>문장 연습 최대 개수</b> <span>문장을 얼마나 연습할지 정합니다.</span><br>
+      <a>숫자</a>
     </div>
   </div>
 </template>
