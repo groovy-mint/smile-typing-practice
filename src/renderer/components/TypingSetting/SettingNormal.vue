@@ -1,7 +1,20 @@
 <template>
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
-    <p>이 기능은 준비중이에요.</p>
+    <h3>언어</h3>
+    <a>한국어</a>
+    <a>영어</a>
+    <a>일어</a>
+    <h3>자판 배열</h3>
+    <a>두벌식</a>
+    <a>세벌식 390</a>
+    <a>세벌식 완성</a>
+    <h3>색각 이상자 옵션</h3>
+    <a>켜기</a>
+    <a>끄기</a>
+    <h3>단어 연습 글자 정렬</h3>
+    <a>가운데</a>
+    <a>왼쪽</a>
   </div>
 </template>
 <script>

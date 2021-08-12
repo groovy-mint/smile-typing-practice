@@ -29,6 +29,11 @@ export default new Router({
           component: require('@/components/SentencePractice').default
         },
         {
+          path: 'article-practice',
+          name: 'article-practice',
+          component: require('@/components/ArticlePractice').default
+        },
+        {
           path: 'typing-setting',
           name: 'typing-setting',
           component: require('@/components/TypingSetting').default
@@ -90,6 +95,26 @@ export default new Router({
       name: 'sentence-practice-end',
       components: {
         contentsView: require('@/components/SentencePractice/PracticeEnd').default
+      },
+      props: {
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr, typnum: route.query.typnum, time: route.query.time })
+      }
+    },
+    {
+      path: '/article-practice/start',
+      name: 'article-practice-start',
+      components: {
+        contentsView: require('@/components/ArticlePractice/PracticeStart').default
+      },
+      props: {
+        contentsView: route => ({ level: route.query.lvl, title: route.query.title })
+      }
+    },
+    {
+      path: '/article-practice/end',
+      name: 'article-practice-end',
+      components: {
+        contentsView: require('@/components/ArticlePractice/PracticeEnd').default
       },
       props: {
         contentsView: route => ({ level: route.query.lvl, title: route.query.title, accuracy: route.query.acr, typnum: route.query.typnum, time: route.query.time })
