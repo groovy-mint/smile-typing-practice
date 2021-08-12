@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }} 컨셉트</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }} 1/5</p>
     <div class="typeInnerWrapper">
         <div class="typeBox">
           <div><span class="gray">애국가</span></div>
@@ -21,8 +21,9 @@
     </div>
     <div class="typeInfoBox">
       <div><div><span>진행도</span><span id="passed">12</span><span>%</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
-      <div><div><span>타수</span><span id="passed">837</span><span>타/분</span></div><progress class="progress" max="1500" v-bind:value="typePerMin"></progress></div>
+      <div><div><span>타수</span><span id="passed">{{ typePerMin }}</span><span>타/분</span></div><progress class="progress" max="1500" v-bind:value="typePerMin"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
+      <div><div><span>{{ hour }}:{{ minDisplay }}:{{ secDisplay }}</span></div></div>
     </div>
     <!-- <div class="typeKeyboardBox">
       <KeyboardLayout/>
@@ -30,6 +31,7 @@
   </div>
 </template>
 <script>
+import Vue from 'vue'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import Hangul from 'hangul-js'
 export default {
@@ -46,11 +48,29 @@ export default {
   },
   data () {
     return {
-      intervalVar: '' // 타이머 및 타수 체크 함수를 위한 변수
+      intervalVar: '', // 타이머 및 타수 체크 함수를 위한 변수
+      keyTime: 0, // 글을 모두 끝내기까지 걸린 시간
+      passPerMax: '', // 진행도
+      typePerMin: 0, // 타수
+      accuracy: 100, // 정확도
+      msec: 0, // 경과 시간 - 밀리초
+      sec: 0, // 경과 시간 - 초
+      min: 0, // 경과 시간 - 분
+      hour: 0, // 경과 시간 - 시
+      msecDisplay: '00', // 표출용 변수
+      secDisplay: '00', // 표출용 변수
+      minDisplay: '00', // 표출용 변수
+      now: '가ㅁㅇㄴㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅁㄴ'
     }
   },
   methods: {
     initialSetting: function () {
+      console.log('initialSetting Complete')
+    },
+    focusOnForm: function () { // 연습 시작 시 인풋란에 커서를 놓는 함수
+      Vue.nextTick(() => // input이 생성될 때까지 기다리게 함
+        this.$refs.answer.focus() // answer라는 ref속성을 갖고있는 것에 입력 포커스를 생성
+      )
     },
     keyPressed: function (ev) {
       clearInterval(this.intervalVar)
@@ -60,27 +80,58 @@ export default {
       var tempAnswer = this.$refs.answer.value.split('')
       var tempAnswer2 = Hangul.d(this.$refs.answer.value).length
       tempAnswer.pop()
-      var leng = this.now.length - 1
+      //   var leng = this.now.length - 1
       if (this.now.length < (tempAnswer.length + 1)) { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김
         this.nextRound()
       } else {
-        this.intervalVar = setInterval(() => {
+        this.intervalVar = setInterval(() => { // 타수 계산 및 타이머 시간 재는 용도
           this.keyTime = this.keyTime + 10
+          this.sec = Math.floor(this.keyTime / 1000)
+          this.min = Math.floor(this.sec / 60)
+          this.msec = this.keyTime % 1000 / 10
+          this.sec = this.sec % 60
+          this.min = this.min % 60
+          this.msecDisplay = this.msec
+          this.secDisplay = this.sec
+          this.minDisplay = this.min
+          if (this.msec < 10) {
+            this.msecDisplay = '0' + this.msec
+          }
+          if (this.sec < 10) {
+            this.secDisplay = '0' + this.sec
+          }
+          if (this.min < 10) {
+            this.minDisplay = '0' + this.min
+          }
+
           this.typePerMin = (tempAnswer2 / this.keyTime * 60000).toFixed(0)
         }, 10)
-        for (var i = 0; i < leng; i++) { // 오타 검사
-          if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if
-            if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], Hangul.d(tempAnswer[i], true)[0]) === false) {
-              this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
-            } else {
-              this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
-            }
-          } else {
-            this.now.splice((i + 1), 1, { id: (i + 1), style: 'black', char: this.now[(i + 1)].char })
-          }
-        }
+        // for (var i = 0; i < leng; i++) { // 오타 검사
+        //   if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if
+        //     if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], Hangul.d(tempAnswer[i], true)[0]) === false) {
+        //       this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
+        //     } else {
+        //       this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
+        //     }
+        //   } else {
+        //     this.now.splice((i + 1), 1, { id: (i + 1), style: 'black', char: this.now[(i + 1)].char })
+        //   }
+        // }
       }
     }
+  },
+  beforeMount () {
+    this.initialSetting()
+  },
+  mounted () {
+    window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+  },
+  beforeDestroy () {
+    window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+    clearInterval(this.intervalVar)
+  },
+  created: function () {
+    this.focusOnForm()
   }
 }
 </script>
@@ -90,6 +141,7 @@ input:focus {outline:none;}
   margin:0 30px;
 }
 .typeInnerWrapper{
+  margin-top:20px;
   font-size:2.5vw;
 }
 .mainMenuTitle{
@@ -171,7 +223,7 @@ input:focus {outline:none;}
   color:black;
 }
 .typeInfoBox{
-  margin-top:10px;
+  margin-top:3vw;
   display: flex;
   justify-content: space-evenly;
 }
