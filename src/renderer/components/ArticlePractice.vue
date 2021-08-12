@@ -17,10 +17,10 @@ export default{
         { id: 0, title: '애국가', route: '/article-practice/start?lvl=0&title=애국가' },
         { id: 1, title: '별 헤는 밤', route: '/article-practice/start?lvl=1&title=별 헤는 밤' },
         { id: 2, title: '서시', route: '/article-practice/start?lvl=2&title=서시' },
-        { id: 3, title: '쉽게 쓰여진 시', route: '/article-practice/start?lvl=3&title=쉽게 쓰여진 시' },
-        { id: 4, title: '동백꽃', route: '/article-practice/start?lvl=4&title=동백꽃' },
+        // { id: 3, title: '쉽게 쓰여진 시', route: '/article-practice/start?lvl=3&title=쉽게 쓰여진 시' },
+        // { id: 4, title: '동백꽃', route: '/article-practice/start?lvl=4&title=동백꽃' },
         { id: 5, title: '님의 침묵', route: '/article-practice/start?lvl=5&title=님의 침묵' },
-        { id: 6, title: '대한민국 헌법', route: '/article-practice/start?lvl=6&title=대한민국 헌법' },
+        // { id: 6, title: '대한민국 헌법', route: '/article-practice/start?lvl=6&title=대한민국 헌법' },
         { id: 7, title: '뒤로', route: '*' }
       ]
     }
