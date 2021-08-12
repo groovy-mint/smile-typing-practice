@@ -21,6 +21,7 @@ export default{
         // { id: 4, title: '동백꽃', route: '/article-practice/start?lvl=4&title=동백꽃' },
         { id: 5, title: '님의 침묵', route: '/article-practice/start?lvl=5&title=님의 침묵' },
         // { id: 6, title: '대한민국 헌법', route: '/article-practice/start?lvl=6&title=대한민국 헌법' },
+        // { id: 7, title: '문서 추가', route: '*' },
         { id: 7, title: '뒤로', route: '*' }
       ]
     }
