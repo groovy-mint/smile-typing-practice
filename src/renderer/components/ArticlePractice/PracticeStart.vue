@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }} 1/5</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeInnerWrapper">
         <div class="typeBox">
           <div><span class="gray">애국가</span></div>
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="typeInfoBox">
-      <div><div><span>진행도</span><span id="passed">12</span><span>%</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
+      <div><div><span>진행도</span><span id="passed">1</span>/<span>5</span></div><progress class="progress" max="100" v-bind:value="passPerMax"></progress></div>
       <div><div><span>타수</span><span id="passed">{{ typePerMin }}</span><span>타/분</span></div><progress class="progress" max="1500" v-bind:value="typePerMin"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
       <div><div><span>{{ hour }}:{{ minDisplay }}:{{ secDisplay }}</span></div></div>
@@ -226,6 +226,7 @@ input:focus {outline:none;}
   margin-top:3vw;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .typeInfoBox>div{
   display: flex;
