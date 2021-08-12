@@ -131,17 +131,23 @@ export default {
       if (answer === '' || answer === ' ') { // 입력란 공백 체크
         this.$refs.answer.value = '' // 입력란 공란화
       } else {
-        var allWords = wordsData.words.map((item) => {
-          return item.wordLevel[this.level].wordData.length
-        })
-        var wordsCount = allWords // 전체 단어 수 가져오기
-        var x = Math.floor(Math.random() * (wordsCount)) // 랜덤 단어 배열 번호
-        var nextWord = wordsData.words.map((item) => {
-          return item.wordLevel[this.level].wordData[x].wordName // 단어 리젠
-        })
-        var dictNext = wordsData.words.map((item) => {
-          return item.wordLevel[this.level].wordData[x].wordDict // 낱말 뜻 리젠
-        })
+        // 단어 리젠 섹션
+        if (this.maxwords > this.passed + 3) {
+          var allWords = wordsData.words.map((item) => {
+            return item.wordLevel[this.level].wordData.length
+          })
+          var wordsCount = allWords // 전체 단어 수 가져오기
+          var x = Math.floor(Math.random() * (wordsCount)) // 랜덤 단어 배열 번호
+          var nextWord = wordsData.words.map((item) => {
+            return item.wordLevel[this.level].wordData[x].wordName // 단어 리젠
+          })
+          var dictNext = wordsData.words.map((item) => {
+            return item.wordLevel[this.level].wordData[x].wordDict // 낱말 뜻 리젠
+          })
+        } else {
+          nextWord = ''
+          dictNext = ''
+        }
         this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
         this.prev1a = answer // 답안을 왼쪽으로 넘김
         var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
