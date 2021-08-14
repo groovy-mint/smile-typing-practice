@@ -10,6 +10,9 @@
         <span>타수</span><br><span>{{ typnum }}</span><span>타</span>
       </div>
     </div>
+    <div class="timeBox center">
+      <span>경과 시간</span><br><span>{{ time }}</span>
+    </div>
     <p class="center">왼쪽 위의 갈매기표를 누르면 뒤로 갑니다.</p>
   </div>
 </template>
@@ -32,6 +35,10 @@ export default{
       default: ''
     },
     title: {
+      type: String,
+      default: ''
+    },
+    time: {
       type: String,
       default: ''
     }
@@ -62,7 +69,7 @@ export default{
 .rateBox{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .center{
     text-align: center;
@@ -78,6 +85,23 @@ export default{
 }
 
 .accuracyBox>span:nth-child(4){
+  font-size: 2em;
+}
+
+.timeBox{
+  margin-bottom: 20px;
+}
+.timeBox>span:nth-child(1){
+  font-family: "NotoSansDemiLight";
+  font-size: 1.5em;
+}
+.timeBox>span:nth-child(3){
+  font-size: 3em;
+  margin-right: 5px;
+  line-height: 1;
+}
+
+.timeBox>span:nth-child(4){
   font-size: 2em;
 }
 .rate{
