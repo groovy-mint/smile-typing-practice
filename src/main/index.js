@@ -36,7 +36,8 @@ function createWindow () {
       webPreferences: {
         enableRemoteModule: true,
         nodeIntegration: true,
-        contextIsolation: false
+        contextIsolation: false,
+        spellcheck: false
       }
     })
   } else {
@@ -50,7 +51,8 @@ function createWindow () {
       webPreferences: {
         enableRemoteModule: true,
         nodeIntegration: true,
-        contextIsolation: false
+        contextIsolation: false,
+        spellcheck: false
       }
     })
   }

@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
     <br><br><span>아직 준비중이에요.</span>
     <!-- <div class="settingCon">
       <b>언어</b> <span>언어를 선택합니다.</span><br>
