@@ -2,7 +2,7 @@
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">정보</p>
     <h3>스마일 타자연습 프로그램 버전</h3>
-    <span>0.5.0</span>
+    <span>0.5.1</span>
     <h3>서포트</h3>
     <span>Smile Creative Lab.・2021<br>admin@ntws.kr<br>http://sclab.ntws.kr</span>
     <h3>단어 자료 출처 및 라이센스</h3>
