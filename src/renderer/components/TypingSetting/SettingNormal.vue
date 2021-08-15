@@ -1,7 +1,8 @@
 <template>
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
-    <div class="settingCon">
+    <span>아직 준비중이에요.</span>
+    <!-- <div class="settingCon">
       <b>언어</b> <span>언어를 선택합니다.</span><br>
       <a>한국어</a>
       <a>English</a>
@@ -34,7 +35,7 @@
     <div class="settingCon">
       <b>문장 연습 최대 개수</b> <span>문장을 얼마나 연습할지 정합니다.</span><br>
       <a>숫자</a>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
