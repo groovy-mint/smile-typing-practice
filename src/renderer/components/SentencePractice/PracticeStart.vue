@@ -198,7 +198,21 @@ export default {
         this.prev1a = answer // 답안을 왼쪽으로 넘김
         var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
         var ansLastChar = answer.length - 1 // 답안 글자의 마지막 글자 배열 순서
-        if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
+        var failed = false
+        for (var j = 0; j < (this.nowSource.length); j++) { // 오타 검사
+          if (answer.split('')[j] !== undefined) { // 공백시 오타처리
+            if (this.arraysEqual(Hangul.d(this.now[j].char, true)[0], Hangul.d(answer.split('')[j], true)[0]) === false) {
+              this.now.splice(j, 1, { id: j, style: 'red', char: this.now[j].char })
+              failed = true
+            } else {
+              this.now.splice(j, 1, { id: j, style: 'black', char: this.now[j].char })
+            }
+          } else {
+            this.now.splice((j), 1, { id: (j), style: 'red', char: this.now[j].char })
+            failed = true
+          }
+        }
+        if (failed) { // 오타 검사
           this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxsentences).toFixed(0)
           this.failPerMax = this.failed * 100 / this.maxsentences
