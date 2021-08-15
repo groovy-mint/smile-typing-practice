@@ -4,29 +4,29 @@
     <div class="typeInnerWrapper">
         <div class="typeBox">
           <div :class="style0"><span v-for="item in line0" :key="item.id" :class="item.style">{{ item.char }}</span></div>
-          <input :class="answerInput0" @keypress.enter ="nextRound" type="text" ref="answer0" id="nowAnswer">
+          <input :class="answerInput0" @keypress.enter ="nextRound" type="text" ref="answer0" id="nowAnswer" onpaste="javascript:return false;">
           <div class="gray">{{ answer0 }}</div>
         </div>
         <div class="typeBox">
           <div :class="style1"><span v-for="item in line1" :key="item.id" :class="item.style">{{ item.char }}</span></div>
-          <input :class="answerInput1" @keypress.enter ="nextRound" type="text" ref="answer1" id="nowAnswer">
+          <input :class="answerInput1" @keypress.enter ="nextRound" type="text" ref="answer1" id="nowAnswer" onpaste="javascript:return false;">
           <div class="gray">{{ answer1 }}</div>
         </div>
         <div class="typeBox">
           <div :class="style2"><span v-for="item in line2" :key="item.id" :class="item.style">{{ item.char }}</span></div>
-          <input :class="answerInput2" @keypress.enter ="nextRound" type="text" ref="answer2" id="nowAnswer">
+          <input :class="answerInput2" @keypress.enter ="nextRound" type="text" ref="answer2" id="nowAnswer" onpaste="javascript:return false;">
           <div class="gray">{{ answer2 }}</div>
         </div>
         <div class="typeBox">
           <div :class="style3"><span v-for="item in line3" :key="item.id" :class="item.style">{{ item.char }}</span></div>
-          <input :class="answerInput3" @keypress.enter ="nextRound" type="text" ref="answer3" id="nowAnswer">
+          <input :class="answerInput3" @keypress.enter ="nextRound" type="text" ref="answer3" id="nowAnswer" onpaste="javascript:return false;">
           <div class="gray">{{ answer3 }}</div>
         </div>
     </div>
     <div class="typeInfoBox">
       <div><div><span>진행도</span><span id="passed">{{ passed }}</span>/<span>{{ maxSentence }}</span></div><progress class="progress" :max="maxSentence" :value="passed"></progress></div>
       <div><div><span>타수</span><span id="passed">{{ typePerMin }}</span><span>타/분</span></div><progress class="progress" max="1500" :value="typePerMin"></progress></div>
-      <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" :max="allChars.length" :value="allChars.length - failed"></progress></div>
+      <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" :max="accuracyChars" :value="accuracyChars - failed"></progress></div>
       <div><div><span>{{ hour }}:{{ minDisplay }}:{{ secDisplay }}</span></div></div>
     </div>
     <!-- <div class="typeKeyboardBox">
@@ -68,6 +68,7 @@ export default {
       secDisplay: '00', // 표출용 변수
       minDisplay: '00', // 표출용 변수
       allChars: '', // 모든 문장 답변 총합
+      accuracyChars: 0, // 정확도 확인용 문자 개수
       nowSource: '', // 현재 진행중인 줄의 원본 문장
       style0: '', // 문장 스타일 변경용
       style1: '',
@@ -177,12 +178,13 @@ export default {
           break
       }
       var answer = this.$refs[answerLine].value
-      answer = answer.trim()
+      answer = answer.trimEnd()
       if (answer === '' || answer === ' ') { // 입력란 공백 체크
         this.$refs[answerLine].value = '' // 입력란 공란화
       } else {
         this.allChars = this.allChars + answer
         for (var i = 0; i < (this.nowSource.length); i++) { // 오타 검사
+          this.accuracyChars = this.accuracyChars + 1
           if (answer.split('')[i] !== undefined) { // 공백시 오타처리
             if (this.arraysEqual(Hangul.d(line[i].char, true)[0], Hangul.d(answer.split('')[i], true)[0]) === false) {
               line.splice(i, 1, { id: i, style: 'red', char: line[i].char })
@@ -195,7 +197,7 @@ export default {
             this.failed = this.failed + 1
           }
         }
-        this.accuracy = Math.floor(100 - (this.failed * 100 / this.allChars.length))
+        this.accuracy = Math.floor(100 - (this.failed * 100 / this.accuracyChars))
         if ((this.passed + 1) === this.maxSentence) { // 문헌의 끝이면 실행
           this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.hour + ':' + this.minDisplay + ':' + this.secDisplay + ':' + this.msecDisplay)
         } else {
@@ -368,6 +370,8 @@ input:focus {outline:none;}
 }
 .typeBox{
   min-height: 7.5vw;
+  max-height: 7.5vw;
+  overflow: hidden;
 }
 .typeNextBox{
   font-family: "NotoSansLight";

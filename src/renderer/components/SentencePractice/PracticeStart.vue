@@ -8,7 +8,7 @@
         </div>
         <div class="nowCursor">
           <div><span id="now" v-for="item in now" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span></div>
-          <div><input @keypress.enter ="nextRound" type="text" ref="answer" id="nowAnswer"></div>
+          <div><input @keypress.enter ="nextRound" type="text" ref="answer" id="nowAnswer" onpaste="javascript:return false;"></div>
         </div>
         <div class="typeNextBox">
           <div><span id="next1">{{ next1 }}</span></div>
