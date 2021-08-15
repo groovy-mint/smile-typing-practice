@@ -335,6 +335,8 @@ input:focus {outline:none;}
 .typePrevBox{
   font-family: "NotoSansLight";
   min-height: 7.5vw;
+  max-height: 7.5vw;
+  overflow: hidden;
 }
 .typeNextBox{
   font-family: "NotoSansLight";
