@@ -9,7 +9,7 @@
       <div class="accuracyBox center">
         <span>타수</span><br><span>{{ typnum }}</span><span>타</span>
       </div>
-      <div class="timeBox center">
+      <div class="accuracyBox center">
         <span>경과 시간</span><br><span>{{ time }}</span>
       </div>
     </div>
