@@ -308,7 +308,6 @@ export default {
       if (this.sec < 10) {
         this.secDisplay = '0' + this.sec
       }
-      console.log(this.min + ':' + this.secDisplay)
     }, 1000)
   },
   beforeDestroy () {
