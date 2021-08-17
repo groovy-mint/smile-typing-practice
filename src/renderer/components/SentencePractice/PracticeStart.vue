@@ -65,7 +65,12 @@ export default {
       passed: 0, // 진행한 문장
       maxsentences: 40, // 최대 문장 개수
       keyTime: 0, // 한 문장당 걸린 소요시간
-      intervalVar: '',
+      intervalVar: '', // 타수 체크 함수용 변수
+      timerIntervalVar: '', // 타이머 함수용 변수
+      sec: 0, // 경과 시간 - 초
+      min: 0, // 경과 시간 - 분
+      hour: 0, // 경과 시간 - 시
+      secDisplay: '00', // 표출용 변수
       typePerMin: 0, // 타수
       typePerMinTotal: 0, // 최종 타수
       passPerMax: 0, // 진행도
@@ -224,7 +229,8 @@ export default {
         }
         this.passed = this.passed + 1 // 진행도 1 올림
         if (this.passed === this.maxsentences) {
-          this.$router.push('/sentence-practice/end?acr=' + this.accuracy + '&typnum=' + (this.typePerMinTotal / this.maxsentences).toFixed(0) + '&title=' + this.title + '&lvl=' + this.level)
+          clearInterval(this.timerInterval)
+          this.$router.push('/sentence-practice/end?acr=' + this.accuracy + '&typnum=' + (this.typePerMinTotal / this.maxsentences).toFixed(0) + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
         } else {
           this.prev1 = this.now // 제시어를 위로 넘김
           this.nowSource = this.next1 // 다음 제시어를 제시어 원본으로 넘김
@@ -292,10 +298,23 @@ export default {
   },
   mounted () {
     window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+    this.timerIntervalVar = setInterval(() => {
+      this.sec = this.sec + 1
+      this.min = Math.floor(this.sec / 60)
+      this.msec = this.keyTime % 1000 / 10
+      this.sec = this.sec % 60
+      this.min = this.min % 60
+      this.secDisplay = this.sec
+      if (this.sec < 10) {
+        this.secDisplay = '0' + this.sec
+      }
+      console.log(this.min + ':' + this.secDisplay)
+    }, 1000)
   },
   beforeDestroy () {
     window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
     clearInterval(this.intervalVar)
+    clearInterval(this.timerIntervalVar)
   },
   created: function () {
     this.focusOnForm()

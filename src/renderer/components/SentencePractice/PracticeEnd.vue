@@ -9,6 +9,9 @@
       <div class="accuracyBox center">
         <span>타수</span><br><span>{{ typnum }}</span><span>타</span>
       </div>
+      <div class="accuracyBox center">
+        <span>경과 시간</span><br><span>{{ time }}</span>
+      </div>
     </div>
     <p class="center">왼쪽 위의 갈매기표를 누르면 뒤로 갑니다.</p>
   </div>
@@ -32,6 +35,10 @@ export default{
       default: ''
     },
     title: {
+      type: String,
+      default: ''
+    },
+    time: {
       type: String,
       default: ''
     }
