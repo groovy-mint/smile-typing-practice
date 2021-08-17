@@ -64,7 +64,6 @@ export default {
       sec: 0, // 경과 시간 - 초
       min: 0, // 경과 시간 - 분
       hour: 0, // 경과 시간 - 시
-      msecDisplay: '00', // 표출용 변수
       secDisplay: '00', // 표출용 변수
       minDisplay: '00', // 표출용 변수
       allChars: '', // 모든 문장 답변 총합
@@ -199,7 +198,7 @@ export default {
         }
         this.accuracy = Math.floor(100 - (this.failed * 100 / this.accuracyChars))
         if ((this.passed + 1) === this.maxSentence) { // 문헌의 끝이면 실행
-          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.hour + ':' + this.minDisplay + ':' + this.secDisplay + ':' + this.msecDisplay)
+          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.hour + ':' + this.minDisplay + ':' + this.secDisplay)
         } else {
           var nextSource = articlesData.articles.map((item) => { // 다음 문장 원본 가져옴
             return item.articleLevel[this.level].sentenceData[(this.passed + 1)].sentence
@@ -281,12 +280,8 @@ export default {
           this.msec = this.keyTime % 1000 / 10
           this.sec = this.sec % 60
           this.min = this.min % 60
-          this.msecDisplay = this.msec
           this.secDisplay = this.sec
           this.minDisplay = this.min
-          if (this.msec < 10) {
-            this.msecDisplay = '0' + this.msec
-          }
           if (this.sec < 10) {
             this.secDisplay = '0' + this.sec
           }
