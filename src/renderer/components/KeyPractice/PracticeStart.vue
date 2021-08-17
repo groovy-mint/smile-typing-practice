@@ -49,7 +49,11 @@ export default {
       maxkeys: 100,
       passPerMax: 0,
       failed: 0,
-      accuracy: 100
+      accuracy: 100, // 정확도
+      timerIntervalVar: '', // 타이머 함수용 변수
+      sec: 0, // 경과 시간 - 초
+      min: 0, // 경과 시간 - 분
+      secDisplay: '00' // 표출용 변수
     }
   },
   methods: {
@@ -106,7 +110,7 @@ export default {
           this.passed = this.passed + 1 // 진행도 1 올림
           this.nowErr = ''
           if (this.passed === this.maxkeys) {
-            this.$router.push('/key-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
+            this.$router.push('/key-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
           }
 
           this.prev2 = this.prev1
@@ -133,10 +137,21 @@ export default {
   },
   mounted () {
     window.addEventListener('keyup', this.keyPressed, true)
+    this.timerIntervalVar = setInterval(() => {
+      this.sec = this.sec + 1
+      this.min = Math.floor(this.sec / 60)
+      this.msec = this.keyTime % 1000 / 10
+      this.sec = this.sec % 60
+      this.min = this.min % 60
+      this.secDisplay = this.sec
+      if (this.sec < 10) {
+        this.secDisplay = '0' + this.sec
+      }
+    }, 1000)
   },
   beforeDestroy () {
-    console.log('beforedestroy')
     window.removeEventListener('keyup', this.keyPressed, true)
+    clearInterval(this.timerIntervalVar)
   }
 }
 </script>

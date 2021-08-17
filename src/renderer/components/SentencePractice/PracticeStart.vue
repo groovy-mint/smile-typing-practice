@@ -69,7 +69,6 @@ export default {
       timerIntervalVar: '', // 타이머 함수용 변수
       sec: 0, // 경과 시간 - 초
       min: 0, // 경과 시간 - 분
-      hour: 0, // 경과 시간 - 시
       secDisplay: '00', // 표출용 변수
       typePerMin: 0, // 타수
       typePerMinTotal: 0, // 최종 타수

@@ -6,6 +6,9 @@
       <div class="accuracyBox center">
         <span>정확도</span><br><span>{{ accuracy }}</span><span>%</span>
       </div>
+      <div class="accuracyBox center">
+        <span>경과시간</span><br><span>{{ time }}</span>
+      </div>
     </div>
     <p class="center">왼쪽 위의 갈매기표를 누르면 뒤로 갑니다.</p>
   </div>
@@ -25,6 +28,10 @@ export default{
       default: ''
     },
     title: {
+      type: String,
+      default: ''
+    },
+    time: {
       type: String,
       default: ''
     }

@@ -66,7 +66,11 @@ export default {
       passPerMax: 0, // 진행도
       failed: 0, // 오타
       failPerMax: 0, // 오타와 최대단어 (프로그레스바 전용)
-      accuracy: 100 // 정확도
+      accuracy: 100, // 정확도
+      timerIntervalVar: '', // 타이머 함수용 변수
+      sec: 0, // 경과 시간 - 초
+      min: 0, // 경과 시간 - 분
+      secDisplay: '00' // 표출용 변수
     }
   },
   methods: {
@@ -164,7 +168,7 @@ export default {
         }
         this.passed = this.passed + 1 // 진행도 1 올림
         if (this.passed === this.maxwords) {
-          this.$router.push('/word-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level)
+          this.$router.push('/word-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
         }
         this.prev2 = this.prev1 // 이전 제시어를 왼쪽으로 넘김
         this.prev1 = this.now // 제시어를 왼쪽으로 넘김
@@ -206,9 +210,21 @@ export default {
   },
   mounted () {
     window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+    this.timerIntervalVar = setInterval(() => {
+      this.sec = this.sec + 1
+      this.min = Math.floor(this.sec / 60)
+      this.msec = this.keyTime % 1000 / 10
+      this.sec = this.sec % 60
+      this.min = this.min % 60
+      this.secDisplay = this.sec
+      if (this.sec < 10) {
+        this.secDisplay = '0' + this.sec
+      }
+    }, 1000)
   },
   beforeDestroy () {
     window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
+    clearInterval(this.timerIntervalVar)
   },
   created: function () {
     this.focusOnForm()
