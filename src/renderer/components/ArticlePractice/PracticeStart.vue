@@ -27,7 +27,7 @@
       <div><div><span>진행도</span><span id="passed">{{ passed }}</span>/<span>{{ maxSentence }}</span></div><progress class="progress" :max="maxSentence" :value="passed"></progress></div>
       <div><div><span>타수</span><span id="passed">{{ typePerMin }}</span><span>타/분</span></div><progress class="progress" max="1500" :value="typePerMin"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" :max="accuracyChars" :value="accuracyChars - failed"></progress></div>
-      <div><div><span>{{ hour }}:{{ minDisplay }}:{{ secDisplay }}</span></div></div>
+      <div><div><span>{{ min }}:{{ secDisplay }}</span></div></div>
     </div>
     <!-- <div class="typeKeyboardBox">
       <KeyboardLayout/>
@@ -63,9 +63,7 @@ export default {
       msec: 0, // 경과 시간 - 밀리초
       sec: 0, // 경과 시간 - 초
       min: 0, // 경과 시간 - 분
-      hour: 0, // 경과 시간 - 시
       secDisplay: '00', // 표출용 변수
-      minDisplay: '00', // 표출용 변수
       allChars: '', // 모든 문장 답변 총합
       accuracyChars: 0, // 정확도 확인용 문자 개수
       nowSource: '', // 현재 진행중인 줄의 원본 문장
@@ -198,7 +196,7 @@ export default {
         }
         this.accuracy = Math.floor(100 - (this.failed * 100 / this.accuracyChars))
         if ((this.passed + 1) === this.maxSentence) { // 문헌의 끝이면 실행
-          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.hour + ':' + this.minDisplay + ':' + this.secDisplay)
+          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
         } else {
           var nextSource = articlesData.articles.map((item) => { // 다음 문장 원본 가져옴
             return item.articleLevel[this.level].sentenceData[(this.passed + 1)].sentence
@@ -281,12 +279,8 @@ export default {
           this.sec = this.sec % 60
           this.min = this.min % 60
           this.secDisplay = this.sec
-          this.minDisplay = this.min
           if (this.sec < 10) {
             this.secDisplay = '0' + this.sec
-          }
-          if (this.min < 10) {
-            this.minDisplay = '0' + this.min
           }
 
           this.typePerMin = (tempAnswer2 / this.keyTime * 60000).toFixed(0)
