@@ -197,7 +197,7 @@ export default {
         }
         this.accuracy = Math.floor(100 - (this.failed * 100 / this.accuracyChars))
         if ((this.passed + 1) === this.maxSentence) { // 문헌의 끝이면 실행
-          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.hour + ':' + this.minDisplay + ':' + this.secDisplay)
+          this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.minDisplay + ':' + this.secDisplay)
         } else {
           var nextSource = articlesData.articles.map((item) => { // 다음 문장 원본 가져옴
             return item.articleLevel[this.level].sentenceData[(this.passed + 1)].sentence
@@ -264,7 +264,6 @@ export default {
           answer = 'answer3'
           break
       }
-      console.log(this.allCharsLength)
       var tempAnswer = this.$refs[answer].value.split('')
       var tempAnswer2 = Hangul.d(this.$refs[answer].value).length + Hangul.d(this.allChars).length
       tempAnswer.pop()
