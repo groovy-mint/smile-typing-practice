@@ -45,4 +45,8 @@ export default {
 .mainMenuTitle a:hover svg{
     background:lightgray
 }
+@media (prefers-color-scheme: dark) {
+  b, span, p, input, h3, li{color:#eee}
+  .mainMenuTitle a:hover svg{background:#444}
+}
 </style>
