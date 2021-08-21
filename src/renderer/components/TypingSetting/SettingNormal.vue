@@ -4,12 +4,12 @@
     <div class="settingBox">
       <div class="settingCon">
         <div>
-          <b>언어</b><br><span>언어를 선택합니다.</span><br>
+          <b>언어</b><br><span>언어를 선택합니다. (Restart to apply.)</span><br>
         </div>
         <div>
           <a ref="langKO" @click="langSet('KO')">한국어</a>
-          <a ref="langEN" @click="langSet('EN')">English</a>
-          <a ref="langJA" @click="langSet('JA')">日本語</a>
+          <!-- <a ref="langEN" @click="langSet('EN')">English</a> -->
+          <!-- <a ref="langJA" @click="langSet('JA')">日本語</a> -->
         </div>
       </div>
       <div class="settingCon">
@@ -18,13 +18,13 @@
         </div>
         <div>
           <a ref="key0" @click="keyboardSet(0)">두벌식</a>
-          <a ref="key1" @click="keyboardSet(1)">세벌식 390</a>
-          <a ref="key2" @click="keyboardSet(2)">세벌식 완성</a>
+          <!-- <a ref="key1" @click="keyboardSet(1)">세벌식 3-90</a> -->
+          <!-- <a ref="key2" @click="keyboardSet(2)">세벌식 3-91</a> -->
         </div>
       </div>
       <div class="settingCon">
         <div>
-          <b>CUD (색각 이상자용 옵션)</b><br><span>오타에 밑줄을 표시하고, 자리 연습의 키보드 색상을 흑백으로 변경합니다.</span><br>
+          <b>CUD (색각 이상자용 옵션)</b><br><span>오타를 검정 바탕에 하얀색으로 표시하고, 자리 연습 키보드를 회색조로 바꿉니다.</span><br>
         </div>
         <div>
           <a ref="cudtrue" @click="cudSet(true)">켜기</a>
@@ -33,18 +33,18 @@
       </div>
       <div class="settingCon">
         <div>
-          <b>자리 연습 최대 개수</b><br><span>자리를 얼마나 연습할지 정합니다.</span><br>
+          <b>자리 연습 최대 개수</b><br><span>자리를 얼마나 연습할지 정합니다. (1~999)</span><br>
         </div>
         <div>
-          <input ref="keyMax" :value="keyMax" class="activated textinput">
+          <input ref="keyMax" type="number" step="10" min="0" max="999" :value="keyMax" class="activated textinput">
         </div>
       </div>
       <div class="settingCon">
         <div>
-          <b>단어 연습 최대 개수</b><br><span>단어를 얼마나 연습할지 정합니다.</span><br>
+          <b>단어 연습 최대 개수</b><br><span>단어를 얼마나 연습할지 정합니다. (1~999)</span><br>
         </div>
         <div>
-          <input ref="wordMax" :value="wordMax" class="activated textinput">
+          <input ref="wordMax" type="number" step="10" min="0" max="999" :value="wordMax" class="activated textinput">
         </div>
       </div>
       <div class="settingCon">
@@ -58,10 +58,10 @@
       </div>
       <div class="settingCon">
         <div>
-          <b>문장 연습 최대 개수</b><br><span>문장을 얼마나 연습할지 정합니다.</span><br>
+          <b>문장 연습 최대 개수</b><br><span>문장을 얼마나 연습할지 정합니다. (1~999)</span><br>
         </div>
         <div>
-          <input ref="sentenceMax" :value="sentenceMax" class="activated textinput">
+          <input ref="sentenceMax" type="number" step="10" min="0" max="999" :value="sentenceMax" class="activated textinput">
         </div>
       </div>
     </div>
@@ -86,11 +86,11 @@ export default {
   methods: {
     settingRender: function () { // 초기화 - 설정 값 불러와서 적용
       this.$refs.langKO.style = ''
-      this.$refs.langEN.style = ''
-      this.$refs.langJA.style = ''
+      // this.$refs.langEN.style = ''
+      // this.$refs.langJA.style = ''
       this.$refs.key0.style = ''
-      this.$refs.key1.style = ''
-      this.$refs.key2.style = ''
+      // this.$refs.key1.style = ''
+      // this.$refs.key2.style = ''
       this.$refs.cudtrue.style = ''
       this.$refs.cudfalse.style = ''
       this.$refs.wordtrue.style = ''
@@ -146,7 +146,7 @@ export default {
     },
     keyMaxSet: function () {
       var num = this.$refs.keyMax.value
-      if (isNaN(num)) {
+      if (isNaN(num) || num <= 0 || num > 999) {
         num = this.keyMax
       }
       num = parseInt(num)
@@ -154,7 +154,7 @@ export default {
     },
     wordMaxSet: function () {
       var num = this.$refs.wordMax.value
-      if (isNaN(num)) {
+      if (isNaN(num) || num <= 0 || num > 999) {
         num = this.wordMax
       }
       num = parseInt(num)
@@ -166,7 +166,7 @@ export default {
     },
     sentenceMaxSet: function () {
       var num = this.$refs.sentenceMax.value
-      if (isNaN(num)) {
+      if (isNaN(num) || num <= 0 || num > 999) {
         num = this.sentenceMax
       }
       num = parseInt(num)
@@ -254,7 +254,7 @@ a{
   font-family: "NotoSansRegular";
   background: none;
   border: none;
-  width: 2em;
+  width: 3em;
   font-size: 1em;
   text-align: right;
   padding: 0;

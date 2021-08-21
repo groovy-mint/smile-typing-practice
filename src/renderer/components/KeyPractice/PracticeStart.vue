@@ -129,8 +129,8 @@ export default {
 
           this.passPerMax = this.passed * 100 / this.maxkeys
         } else {
-          ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => { // CUD
-            result ? this.nowErr = 'red' : this.nowErr = 'red underline'
+          ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD
+            result ? this.nowErr = 'red underline' : this.nowErr = 'red'
           })
           this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxkeys).toFixed(0)
@@ -219,7 +219,8 @@ export default {
   color:red;
 }
 .underline{
-  text-decoration: underline;
+  color:white;
+  background: black;
 }
 #next1,#next2{
   color: gray;
