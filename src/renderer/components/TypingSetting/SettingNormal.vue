@@ -1,50 +1,193 @@
 <template>
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
-    <br><br><span>아직 준비중이에요.</span>
-    <!-- <div class="settingCon">
-      <b>언어</b> <span>언어를 선택합니다.</span><br>
-      <a>한국어</a>
-      <a>English</a>
-      <a>日本語</a>
+    <div class="settingBox">
+      <div class="settingCon">
+        <div>
+          <b>언어</b><br><span>언어를 선택합니다.</span><br>
+        </div>
+        <div>
+          <a ref="langKO" @click="langSet('KO')">한국어</a>
+          <a ref="langEN" @click="langSet('EN')">English</a>
+          <a ref="langJA" @click="langSet('JA')">日本語</a>
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>자판 배열</b><br><span>손에 익힐 자판 배열을 선택합니다.</span><br>
+        </div>
+        <div>
+          <a ref="key0" @click="keyboardSet(0)">두벌식</a>
+          <a ref="key1" @click="keyboardSet(1)">세벌식 390</a>
+          <a ref="key2" @click="keyboardSet(2)">세벌식 완성</a>
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>CUD (색각 이상자용 옵션)</b><br><span>오타에 밑줄을 표시하고, 자리 연습의 키보드 색상을 흑백으로 변경합니다.</span><br>
+        </div>
+        <div>
+          <a ref="cudtrue" @click="cudSet(true)">켜기</a>
+          <a ref="cudfalse" @click="cudSet(false)">끄기</a>
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>자리 연습 최대 개수</b><br><span>자리를 얼마나 연습할지 정합니다.</span><br>
+        </div>
+        <div>
+          <input ref="keyMax" :value="keyMax" class="activated textinput">
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>단어 연습 최대 개수</b><br><span>단어를 얼마나 연습할지 정합니다.</span><br>
+        </div>
+        <div>
+          <input ref="wordMax" :value="wordMax" class="activated textinput">
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>단어 정렬</b><br><span>단어를 가운데로 정렬할지, 왼쪽으로 정렬할지 정합니다.</span><br>
+        </div>
+        <div>
+          <a ref="wordtrue" @click="wordCenterSet(true)">가운데</a>
+          <a ref="wordfalse" @click="wordCenterSet(false)">왼쪽</a>
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>문장 연습 최대 개수</b><br><span>문장을 얼마나 연습할지 정합니다.</span><br>
+        </div>
+        <div>
+          <input ref="sentenceMax" :value="sentenceMax" class="activated textinput">
+        </div>
+      </div>
     </div>
-    <div class="settingCon">
-      <b>자판 배열</b>　<span>손에 익힐 자판 배열을 선택합니다.</span><br>
-      <a>두벌식</a>
-      <a>세벌식 390</a>
-      <a>세벌식 완성</a>
-    </div>
-    <div class="settingCon">
-      <b>CUD (색각 이상자용 옵션)</b> <span>오타에 밑줄을 표시하고, 자리 연습의 키보드 색상을 흑백으로 변경합니다.</span><br>
-      <a>켜기</a>
-      <a>끄기</a>
-    </div>
-    <div class="settingCon">
-      <b>자리 연습 최대 개수</b> <span>자리를 얼마나 연습할지 정합니다.</span><br>
-      <a>숫자</a>
-    </div>
-    <div class="settingCon">
-      <b>단어 연습 최대 개수</b> <span>단어를 얼마나 연습할지 정합니다.</span><br>
-      <a>숫자</a>
-    </div>
-    <div class="settingCon">
-      <b>단어 연습 글자 정렬</b> <span>단어 연습의 제시어를 왼쪽으로 정렬할지 가운데로 정렬할지 결정합니다.</span><br>
-      <a>가운데</a>
-      <a>왼쪽</a>
-    </div>
-    <div class="settingCon">
-      <b>문장 연습 최대 개수</b> <span>문장을 얼마나 연습할지 정합니다.</span><br>
-      <a>숫자</a>
-    </div> -->
   </div>
 </template>
 <script>
+import { ipcRenderer } from 'electron'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 export default {
-  components: { LeftIcon }
+  components: { LeftIcon },
+  data () {
+    return {
+      language: '',
+      keyboard: '',
+      cud: false,
+      keyMax: 0,
+      wordMax: 0,
+      wordCenter: true,
+      sentenceMax: 0
+    }
+  },
+  methods: {
+    settingRender: function () { // 초기화 - 설정 값 불러와서 적용
+      this.$refs.langKO.style = ''
+      this.$refs.langEN.style = ''
+      this.$refs.langJA.style = ''
+      this.$refs.key0.style = ''
+      this.$refs.key1.style = ''
+      this.$refs.key2.style = ''
+      this.$refs.cudtrue.style = ''
+      this.$refs.cudfalse.style = ''
+      this.$refs.wordtrue.style = ''
+      this.$refs.wordfalse.style = ''
+      const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      var darklight
+      isDark ? darklight = '#eee' : darklight = 'black'
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => {
+        this.language = result
+        this.$refs['lang' + result].style.cursor = 'default'
+        this.$refs['lang' + result].style.color = darklight
+        this.$refs['lang' + result].style.textDecoration = 'underline'
+      })
+      ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => {
+        this.keyboard = result
+        this.$refs['key' + result].style.cursor = 'default'
+        this.$refs['key' + result].style.color = darklight
+        this.$refs['key' + result].style.textDecoration = 'underline'
+      })
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => {
+        this.cud = result
+        this.$refs['cud' + result].style.cursor = 'default'
+        this.$refs['cud' + result].style.color = darklight
+        this.$refs['cud' + result].style.textDecoration = 'underline'
+      })
+      ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => {
+        this.keyMax = result
+      })
+      ipcRenderer.invoke('getStoreValue', 'wordMax').then((result) => {
+        this.wordMax = result
+      })
+      ipcRenderer.invoke('getStoreValue', 'wordCenter').then((result) => {
+        this.wordCenter = result
+        this.$refs['word' + result].style.cursor = 'default'
+        this.$refs['word' + result].style.color = darklight
+        this.$refs['word' + result].style.textDecoration = 'underline'
+      })
+      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => {
+        this.sentenceMax = result
+      })
+    },
+    langSet: function (lang) {
+      ipcRenderer.invoke('setStoreValue', 'language', lang)
+      this.settingRender()
+    },
+    keyboardSet: function (k) {
+      ipcRenderer.invoke('setStoreValue', 'keyboard', k)
+      this.settingRender()
+    },
+    cudSet: function (bool) {
+      ipcRenderer.invoke('setStoreValue', 'cud', bool)
+      this.settingRender()
+    },
+    keyMaxSet: function () {
+      var num = this.$refs.keyMax.value
+      if (isNaN(num)) {
+        num = this.keyMax
+      }
+      num = parseInt(num)
+      ipcRenderer.invoke('setStoreValue', 'keyMax', num)
+    },
+    wordMaxSet: function () {
+      var num = this.$refs.wordMax.value
+      if (isNaN(num)) {
+        num = this.wordMax
+      }
+      num = parseInt(num)
+      ipcRenderer.invoke('setStoreValue', 'wordMax', num)
+    },
+    wordCenterSet: function (bool) {
+      ipcRenderer.invoke('setStoreValue', 'wordCenter', bool)
+      this.settingRender()
+    },
+    sentenceMaxSet: function () {
+      var num = this.$refs.sentenceMax.value
+      if (isNaN(num)) {
+        num = this.sentenceMax
+      }
+      num = parseInt(num)
+      ipcRenderer.invoke('setStoreValue', 'sentenceMax', num)
+    }
+  },
+  mounted () {
+    this.settingRender()
+  },
+  beforeDestroy () {
+    this.keyMaxSet()
+    this.wordMaxSet()
+    this.sentenceMaxSet()
+  }
 }
 </script>
 <style>
+input:focus {outline:none;}
+a{
+  cursor: pointer;
+}
 #typeWrapper{
   margin-left:30px
 }
@@ -79,10 +222,50 @@ export default {
 .mainMenuTitle a:hover svg{
     background:lightgray
 }
+.settingBox{
+  padding-bottom:30px;
+}
 .settingCon{
-  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  border-bottom: 1px solid black;
+}
+.settingCon:last-child{
+  border-bottom: 0px;
+}
+.settingCon div:last-child a{
+  color: #999
+}
+.settingCon div:last-child a:hover{
+  color: black
+}
+.activated{
+  cursor: default;
+  color: black !important;
+  text-decoration: underline;
+}
+.textinput{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  font-family: "NotoSansRegular";
+  background: none;
+  border: none;
+  width: 2em;
+  font-size: 1em;
+  text-align: right;
+  padding: 0;
 }
 b{
   font-size: 1.2em;
+}
+@media (prefers-color-scheme: dark) {
+  b, span, p, input{color:#eee}
+  .settingCon{border-bottom: 1px solid #eee;}
+  .settingCon div:last-child a:hover{color: #eee}
+  .activated{color: #eee !important;}
 }
 </style>

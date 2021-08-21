@@ -72,7 +72,7 @@
         <div class="key">◆</div>
         <div class="key">alt</div>
         <div class="key">漢</div>
-        <div class="key keySpace keyFinger">Space</div>
+        <div class="key keySpace keyFinger" ref="Space">Space</div>
         <div class="key">한</div>
         <div class="key">alt</div>
         <div class="key">☰</div>
@@ -84,7 +84,7 @@
         <div class="key">⌃</div>
         <div class="key">⌥</div>
         <div class="key">⌘</div>
-        <div class="key keySpace keyFinger">␣</div>
+        <div class="key keySpace keyFinger" ref="Space">␣</div>
         <div class="key">⌘</div>
         <div class="key">⌥</div>
         <div class="key">ㅤ</div>
@@ -94,6 +94,7 @@
     </div>
 </template>
 <script>
+import { ipcRenderer } from 'electron'
 export default {
   props: {
     keyToPress: {
@@ -113,61 +114,70 @@ export default {
     keyboardFingerChange: function (k) {
       console.log(k + 'finger change')
       console.log(this.shoulderLeft)
-      this.$refs.KeyA.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyS.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyD.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyF.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyJ.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyK.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.KeyL.style.background = 'rgba(102, 205, 171, 0.603)'
-      this.$refs.Semicolon.style.background = 'rgba(102, 205, 171, 0.603)'
-      switch (k) {
-        case 'KeyA': case 'KeyS': case 'KeyD': case 'KeyF': case 'KeyJ': case 'KeyK': case 'KeyL': case 'Semicolon':
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyQ': case 'KeyZ':
-          console.log('A key section')
-          this.$refs.KeyA.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyW': case 'KeyX':
-          console.log('S key section')
-          this.$refs.KeyS.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyE': case 'KeyC':
-          console.log('D key section')
-          this.$refs.KeyD.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB':
-          console.log('F key section')
-          this.$refs.KeyF.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN':
-          console.log('J key section')
-          this.$refs.KeyJ.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyI': case 'Comma':
-          console.log('K key section')
-          this.$refs.KeyK.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'Period': case 'KeyO':
-          console.log('L key section')
-          this.$refs.KeyL.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        case 'KeyP': case 'Slash':
-          console.log('; key section')
-          this.$refs.Semicolon.style.background = 'none'
-          this.$refs[k].style.background = 'lightpink'
-          break
-        default:
-          console.log('none of any section')
-      }
+      var pressFeedback = 'lightpink'
+      var idleFeedback = 'rgba(102, 205, 171, 0.603)'
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD
+        if (result) {
+          pressFeedback = 'gray'
+          idleFeedback = 'darkgray'
+        }
+        this.$refs.KeyA.style.background = idleFeedback
+        this.$refs.KeyS.style.background = idleFeedback
+        this.$refs.KeyD.style.background = idleFeedback
+        this.$refs.KeyF.style.background = idleFeedback
+        this.$refs.KeyJ.style.background = idleFeedback
+        this.$refs.KeyK.style.background = idleFeedback
+        this.$refs.KeyL.style.background = idleFeedback
+        this.$refs.Semicolon.style.background = idleFeedback
+        this.$refs.Space.style.background = idleFeedback
+        switch (k) {
+          case 'KeyA': case 'KeyS': case 'KeyD': case 'KeyF': case 'KeyJ': case 'KeyK': case 'KeyL': case 'Semicolon':
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyQ': case 'KeyZ':
+            console.log('A key section')
+            this.$refs.KeyA.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyW': case 'KeyX':
+            console.log('S key section')
+            this.$refs.KeyS.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyE': case 'KeyC':
+            console.log('D key section')
+            this.$refs.KeyD.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB':
+            console.log('F key section')
+            this.$refs.KeyF.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN':
+            console.log('J key section')
+            this.$refs.KeyJ.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyI': case 'Comma':
+            console.log('K key section')
+            this.$refs.KeyK.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'Period': case 'KeyO':
+            console.log('L key section')
+            this.$refs.KeyL.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          case 'KeyP': case 'Slash':
+            console.log('; key section')
+            this.$refs.Semicolon.style.background = 'none'
+            this.$refs[k].style.background = pressFeedback
+            break
+          default:
+            console.log('none of any section')
+        }
+      })
     },
     keyboardInitSet: function (key) {
       this.keyboardFingerChange(key)
@@ -203,4 +213,7 @@ export default {
 .key {width:25px;height:25px; padding:10px 10px; display:inline-block; border:1px solid gray;margin-bottom:5px;border-radius: 5px; }
 .keyBs {width:55px} .keyEnt {width:65px} .keyShift {width:90px} .keyLeft {text-align: left;} .keyRight {text-align: right;} .keySpace {width: 256px;}
 .keyEnable{background: lightpink;} .keyFinger{background: rgba(102, 205, 171, 0.603);}
+@media (prefers-color-scheme: dark) {
+  .key{color:#eee; border:1px solid #777}
+}
 </style>

@@ -23,7 +23,7 @@
 
 <script>
   import MainMenu from './components/MainMenu'
-  import { remote } from 'electron'
+  import { remote, ipcRenderer } from 'electron'
   import CloseIcon from 'vue-material-design-icons/Close.vue'
   import MaximizeIcon from 'vue-material-design-icons/CropSquare.vue'
   import NormalIcon from 'vue-material-design-icons/FullscreenExit.vue'
@@ -58,6 +58,11 @@
         maximize: true,
         minimize: false
       }
+    },
+    mounted () {
+      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => {
+        console.log(result)
+      })
     }
   }
 </script>
@@ -145,5 +150,11 @@
 .slide-up-fade-leave-to {
   transform: translateX(-10px);
   opacity: 0;
+}
+@media (prefers-color-scheme: dark) {
+  /* body{background: linear-gradient( to right, #011016, #000);} */
+  body{background: linear-gradient( to right, #131414, #191b1f);}
+  #windowControl button:hover{background: darkgray;}
+  a{color:white}
 }
 </style>

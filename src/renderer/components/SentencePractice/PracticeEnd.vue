@@ -92,4 +92,8 @@ export default{
     font-size: 3em;
     text-align: center;
 }
+@media (prefers-color-scheme: dark) {
+  .mainMenuTitle a:hover svg{background:#444}
+  p, span{color:#eee}
+}
 </style>

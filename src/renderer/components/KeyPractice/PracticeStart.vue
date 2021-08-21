@@ -19,6 +19,7 @@
   </div>
 </template>
 <script>
+import { ipcRenderer } from 'electron'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import keysData from '@/assets/keyPracticeData.json'
 import KeyboardLayout from './keyboardDubeol.vue'
@@ -58,6 +59,9 @@ export default {
   },
   methods: {
     initialSetting: function () { // 초기화 메소드
+      ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => { // 최대 키 설정 가져오기
+        this.maxkeys = result
+      })
       var allkeys = keysData.keys.map((item) => {
         return item.keyType[0].keyLevel[this.level].keyData.length
       })
@@ -125,7 +129,9 @@ export default {
 
           this.passPerMax = this.passed * 100 / this.maxkeys
         } else {
-          this.nowErr = 'red'
+          ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => { // CUD
+            result ? this.nowErr = 'red' : this.nowErr = 'red underline'
+          })
           this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxkeys).toFixed(0)
         }
@@ -212,6 +218,9 @@ export default {
 .red{
   color:red;
 }
+.underline{
+  text-decoration: underline;
+}
 #next1,#next2{
   color: gray;
 }
@@ -259,5 +268,14 @@ progress::-webkit-progress-value {
 
 .typeKeyboardBox{
   margin-top: 40px;
+}
+@media (prefers-color-scheme: dark) {
+  span, p{color:#eee}
+  .mainMenuTitle a:hover svg{background:#444}
+  #prev1,#prev2{color: #444;}
+  .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
+  #next1,#next2{color: #777;}
+  progress{border: 1px solid #eee;}
+  progress::-webkit-progress-value {background: #eee;}
 }
 </style>

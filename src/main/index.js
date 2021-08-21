@@ -1,7 +1,8 @@
 'use strict'
 
-import { app, BrowserWindow, Menu } from 'electron'
+import { app, BrowserWindow, Menu, ipcMain } from 'electron'
 import '../renderer/store'
+import Store from 'electron-store'
 
 /**
  * Set `__static` path to static files in production
@@ -56,6 +57,48 @@ function createWindow () {
       }
     })
   }
+  const schema = {
+    language: {
+      type: 'string',
+      default: 'KO'
+    },
+    keyboard: {
+      type: 'number',
+      default: 0
+    },
+    cud: {
+      type: 'boolean',
+      default: false
+    },
+    keyMax: {
+      type: 'integer',
+      default: 50
+    },
+    wordMax: {
+      type: 'integer',
+      default: 50
+    },
+    wordCenter: {
+      type: 'boolean',
+      default: true
+    },
+    sentenceMax: {
+      type: 'integer',
+      default: 40
+    }
+  }
+
+  const store = new Store({schema})
+
+  ipcMain.handle('getStoreValue', (event, key) => {
+    return store.get(key)
+  })
+  ipcMain.handle('setStoreValue', (event, key, value) => {
+    return store.set(key, value)
+  })
+
+  console.log(store.get('wordCenter'))
+
   mainWindow.loadURL(winURL)
 
   mainWindow.on('closed', () => {

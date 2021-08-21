@@ -48,12 +48,12 @@ export default{
           : this.accuracy >= '80' ? this.accuracyRate = '쫌 몬해도 괘안타!'
             : this.accuracyRate = '니 머꼬? 사람이 아이가?'
       } else if (this.level === '2') {
-        this.accuracy === '100' ? this.accuracyRate = '고냥 찢었다'
+        this.accuracy === '100' ? this.accuracyRate = '잘했음'
           : this.accuracy >= '80' ? this.accuracyRate = '쫌 치네 ㅋㅋ'
-            : this.accuracyRate = '이게 사람이 맞나 ㄹㅇ'
+            : this.accuracyRate = '버근가?'
       } else {
         this.accuracy === '100' ? this.accuracyRate = '참 잘했어요!'
-          : this.accuracy >= '80' ? this.accuracyRate = '조금만 더 노력해봐요!'
+          : this.accuracy >= '80' ? this.accuracyRate = '조금만 더 정확히!'
             : this.accuracyRate = '자리 연습부터 다시 하는 게 어떨까요?'
       }
     }
@@ -93,5 +93,9 @@ export default{
     font-family: "NotoSansLight";
     font-size: 3em;
     text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  .mainMenuTitle a:hover svg{background:#444}
+  p, span{color:#eee}
 }
 </style>

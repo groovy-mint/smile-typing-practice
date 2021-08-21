@@ -36,6 +36,7 @@
 </template>
 <script>
 import Vue from 'vue'
+import { ipcRenderer } from 'electron'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import articlesData from '@/assets/articlePracticeData.json'
 import Hangul from 'hangul-js'
@@ -83,11 +84,17 @@ export default {
       answer0: '', // 답변 변수
       answer1: '',
       answer2: '',
-      answer3: ''
+      answer3: '',
+      redOption: 'red' // CUD 대응 오타 표시 변수
     }
   },
   methods: {
     pageRegen: function () { // 초기화 메소드 역할 및 쪽 리젠
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD 대응
+        if (!result) {
+          this.redOption = 'underline'
+        }
+      })
       this.line0 = []
       this.line1 = []
       this.line2 = []
@@ -185,13 +192,13 @@ export default {
           this.accuracyChars = this.accuracyChars + 1
           if (answer.split('')[i] !== undefined) { // 공백시 오타처리
             if (this.arraysEqual(Hangul.d(line[i].char, true)[0], Hangul.d(answer.split('')[i], true)[0]) === false) {
-              line.splice(i, 1, { id: i, style: 'red', char: line[i].char })
+              line.splice(i, 1, { id: i, style: this.redOption, char: line[i].char })
               this.failed = this.failed + 1
             } else {
               line.splice(i, 1, { id: i, style: 'black', char: line[i].char })
             }
           } else {
-            line.splice((i), 1, { id: (i), style: 'red', char: line[i].char })
+            line.splice((i), 1, { id: (i), style: this.redOption, char: line[i].char })
             this.failed = this.failed + 1
           }
         }
@@ -292,7 +299,7 @@ export default {
         for (var i = 0; i < leng; i++) { // 오타 검사
           if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if
             if (this.arraysEqual(Hangul.d(line[i].char, true)[0], Hangul.d(tempAnswer[i], true)[0]) === false) {
-              line.splice(i, 1, { id: i, style: 'red', char: line[i].char })
+              line.splice(i, 1, { id: i, style: this.redOption, char: line[i].char })
             } else {
               line.splice(i, 1, { id: i, style: 'black', char: line[i].char })
             }
@@ -375,17 +382,8 @@ input:focus {outline:none;}
   font-family: "NotoSansLight";
   color: gray !important;
 }
-.gray.red ,.gray.red{
+.gray .red ,.gray .red{
   color:lightcoral
-}
-.nowCursor{
-  display: flex;
-  flex-direction: column;
-  font-family: "NotoSansRegular";
-  border-top: 0.3vw solid black;
-  border-bottom: 0.3vw solid black;
-  text-align: left;
-  min-height: 7.5vw;
 }
 #nowAnswer{
   -webkit-appearance: none;
@@ -405,6 +403,10 @@ input:focus {outline:none;}
 }
 .red{
   color:red;
+}
+.underline{
+  background: black;
+  color:white;
 }
 .typeInfoBox{
   margin-top:4vw;
@@ -449,5 +451,15 @@ progress::-webkit-progress-value {
 }
 .typeKeyboardBox{
   margin-top: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  .mainMenuTitle a:hover svg{background:#444}
+  .typeNextBox{color:#777 !important}
+  p, span, input{color:#eee}
+  .gray{color:#777 !important}
+  .gray .black{color:#777}
+  .gray .red ,.gray .red{color:darkred}
+  progress{border: 1px solid #eee;}
+  progress::-webkit-progress-value {background: #eee;}
 }
 </style>

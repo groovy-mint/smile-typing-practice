@@ -32,6 +32,7 @@
 </template>
 <script>
 import Vue from 'vue'
+import { ipcRenderer } from 'electron'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import sentencesData from '@/assets/sentencePracticeData.json'
 import Hangul from 'hangul-js'
@@ -63,7 +64,7 @@ export default {
       noteNext1: '', // 다음 각주
       noteNext2: '', // 다다음 각주
       passed: 0, // 진행한 문장
-      maxsentences: 40, // 최대 문장 개수
+      maxsentences: 0, // 최대 문장 개수
       keyTime: 0, // 한 문장당 걸린 소요시간
       intervalVar: '', // 타수 체크 함수용 변수
       timerIntervalVar: '', // 타이머 함수용 변수
@@ -75,11 +76,20 @@ export default {
       passPerMax: 0, // 진행도
       failed: 0, // 틀린 문장
       failPerMax: 0, // 틀린 문장과 최대 문장 (프로그레스바 전용)
-      accuracy: 100 // 정확도
+      accuracy: 100, // 정확도
+      redOption: 'red' // CUD 대응 오타 표시 옵션
     }
   },
   methods: {
     initialSetting: function () { // 초기화 메소드
+      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => { // 최대 문장 설정 가져오기
+        this.maxsentences = result
+      })
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // 최대 문장 설정 가져오기
+        if (result) {
+          this.redOption = 'underline'
+        }
+      })
       var allSentences = sentencesData.sentences.map((item) => {
         return item.sentenceLevel[this.level].sentenceData.length
       })
@@ -206,13 +216,13 @@ export default {
         for (var j = 0; j < (this.nowSource.length); j++) { // 오타 검사
           if (answer.split('')[j] !== undefined) { // 공백시 오타처리
             if (this.arraysEqual(Hangul.d(this.now[j].char, true)[0], Hangul.d(answer.split('')[j], true)[0]) === false) {
-              this.now.splice(j, 1, { id: j, style: 'red', char: this.now[j].char })
+              this.now.splice(j, 1, { id: j, style: this.redOption, char: this.now[j].char })
               failed = true
             } else {
               this.now.splice(j, 1, { id: j, style: 'black', char: this.now[j].char })
             }
           } else {
-            this.now.splice((j), 1, { id: (j), style: 'red', char: this.now[j].char })
+            this.now.splice((j), 1, { id: (j), style: this.redOption, char: this.now[j].char })
             failed = true
           }
         }
@@ -222,7 +232,7 @@ export default {
           this.failPerMax = this.failed * 100 / this.maxsentences
         }
         if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[ansLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
-          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
+          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: this.redOption, char: this.now[srcLastChar].char })
         } else {
           this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
         }
@@ -281,7 +291,7 @@ export default {
         for (var i = 0; i < leng; i++) { // 오타 검사
           if (tempAnswer[i] !== undefined) { // 오타를 치우면 빨간걸 없애는 if
             if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], Hangul.d(tempAnswer[i], true)[0]) === false) {
-              this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
+              this.now.splice(i, 1, { id: i, style: this.redOption, char: this.now[i].char })
             } else {
               this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
             }
@@ -404,6 +414,10 @@ input:focus {outline:none;}
 .red{
   color:red;
 }
+.underline{
+  background: black;
+  color:white;
+}
 .black{
   color:black;
 }
@@ -449,5 +463,18 @@ progress::-webkit-progress-value {
 }
 .typeKeyboardBox{
   margin-top: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  .mainMenuTitle a:hover svg{background:#444}
+  #prev1,#prev2{color: #444;}
+  p, span, input{color:#eee}
+  .typeNextBox>div>span{color: #777;}
+  #prev1.red ,#prev2.red{color:darkred}
+  .nowCursor{border-top: 0.3vw solid #eee;border-bottom: 0.3vw solid #eee;}
+  .black{color:#eee;}
+  .underline{background: #eee;color:black;}
+  .gray{color:#777 !important}
+  progress{border: 1px solid #eee;}
+  progress::-webkit-progress-value {background: #eee;}
 }
 </style>

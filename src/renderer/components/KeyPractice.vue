@@ -71,4 +71,9 @@ export default{
   text-decoration: none;
   color:#000;
 }
+@media (prefers-color-scheme: dark) {
+  .menuItem:after {background-color: #eee;}
+  li a{color:#eee}
+  .menuItem{color:#eee;}
+}
 </style>

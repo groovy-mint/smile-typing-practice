@@ -1,16 +1,16 @@
 <template>
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>단어 연습</p><p class="subMenuTitle">{{ title }}</p>
-    <div class="typeReqBox">
+    <div class="typeReqBox" ref="isCenter0">
       <div><span id="prev2" v-for="item in prev2" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span></div>
       <div><span id="prev1" v-for="item in prev1" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span></div>
-      <div class="nowCursor">
+      <div class="nowCursor" ref="isCenter1">
         <span id="now" v-for="item in now" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span>
       </div>
       <div><span id="next1">{{ next1 }}</span></div>
       <div><span id="next2">{{ next2 }}</span></div>
     </div>
-    <div class="typeAnswerBox">
+    <div class="typeAnswerBox" ref="isCenter2">
       <div><span v-html="prev2a" id="prev2"></span></div>
       <div><span v-html="prev1a" id="prev1"></span></div>
       <div class="nowCursor"><input @keypress.enter ="nextRound" @keyup.space ="nextRound" type="text" ref="answer" id="nowAnswer"></div>
@@ -32,12 +32,12 @@
 </template>
 <script>
 import Vue from 'vue'
+import { ipcRenderer } from 'electron'
 import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import wordsData from '@/assets/wordPracticeData.json'
 import Hangul from 'hangul-js'
-import KeyboardLayout from './keyboardDubeol.vue'
 export default {
-  components: { LeftIcon, KeyboardLayout },
+  components: { LeftIcon },
   props: {
     level: {
       type: String,
@@ -75,6 +75,22 @@ export default {
   },
   methods: {
     initialSetting: function () { // 초기화 메소드
+      ipcRenderer.invoke('getStoreValue', 'wordMax').then((result) => { // 최대 단어 설정 가져오기
+        this.maxwords = result
+      })
+      ipcRenderer.invoke('getStoreValue', 'wordCenter').then((result) => { // 글자 정렬 설정 가져오기
+        if (result) {
+          this.$refs.isCenter0.style.textAlign = 'center'
+          this.$refs.isCenter1.style.textAlign = 'center'
+          this.$refs.isCenter2.style.textAlign = 'center'
+          this.$refs.answer.style.textAlign = 'center'
+        } else {
+          this.$refs.isCenter0.style.textAlign = 'left'
+          this.$refs.isCenter1.style.textAlign = 'left'
+          this.$refs.isCenter2.style.textAlign = 'left'
+          this.$refs.answer.style.textAlign = 'left'
+        }
+      })
       var allWords = wordsData.words.map((item) => {
         return item.wordLevel[this.level].wordData.length
       })
@@ -277,7 +293,6 @@ input:focus {outline:none;}
   width:300px;
   font-size: 3.7vw;
   padding: 0 1.5vw;
-  text-align: center;
   overflow: hidden;
 }
 .typeReqBox>div:nth-child(2){
@@ -302,7 +317,6 @@ input:focus {outline:none;}
   font-size: 3.7vw;
   padding: 0 1.5vw;
   padding-top: 0px;
-  text-align: center;
   overflow: hidden;
 }
 .typeAnswerBox>div:nth-child(2){
@@ -334,7 +348,6 @@ input:focus {outline:none;}
   font-family: "NotoSansRegular";
   background: none;
   border: none;
-  text-align: center;
   width: 15vw;
   font-size: 3.7vw;
   padding: 0;
@@ -390,5 +403,15 @@ progress::-webkit-progress-value {
 }
 .typeKeyboardBox{
   margin-top: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  span, p, #nowAnswer, .black{color:#eee}
+  .mainMenuTitle a:hover svg{background:#444}
+  #prev1,#prev2{color: #444;}
+  .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
+  #next1,#next2{color: #777;}
+  #dict{color:#777}
+  progress{border: 1px solid #eee;}
+  progress::-webkit-progress-value {background: #eee;}
 }
 </style>

@@ -105,4 +105,10 @@ export default{
 .list-concentrate-leave-active {
   position: absolute;
 }
+@media (prefers-color-scheme: dark) {
+  #mainMenuWrapper ol:hover a{color:#eee}
+  .menuItem:after {background-color: #eee;}
+  #mainMenuWrapper li a.router-link-active{color:#eee;}
+  #mainMenuWrapper>ol>li a{color:#444}
+}
 </style>
