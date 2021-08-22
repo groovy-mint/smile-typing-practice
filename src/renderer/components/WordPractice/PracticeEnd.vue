@@ -1,6 +1,6 @@
 <template>
   <div id="resultWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>단어 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><img src="~@/assets/back.svg" alt="Back"></router-link>단어 연습</p><p class="subMenuTitle">{{ title }} - 결과</p>
     <p class="rate">{{ accuracyRate }}</p>
     <div class="rateBox">
       <div class="accuracyBox center">
@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
+
 export default{
-  components: { LeftIcon },
+
   props: {
     accuracy: {
       type: String,
@@ -95,7 +95,8 @@ export default{
     text-align: center;
 }
 @media (prefers-color-scheme: dark) {
-  .mainMenuTitle a:hover svg{background:#444}
+  .mainMenuTitle img{filter: invert(100%);}
+  .mainMenuTitle a:hover img{background:#444}
   p, span{color:#eee}
 }
 </style>

@@ -4,10 +4,10 @@
       <div id="windowControlOverlay">
       </div>
       <div v-if="seen">
-      <button @click="hideWindow"><MinimizeIcon /></button>
-      <button @click="setFullScreen" v-if="maximize"><MaximizeIcon /></button>
-      <button @click="unsetFullScreen" v-if="minimize"><NormalIcon /></button>
-      <button @click="closeApp"><CloseIcon /></button>
+      <button @click="hideWindow"><img src="~@/assets/close.svg" alt="Back"></button>
+      <button @click="setFullScreen" v-if="maximize"><img src="~@/assets/maximize.svg" alt="Back"></button>
+      <button @click="unsetFullScreen" v-if="minimize"><img src="~@/assets/window.svg" alt="Back"></button>
+      <button @click="closeApp"><img src="~@/assets/minimize.svg" alt="Back"></button>
       </div>
     </div>
     <div id="contentsViewWrapper">
@@ -22,18 +22,10 @@
 </template>
 
 <script>
-  import MainMenu from './components/MainMenu'
   import { remote, ipcRenderer } from 'electron'
-  import CloseIcon from 'vue-material-design-icons/Close.vue'
-  import MaximizeIcon from 'vue-material-design-icons/CropSquare.vue'
-  import NormalIcon from 'vue-material-design-icons/FullscreenExit.vue'
-  import MinimizeIcon from 'vue-material-design-icons/Minus.vue'
-
   /* eslint-disable no-new */
-
   export default {
     name: 'smile-typing-practice',
-    components: { 'menu-view': MainMenu, CloseIcon, MaximizeIcon, NormalIcon, MinimizeIcon },
     methods: { // Windows 운영체제 창 제어 모음
       closeApp: function () {
         remote.getCurrentWindow().close()
@@ -97,12 +89,12 @@
   #windowControl div:nth-child(1){width:100%}
   #windowControl div:nth-child(2){margin-right:10px;min-width: 100px;}
   #windowControl button{background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
-  button svg{padding:1px;width:20px;margin:0 2.5px}
+  button img{padding:1px;width:20px;margin:0 2.5px}
   button:focus{ 	
     border: none;
     outline:none;
     }
-  #windowControl button:hover{ 	
+  #windowControl button:hover{
     background: lightgray;
     }
   #contentsViewWrapper{

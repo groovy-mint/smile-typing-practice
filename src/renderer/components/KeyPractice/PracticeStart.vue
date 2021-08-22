@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>자리 연습</p><p class="subMenuTitle">{{ title }}</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><img src="~@/assets/back.svg" alt="Back"></router-link>자리 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeAnswerBox">
       <div><span id="prev2">{{ prev2 }}</span></div>
       <div><span id="prev1">{{ prev1 }}</span></div>
@@ -20,11 +20,10 @@
 </template>
 <script>
 import { ipcRenderer } from 'electron'
-import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
 import keysData from '@/assets/keyPracticeData.json'
 import KeyboardLayout from './keyboardDubeol.vue'
 export default {
-  components: { LeftIcon, KeyboardLayout },
+  components: { KeyboardLayout },
   props: {
     level: {
       type: String,
@@ -183,7 +182,7 @@ export default {
   margin-top: 18px;
   margin-bottom:0;
   }
-.mainMenuTitle svg{
+.mainMenuTitle img{
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -193,7 +192,7 @@ export default {
     background:rgba(0, 0, 0, 0);
     transition: all 0.15s;
 }
-.mainMenuTitle a:hover svg{
+.mainMenuTitle a:hover img{
     background:lightgray
 }
 .typeAnswerBox{
@@ -272,7 +271,8 @@ progress::-webkit-progress-value {
 }
 @media (prefers-color-scheme: dark) {
   span, p{color:#eee}
-  .mainMenuTitle a:hover svg{background:#444}
+  .mainMenuTitle img{filter: invert(100%);}
+  .mainMenuTitle a:hover img{background:#444}
   #prev1,#prev2{color: #444;}
   .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
   #next1,#next2{color: #777;}
