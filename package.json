@@ -72,8 +72,7 @@
       }
     },
     "win": {
-      "icon": "build/icons/icon.ico",
-      "target": "appx"
+      "icon": "build/icons/icon.ico"
     },
     "nsis": {
       "oneClick": false,
