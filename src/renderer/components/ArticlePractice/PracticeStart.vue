@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><LeftIcon/></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }}</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><img src="~@/assets/back.svg" alt="Back"></router-link>긴 글 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeInnerWrapper">
         <div class="typeBox">
           <div :class="style0"><span v-for="item in line0" :key="item.id" :class="item.style">{{ item.char }}</span></div>
@@ -37,11 +37,11 @@
 <script>
 import Vue from 'vue'
 import { ipcRenderer } from 'electron'
-import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
+
 import articlesData from '@/assets/articlePracticeData.json'
 import Hangul from 'hangul-js'
 export default {
-  components: { LeftIcon },
+
   props: {
     level: {
       type: String,
@@ -350,7 +350,7 @@ input:focus {outline:none;}
   margin-top: 18px;
   margin-bottom:0;
   }
-.mainMenuTitle svg{
+.mainMenuTitle img{
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -360,7 +360,7 @@ input:focus {outline:none;}
     background:rgba(0, 0, 0, 0);
     transition: all 0.15s;
 }
-.mainMenuTitle a:hover svg{
+.mainMenuTitle a:hover img{
     background:lightgray
 }
 .typeInnerWrapper>div{
@@ -453,7 +453,8 @@ progress::-webkit-progress-value {
   margin-top: 10px;
 }
 @media (prefers-color-scheme: dark) {
-  .mainMenuTitle a:hover svg{background:#444}
+  .mainMenuTitle img{filter: invert(100%);}
+  .mainMenuTitle a:hover img{background:#444}
   .typeNextBox{color:#777 !important}
   p, span, input{color:#eee}
   .gray{color:#777 !important}

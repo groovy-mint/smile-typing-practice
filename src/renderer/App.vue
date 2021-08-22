@@ -4,10 +4,10 @@
       <div id="windowControlOverlay">
       </div>
       <div v-if="seen">
-      <button @click="hideWindow"><MinimizeIcon /></button>
-      <button @click="setFullScreen" v-if="maximize"><MaximizeIcon /></button>
-      <button @click="unsetFullScreen" v-if="minimize"><NormalIcon /></button>
-      <button @click="closeApp"><CloseIcon /></button>
+      <button @click="hideWindow"><img src="~@/assets/close.svg" alt="Back"></button>
+      <button @click="setFullScreen" v-if="maximize"><img src="~@/assets/maximize.svg" alt="Back"></button>
+      <button @click="unsetFullScreen" v-if="minimize"><img src="~@/assets/window.svg" alt="Back"></button>
+      <button @click="closeApp"><img src="~@/assets/minimize.svg" alt="Back"></button>
       </div>
     </div>
     <div id="contentsViewWrapper">
@@ -22,18 +22,10 @@
 </template>
 
 <script>
-  import MainMenu from './components/MainMenu'
   import { remote, ipcRenderer } from 'electron'
-  import CloseIcon from 'vue-material-design-icons/Close.vue'
-  import MaximizeIcon from 'vue-material-design-icons/CropSquare.vue'
-  import NormalIcon from 'vue-material-design-icons/FullscreenExit.vue'
-  import MinimizeIcon from 'vue-material-design-icons/Minus.vue'
-
   /* eslint-disable no-new */
-
   export default {
     name: 'smile-typing-practice',
-    components: { 'menu-view': MainMenu, CloseIcon, MaximizeIcon, NormalIcon, MinimizeIcon },
     methods: { // Windows 운영체제 창 제어 모음
       closeApp: function () {
         remote.getCurrentWindow().close()

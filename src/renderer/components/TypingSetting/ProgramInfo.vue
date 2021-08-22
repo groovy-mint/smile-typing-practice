@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">정보</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><img src="~@/assets/back.svg" alt="Back"></router-link>환경설정</p><p class="subMenuTitle">정보</p>
     <h3>스마일 타자연습 프로그램 버전</h3>
     <span>0.7.8</span>
     <h3>서포트</h3>
@@ -37,9 +37,9 @@ OTHER DEALINGS IN THE SOFTWARE.<br><br>
   </div>
 </template>
 <script>
-import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
+
 export default {
-  components: { LeftIcon }
+
 }
 </script>
 <style>
@@ -64,7 +64,7 @@ export default {
   margin-top: 18px;
   margin-bottom:0;
   }
-.mainMenuTitle svg{
+.mainMenuTitle img{
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -74,11 +74,12 @@ export default {
     background:rgba(0, 0, 0, 0);
     transition: all 0.15s;
 }
-.mainMenuTitle a:hover svg{
+.mainMenuTitle a:hover img{
     background:lightgray
 }
 @media (prefers-color-scheme: dark) {
   b, span, p, input, h3, li{color:#eee}
-  .mainMenuTitle a:hover svg{background:#444}
+  .mainMenuTitle img{filter: invert(100%);}
+  .mainMenuTitle a:hover img{background:#444}
 }
 </style>

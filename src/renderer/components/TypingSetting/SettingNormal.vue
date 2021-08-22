@@ -1,6 +1,6 @@
 <template>
   <div id="typeWrapper">
-    <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><LeftIcon/></router-link>환경설정</p><p class="subMenuTitle">일반</p>
+    <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><img src="~@/assets/back.svg" alt="Back"></router-link>환경설정</p><p class="subMenuTitle">일반</p>
     <div class="settingBox">
       <div class="settingCon">
         <div>
@@ -69,9 +69,9 @@
 </template>
 <script>
 import { ipcRenderer } from 'electron'
-import LeftIcon from 'vue-material-design-icons/ChevronLeft.vue'
+
 export default {
-  components: { LeftIcon },
+
   data () {
     return {
       language: '',
@@ -209,7 +209,7 @@ a{
   margin-top: 18px;
   margin-bottom:0;
   }
-.mainMenuTitle svg{
+.mainMenuTitle img{
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -219,7 +219,7 @@ a{
     background:rgba(0, 0, 0, 0);
     transition: all 0.15s;
 }
-.mainMenuTitle a:hover svg{
+.mainMenuTitle a:hover img{
     background:lightgray
 }
 .settingBox{
