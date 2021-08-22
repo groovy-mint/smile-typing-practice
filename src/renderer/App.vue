@@ -89,12 +89,12 @@
   #windowControl div:nth-child(1){width:100%}
   #windowControl div:nth-child(2){margin-right:10px;min-width: 100px;}
   #windowControl button{background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
-  button svg{padding:1px;width:20px;margin:0 2.5px}
+  button img{padding:1px;width:20px;margin:0 2.5px}
   button:focus{ 	
     border: none;
     outline:none;
     }
-  #windowControl button:hover{ 	
+  #windowControl button:hover{
     background: lightgray;
     }
   #contentsViewWrapper{
