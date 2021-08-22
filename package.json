@@ -85,7 +85,9 @@
     "appx": {
       "publisherDisplayName": "Smile Creative Lab.",
       "publisher": "CN=E87704F1-ED21-426D-A7A7-4AF251846A60",
+      "displayName": "스마일 타자연습",
       "identityName": "13321SmileCreativeLab.343170ED198F4",
+      "applicationId": "smileTyping",
       "languages": "ko-kr"
     },
     "linux": {

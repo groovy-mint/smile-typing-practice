@@ -91,7 +91,7 @@ export default {
   methods: {
     pageRegen: function () { // 초기화 메소드 역할 및 쪽 리젠
       ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD 대응
-        if (!result) {
+        if (result) {
           this.redOption = 'underline'
         }
       })
