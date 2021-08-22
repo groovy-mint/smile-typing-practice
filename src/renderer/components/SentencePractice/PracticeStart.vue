@@ -186,7 +186,7 @@ export default {
       console.log(this.typePerMin)
       clearInterval(this.intervalVar)
       var answer = this.$refs.answer.value
-      answer = answer.trim()
+      answer = answer.trimEnd()
       if (answer === '' || answer === ' ') { // 입력란 공백 체크
         this.$refs.answer.value = '' // 입력란 공란화
       } else {

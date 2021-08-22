@@ -69,7 +69,8 @@ export default {
       timerIntervalVar: '', // 타이머 함수용 변수
       sec: 0, // 경과 시간 - 초
       min: 0, // 경과 시간 - 분
-      secDisplay: '00' // 표출용 변수
+      secDisplay: '00', // 표출용 변수
+      redOption: 'red' // CUD 대응 오타 표시 옵션
     }
   },
   methods: {
@@ -88,6 +89,11 @@ export default {
           this.$refs.isCenter1.style.textAlign = 'left'
           this.$refs.isCenter2.style.textAlign = 'left'
           this.$refs.answer.style.textAlign = 'left'
+        }
+      })
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD 설정 가져오기
+        if (result) {
+          this.redOption = 'underline'
         }
       })
       var allWords = wordsData.words.map((item) => {
@@ -169,17 +175,24 @@ export default {
         }
         this.prev2a = this.prev1a // 이전 답안을 왼쪽으로 넘김
         this.prev1a = answer // 답안을 왼쪽으로 넘김
-        var srcLastChar = this.nowSource.length - 1 // 주어진 글자의 마지막 글자 배열 순서
-        var ansLastChar = answer.length - 1 // 답안 글자의 마지막 글자 배열 순서
-        if (this.arraysEqual(Hangul.d(this.nowSource, true), Hangul.d(answer, true)) !== true) { // 오타 검사
+        var failed = false
+        for (var j = 0; j < (this.nowSource.length); j++) { // 오타 검사
+          if (answer.split('')[j] !== undefined) { // 공백시 오타처리
+            if (this.arraysEqual(Hangul.d(this.nowSource.split('')[j], true)[0], Hangul.d(answer.split('')[j], true)[0]) === false) {
+              this.now.splice(j, 1, { id: j, style: this.redOption, char: this.now[j].char })
+              failed = true
+            } else {
+              this.now.splice(j, 1, { id: j, style: 'black', char: this.now[j].char })
+            }
+          } else {
+            this.now.splice((j), 1, { id: (j), style: this.redOption, char: this.now[j].char })
+            failed = true
+          }
+        }
+        if (failed) { // 오타 검사
           this.failed = this.failed + 1
           this.accuracy = (100 - this.failed * 100 / this.maxwords).toFixed(0)
           this.failPerMax = this.failed * 100 / this.maxwords
-        }
-        if (this.arraysEqual(Hangul.d(this.nowSource, true)[srcLastChar], Hangul.d(answer, true)[ansLastChar]) === false) { // 제시어 마지막 글자 오타 확인 후 색깔 처리
-          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'red', char: this.now[srcLastChar].char })
-        } else {
-          this.now.splice(srcLastChar, 1, { id: srcLastChar, style: 'black', char: this.now[srcLastChar].char })
         }
         this.passed = this.passed + 1 // 진행도 1 올림
         if (this.passed === this.maxwords) {
@@ -289,7 +302,7 @@ input:focus {outline:none;}
   justify-content: center;
 }
 .typeReqBox>div{
-  width:300px;
+  width:100%;
   font-size: 3.7vw;
   padding: 0 1.5vw;
   overflow: hidden;
@@ -312,7 +325,7 @@ input:focus {outline:none;}
   justify-content: center;
 }
 .typeAnswerBox>div{
-  width:300px;
+  width:100%;
   font-size: 3.7vw;
   padding: 0 1.5vw;
   padding-top: 0px;
