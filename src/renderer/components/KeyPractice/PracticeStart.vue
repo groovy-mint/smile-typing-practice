@@ -38,7 +38,7 @@ export default {
   },
   data () {
     return {
-      kbdLayout: 0,
+      kbdLayout: -1,
       prev1: '',
       prev2: '',
       now: '',
@@ -158,7 +158,6 @@ export default {
       if (this.sec < 10) {
         this.secDisplay = '0' + this.sec
       }
-      console.log(this.min + ':' + this.secDisplay)
     }, 1000)
   },
   beforeDestroy () {

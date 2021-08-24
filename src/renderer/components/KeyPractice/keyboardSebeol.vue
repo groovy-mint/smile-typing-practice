@@ -114,7 +114,7 @@ export default {
     keyboardFingerChange: function (k) {
       console.log(k + 'finger change')
       console.log(this.shoulderLeft)
-      var pressFeedback = 'lightpink'
+      var pressFeedback = '#ff555590'
       var idleFeedback = 'rgba(102, 205, 171, 0.603)'
       ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD
         if (result) {
@@ -223,7 +223,7 @@ export default {
 .keyboardRow {text-align: center;font-size: 1em;display: flex;width: 750px;justify-content: space-around;}
 .key {min-width:25px;min-height:45px;max-height:35px;padding:0 10px;display:inline-block; border:1px solid gray;margin-bottom:5px;border-radius: 5px;display: flex;flex-direction: column;justify-content: center;}
 .keyBs {width:55px} .keyEnt {width:65px} .keyShift {width:90px} .keyLeft {text-align: left;} .keyRight {text-align: right;} .keySpace {width: 256px;}
-.keyEnable{background: lightpink;} .keyFinger{background: rgba(102, 205, 171, 0.603);}
+.keyEnable{background: #ff555590;} .keyFinger{background: rgba(102, 205, 171, 0.603);}
 @media (prefers-color-scheme: dark) {
   .key{color:#eee; border:1px solid #777}
 }
