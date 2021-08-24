@@ -94,7 +94,7 @@ export default{
 }
 @media (prefers-color-scheme: dark) {
   .mainMenuTitle img{filter: invert(100%);}
-  .mainMenuTitle a:hover img{background:#444}
+  .mainMenuTitle a:hover img{background:#bbb}
   p, span{color:#eee}
 }
 </style>

@@ -4,7 +4,7 @@
     <div class="settingBox">
       <div class="settingCon">
         <div>
-          <b>언어</b><br><span>언어를 선택합니다. (Restart to apply.)</span><br>
+          <b>언어</b><br><span>손에 익힐 자판의 언어를 선택합니다.</span><br>
         </div>
         <div>
           <a ref="langKO" @click="langSet('KO')">한국어</a>

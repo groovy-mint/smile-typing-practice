@@ -278,7 +278,7 @@ progress::-webkit-progress-value {
 @media (prefers-color-scheme: dark) {
   span, p{color:#eee}
   .mainMenuTitle img{filter: invert(100%);}
-  .mainMenuTitle a:hover img{background:#444}
+  .mainMenuTitle a:hover img{background:#bbb}
   #prev1,#prev2{color: #444;}
   .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
   #next1,#next2{color: #777;}

@@ -465,7 +465,7 @@ progress::-webkit-progress-value {
 }
 @media (prefers-color-scheme: dark) {
   .mainMenuTitle img{filter: invert(100%);}
-  .mainMenuTitle a:hover img{background:#444}
+  .mainMenuTitle a:hover img{background:#bbb}
   #prev1,#prev2{color: #444;}
   p, span, input{color:#eee}
   .typeNextBox>div>span{color: #777;}

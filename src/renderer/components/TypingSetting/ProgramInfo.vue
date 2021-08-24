@@ -80,6 +80,6 @@ export default {
 @media (prefers-color-scheme: dark) {
   b, span, p, input, h3, li{color:#eee}
   .mainMenuTitle img{filter: invert(100%);}
-  .mainMenuTitle a:hover img{background:#444}
+  .mainMenuTitle a:hover img{background:#bbb}
 }
 </style>
