@@ -14,16 +14,18 @@
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
     <div class="typeKeyboardBox">
-      <KeyboardLayout :keyToPress="nowCode"/>
+      <KeyboardLayout0 v-if="kbdLayout===0" :keyToPress="nowCode"/>
+      <KeyboardLayout1 v-if="kbdLayout===1" :keyToPress="nowCode"/>
     </div>
   </div>
 </template>
 <script>
 import { ipcRenderer } from 'electron'
 import keysData from '@/assets/keyPracticeData.json'
-import KeyboardLayout from './keyboardDubeol.vue'
+import KeyboardLayout0 from './keyboardDubeol.vue'
+import KeyboardLayout1 from './keyboardSebeol.vue'
 export default {
-  components: { KeyboardLayout },
+  components: { KeyboardLayout0, KeyboardLayout1 },
   props: {
     level: {
       type: String,
@@ -36,6 +38,7 @@ export default {
   },
   data () {
     return {
+      kbdLayout: 0,
       prev1: '',
       prev2: '',
       now: '',
@@ -61,54 +64,58 @@ export default {
       ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => { // 최대 키 설정 가져오기
         this.maxkeys = result
       })
-      var allkeys = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData.length
+      ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => { // 키보드 레이아웃 설정 가져오기
+        this.kbdLayout = result
+        var allkeys = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData.length
+        })
+        var keysCount = allkeys
+        var x = Math.floor(Math.random() * (keysCount))
+        var key1 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+        })
+        var code1 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+        })
+        x = Math.floor(Math.random() * (keysCount))
+        var key2 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+        })
+        var code2 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+        })
+        x = Math.floor(Math.random() * (keysCount))
+        var key3 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+        })
+        var code3 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+        }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
+        this.now = key1[0]
+        this.next1 = key2[0]
+        this.next2 = key3[0]
+        this.nowCode = code1[0]
+        this.nextCode1 = code2[0]
+        this.nextCode2 = code3[0]
       })
-      var keysCount = allkeys
-      var x = Math.floor(Math.random() * (keysCount))
-      var key1 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyName
-      })
-      var code1 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyCode
-      })
-      x = Math.floor(Math.random() * (keysCount))
-      var key2 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyName
-      })
-      var code2 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyCode
-      })
-      x = Math.floor(Math.random() * (keysCount))
-      var key3 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyName
-      })
-      var code3 = keysData.keys.map((item) => {
-        return item.keyType[0].keyLevel[this.level].keyData[x].keyCode
-      }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
-      this.now = key1[0]
-      this.next1 = key2[0]
-      this.next2 = key3[0]
-      this.nowCode = code1[0]
-      this.nextCode1 = code2[0]
-      this.nextCode2 = code3[0]
     },
     keyPressed: function (ev) {
       if (ev.key === 'Shift' || ev.key === 'Enter' || ev.key === 'CapsLock' || ev.key === 'Alt' || ev.key === 'Control' || ev.key === 'Meta' || ev.code === 'Space') {
         // 실수할 수 있는 시스템키 거름망
       } else { // 키 누름 판정
         console.log(ev.code)
+        console.log(ev)
         if (this.nowCode === ev.code) {
           var allkeys = keysData.keys.map((item) => {
-            return item.keyType[0].keyLevel[this.level].keyData.length
+            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData.length
           })
           var keysCount = allkeys
           var x = Math.floor(Math.random() * (keysCount))
           var nextKey = keysData.keys.map((item) => {
-            return item.keyType[0].keyLevel[this.level].keyData[x].keyName
+            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
           })
           var nextCode = keysData.keys.map((item) => {
-            return item.keyType[0].keyLevel[this.level].keyData[x].keyCode
+            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
           })
           this.passed = this.passed + 1 // 진행도 1 올림
           this.nowErr = ''
@@ -144,14 +151,14 @@ export default {
     window.addEventListener('keyup', this.keyPressed, true)
     this.timerIntervalVar = setInterval(() => {
       this.sec = this.sec + 1
-      this.min = Math.floor(this.sec / 60)
-      this.msec = this.keyTime % 1000 / 10
+      this.min = this.min + Math.floor(this.sec / 60)
       this.sec = this.sec % 60
       this.min = this.min % 60
       this.secDisplay = this.sec
       if (this.sec < 10) {
         this.secDisplay = '0' + this.sec
       }
+      console.log(this.min + ':' + this.secDisplay)
     }, 1000)
   },
   beforeDestroy () {

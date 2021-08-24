@@ -237,11 +237,11 @@ export default {
     this.initialSetting() // 연습 초기화
   },
   mounted () {
+    this.initialSetting()
     window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
     this.timerIntervalVar = setInterval(() => {
       this.sec = this.sec + 1
-      this.min = Math.floor(this.sec / 60)
-      this.msec = this.keyTime % 1000 / 10
+      this.min = this.min + Math.floor(this.sec / 60)
       this.sec = this.sec % 60
       this.min = this.min % 60
       this.secDisplay = this.sec

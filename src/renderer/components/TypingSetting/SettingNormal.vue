@@ -18,7 +18,7 @@
         </div>
         <div>
           <a ref="key0" @click="keyboardSet(0)">두벌식</a>
-          <!-- <a ref="key1" @click="keyboardSet(1)">세벌식 3-90</a> -->
+          <a ref="key1" @click="keyboardSet(1)">세벌식 3-90</a>
           <!-- <a ref="key2" @click="keyboardSet(2)">세벌식 3-91</a> -->
         </div>
       </div>
@@ -89,7 +89,7 @@ export default {
       // this.$refs.langEN.style = ''
       // this.$refs.langJA.style = ''
       this.$refs.key0.style = ''
-      // this.$refs.key1.style = ''
+      this.$refs.key1.style = ''
       // this.$refs.key2.style = ''
       this.$refs.cudtrue.style = ''
       this.$refs.cudfalse.style = ''

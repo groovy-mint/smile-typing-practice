@@ -147,7 +147,188 @@
                     "keyTypeName": "세벌식 390",
                     "keyLevel": [
                         {
-                            
+                            "keyData": [
+                                {
+                                    "keyName": "ㅇ*",
+                                    "keyCode": "KeyA"
+                                },
+                                {
+                                    "keyName": "ᆫ*",
+                                    "keyCode": "KeyS"
+                                },
+                                {
+                                    "keyName": "ㅣ",
+                                    "keyCode": "KeyD"
+                                },
+                                {
+                                    "keyName": "ㅏ",
+                                    "keyCode": "KeyF"
+                                },
+                                {
+                                    "keyName": "ㅇ",
+                                    "keyCode": "KeyJ"
+                                },
+                                {
+                                    "keyName": "ㄱ",
+                                    "keyCode": "KeyK"
+                                },
+                                {
+                                    "keyName": "ㅈ",
+                                    "keyCode": "KeyL"
+                                },
+                                {
+                                    "keyName": "ㅂ",
+                                    "keyCode": "Semicolon"
+                                }
+                            ]
+                        },
+                        {
+                            "keyData": [
+                                {
+                                    "keyName": "ᆺ*",
+                                    "keyCode": "KeyQ"
+                                },
+                                {
+                                    "keyName": "ᆯ*",
+                                    "keyCode": "KeyW"
+                                },
+                                {
+                                    "keyName": "ㅕ",
+                                    "keyCode": "KeyE"
+                                },
+                                {
+                                    "keyName": "ㅐ",
+                                    "keyCode": "KeyR"
+                                },
+                                {
+                                    "keyName": "ㄷ",
+                                    "keyCode": "KeyU"
+                                },
+                                {
+                                    "keyName": "ㅁ",
+                                    "keyCode": "KeyI"
+                                },
+                                {
+                                    "keyName": "ㅊ",
+                                    "keyCode": "KeyO"
+                                },
+                                {
+                                    "keyName": "ㅍ",
+                                    "keyCode": "KeyP"
+                                }
+                            ]
+                        },
+                        {
+                            "keyData": [
+                                {
+                                    "keyName": "ᆷ*",
+                                    "keyCode": "KeyZ"
+                                },
+                                {
+                                    "keyName": "ᆨ*",
+                                    "keyCode": "KeyX"
+                                },
+                                {
+                                    "keyName": "ㅔ",
+                                    "keyCode": "KeyC"
+                                },
+                                {
+                                    "keyName": "ㅗ",
+                                    "keyCode": "KeyV"
+                                },
+                                {
+                                    "keyName": "ㅎ",
+                                    "keyCode": "KeyM"
+                                },
+                                {
+                                    "keyName": ",",
+                                    "keyCode": "Comma"
+                                },
+                                {
+                                    "keyName": ".",
+                                    "keyCode": "Period"
+                                },
+                                {
+                                    "keyName": "ㅗ",
+                                    "keyCode": "Slash"
+                                },
+                                {
+                                    "keyName": "ㅌ",
+                                    "keyCode": "Quote"
+                                }
+                            ]
+                        },
+                        {
+                            "keyData": [
+                                {
+                                    "keyName": "ㅓ",
+                                    "keyCode": "KeyT"
+                                },
+                                {
+                                    "keyName": "ㄹ",
+                                    "keyCode": "KeyY"
+                                },
+                                {
+                                    "keyName": "ㅡ",
+                                    "keyCode": "KeyG"
+                                },
+                                {
+                                    "keyName": "ㄴ",
+                                    "keyCode": "KeyH"
+                                },
+                                {
+                                    "keyName": "ㅅ",
+                                    "keyCode": "KeyN"
+                                },
+                                {
+                                    "keyName": "ㅜ",
+                                    "keyCode": "KeyB"
+                                }
+                            ]
+                        },
+                        {
+                            "keyData": [
+                                {
+                                    "keyName": "ᇂ*",
+                                    "keyCode": "Digit1"
+                                },
+                                {
+                                    "keyName": "ᆻ*",
+                                    "keyCode": "Digit2"
+                                },
+                                {
+                                    "keyName": "ᆸ*",
+                                    "keyCode": "Digit3"
+                                },
+                                {
+                                    "keyName": "ㅛ",
+                                    "keyCode": "Digit4"
+                                },
+                                {
+                                    "keyName": "ㅠ",
+                                    "keyCode": "Digit5"
+                                },
+                                {
+                                    "keyName": "ㅑ",
+                                    "keyCode": "Digit6"
+                                },
+                                {
+                                    "keyName": "ㅖ",
+                                    "keyCode": "Digit7"
+                                },
+                                {
+                                    "keyName": "ㅢ",
+                                    "keyCode": "Digit8"
+                                },
+                                {
+                                    "keyName": "ㅜ",
+                                    "keyCode": "Digit9"
+                                },
+                                {
+                                    "keyName": "ㅋ",
+                                    "keyCode": "Digit0"
+                                }
+                            ]
                         }
                     ]
                 }
