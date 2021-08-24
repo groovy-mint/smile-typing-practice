@@ -19,7 +19,8 @@ export default{
         { id: 2, title: '3단계', route: '/key-practice/start?lvl=2&title=3단계' },
         { id: 3, title: '4단계', route: '/key-practice/start?lvl=3&title=4단계' },
         { id: 4, title: '5단계', route: '/key-practice/start?lvl=4&title=5단계' },
-        { id: 5, title: '뒤로', route: '*' }
+        { id: 5, title: '6단계', route: '/key-practice/start?lvl=5&title=6단계' },
+        { id: 6, title: '뒤로', route: '*' }
       ]
     }
   }

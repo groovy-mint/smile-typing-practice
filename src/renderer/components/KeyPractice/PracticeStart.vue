@@ -14,8 +14,8 @@
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
     <div class="typeKeyboardBox">
-      <KeyboardLayout0 v-if="kbdLayout===0" :keyToPress="nowCode"/>
-      <KeyboardLayout1 v-if="kbdLayout===1" :keyToPress="nowCode"/>
+      <KeyboardLayout0 v-if="kbdLayout===0" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout1 v-if="kbdLayout===1" :keyToPress="nowCode" :isShift="nowShift"/>
     </div>
   </div>
 </template>
@@ -48,6 +48,9 @@ export default {
       nowCode: '',
       nextCode1: '',
       nextCode2: '',
+      nowShift: '',
+      nextShift1: '',
+      nextShift2: '',
       passed: 0,
       maxkeys: 100,
       passPerMax: 0,
@@ -77,6 +80,9 @@ export default {
         var code1 = keysData.keys.map((item) => {
           return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
         })
+        var shift1 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+        })
         x = Math.floor(Math.random() * (keysCount))
         var key2 = keysData.keys.map((item) => {
           return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
@@ -84,12 +90,18 @@ export default {
         var code2 = keysData.keys.map((item) => {
           return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
         })
+        var shift2 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+        })
         x = Math.floor(Math.random() * (keysCount))
         var key3 = keysData.keys.map((item) => {
           return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
         })
         var code3 = keysData.keys.map((item) => {
           return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+        })
+        var shift3 = keysData.keys.map((item) => {
+          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
         }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
         this.now = key1[0]
         this.next1 = key2[0]
@@ -97,6 +109,9 @@ export default {
         this.nowCode = code1[0]
         this.nextCode1 = code2[0]
         this.nextCode2 = code3[0]
+        this.nowShift = shift1[0]
+        this.nextShift1 = shift2[0]
+        this.nextShift2 = shift3[0]
       })
     },
     keyPressed: function (ev) {
@@ -104,8 +119,12 @@ export default {
       if (ev.key === 'Shift' || ev.key === 'Enter' || ev.key === 'CapsLock' || ev.key === 'Alt' || ev.key === 'Control' || ev.key === 'Meta' || ev.code === 'Space' || ev.code === 'Tab') {
         // 실수할 수 있는 시스템키 거름망
       } else { // 키 누름 판정
-        console.log(ev.code)
-        if (this.nowCode === ev.code) {
+        if (this.nowCode === ev.code && this.nowShift === ev.shiftKey) {
+          this.passed = this.passed + 1 // 진행도 1 올림
+          this.nowErr = ''
+          if (this.passed === this.maxkeys) {
+            this.$router.push('/key-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
+          }
           var allkeys = keysData.keys.map((item) => {
             return item.keyType[this.kbdLayout].keyLevel[this.level].keyData.length
           })
@@ -117,11 +136,9 @@ export default {
           var nextCode = keysData.keys.map((item) => {
             return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
           })
-          this.passed = this.passed + 1 // 진행도 1 올림
-          this.nowErr = ''
-          if (this.passed === this.maxkeys) {
-            this.$router.push('/key-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
-          }
+          var nextShift = keysData.keys.map((item) => {
+            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+          })
 
           this.prev2 = this.prev1
           this.prev1 = this.now
@@ -132,6 +149,10 @@ export default {
           this.nowCode = this.nextCode1
           this.nextCode1 = this.nextCode2
           this.nextCode2 = nextCode[0]
+
+          this.nowShift = this.nextShift1
+          this.nextShift1 = this.nextShift2
+          this.nextShift2 = nextShift[0]
 
           this.passPerMax = this.passed * 100 / this.maxkeys
         } else {
