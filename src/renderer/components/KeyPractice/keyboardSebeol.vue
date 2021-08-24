@@ -164,19 +164,19 @@ export default {
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
-          case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB': case 'Digit5': case 'Digit6':
+          case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB': case 'Digit5':
             // console.log('F key section')
             this.$refs.KeyF.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
-          case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN': case 'Digit7':
+          case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN': case 'Digit6': case 'Digit7': case 'Digit8':
             // console.log('J key section')
             this.$refs.KeyJ.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = false
             break
-          case 'KeyI': case 'Comma': case 'Digit9': case 'Digit8':
+          case 'KeyI': case 'Comma': case 'Digit9':
             // console.log('K key section')
             this.$refs.KeyK.style.background = 'none'
             this.$refs[k].style.background = pressFeedback

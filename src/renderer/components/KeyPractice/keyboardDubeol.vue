@@ -147,55 +147,55 @@ export default {
             this.shiftLocation = false
             break
           case 'KeyQ': case 'KeyZ': case 'Digit1':
-            console.log('A key section')
+            // console.log('A key section')
             this.$refs.KeyA.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
           case 'KeyW': case 'KeyX': case 'Digit2':
-            console.log('S key section')
+            // console.log('S key section')
             this.$refs.KeyS.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
           case 'KeyE': case 'KeyC': case 'Digit3': case 'Digit4':
-            console.log('D key section')
+            // console.log('D key section')
             this.$refs.KeyD.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
-          case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB': case 'Digit5': case 'Digit6':
-            console.log('F key section')
+          case 'KeyR': case 'KeyV': case 'KeyT': case 'KeyG': case 'KeyB': case 'Digit5':
+            // console.log('F key section')
             this.$refs.KeyF.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = true
             break
-          case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN': case 'Digit7':
-            console.log('J key section')
+          case 'KeyU': case 'KeyM': case 'KeyY': case 'KeyH': case 'KeyN': case 'Digit6': case 'Digit7': case 'Digit8':
+            // console.log('J key section')
             this.$refs.KeyJ.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = false
             break
-          case 'KeyI': case 'Comma': case 'Digit9': case 'Digit8':
-            console.log('K key section')
+          case 'KeyI': case 'Comma': case 'Digit9':
+            // console.log('K key section')
             this.$refs.KeyK.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = false
             break
           case 'Period': case 'KeyO': case 'Digit0':
-            console.log('L key section')
+            // console.log('L key section')
             this.$refs.KeyL.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = false
             break
           case 'KeyP': case 'Slash': case 'Quote':
-            console.log('; key section')
+            // console.log('; key section')
             this.$refs.Semicolon.style.background = 'none'
             this.$refs[k].style.background = pressFeedback
             this.shiftLocation = false
             break
           default:
-            console.log('none of any section')
+            // console.log('none of any section')
             this.$refs.KeyA.style.background = 'none'
             this.$refs.KeyS.style.background = 'none'
             this.$refs.KeyD.style.background = 'none'
