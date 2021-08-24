@@ -237,7 +237,6 @@ export default {
     this.initialSetting() // 연습 초기화
   },
   mounted () {
-    this.initialSetting()
     window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
     this.timerIntervalVar = setInterval(() => {
       this.sec = this.sec + 1
