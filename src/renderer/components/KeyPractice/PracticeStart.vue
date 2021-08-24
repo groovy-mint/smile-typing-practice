@@ -16,6 +16,7 @@
     <div class="typeKeyboardBox">
       <KeyboardLayout0 v-if="kbdLayout===0" :keyToPress="nowCode" :isShift="nowShift"/>
       <KeyboardLayout1 v-if="kbdLayout===1" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout2 v-if="kbdLayout===2" :keyToPress="nowCode" :isShift="nowShift"/>
     </div>
   </div>
 </template>
@@ -24,8 +25,9 @@ import { ipcRenderer } from 'electron'
 import keysData from '@/assets/keyPracticeData.json'
 import KeyboardLayout0 from './keyboardDubeol.vue'
 import KeyboardLayout1 from './keyboardSebeol.vue'
+import KeyboardLayout2 from './keyboardSebeolLast.vue'
 export default {
-  components: { KeyboardLayout0, KeyboardLayout1 },
+  components: { KeyboardLayout0, KeyboardLayout1, KeyboardLayout2 },
   props: {
     level: {
       type: String,

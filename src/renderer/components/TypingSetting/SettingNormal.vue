@@ -14,12 +14,12 @@
       </div>
       <div class="settingCon">
         <div>
-          <b>자판 배열</b><br><span>손에 익힐 자판 배열을 선택합니다.</span><br>
+          <b>자판 배열</b><br><span>자판 배열은 자리 연습에만 적용되며, 나머지는 사용자의 입력기를 따릅니다.</span><br>
         </div>
         <div>
           <a ref="key0" @click="keyboardSet(0)">두벌식</a>
           <a ref="key1" @click="keyboardSet(1)">세벌식 3-90</a>
-          <!-- <a ref="key2" @click="keyboardSet(2)">세벌식 3-91</a> -->
+          <a ref="key2" @click="keyboardSet(2)">세벌식 최종</a>
         </div>
       </div>
       <div class="settingCon">
@@ -90,7 +90,7 @@ export default {
       // this.$refs.langJA.style = ''
       this.$refs.key0.style = ''
       this.$refs.key1.style = ''
-      // this.$refs.key2.style = ''
+      this.$refs.key2.style = ''
       this.$refs.cudtrue.style = ''
       this.$refs.cudfalse.style = ''
       this.$refs.wordtrue.style = ''
