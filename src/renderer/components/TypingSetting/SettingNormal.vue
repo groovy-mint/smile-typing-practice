@@ -8,7 +8,7 @@
         </div>
         <div>
           <a ref="langKO" @click="langSet('KO')">한국어</a>
-          <!-- <a ref="langEN" @click="langSet('EN')">English</a> -->
+          <a ref="langEN" @click="langSet('EN')">English</a>
           <!-- <a ref="langJA" @click="langSet('JA')">日本語</a> -->
         </div>
       </div>
@@ -17,9 +17,15 @@
           <b>자판 배열</b><br><span>자판 배열은 자리 연습에만 적용되며, 나머지는 사용자의 입력기를 따릅니다.</span><br>
         </div>
         <div>
-          <a ref="key0" @click="keyboardSet(0)">두벌식</a>
-          <a ref="key1" @click="keyboardSet(1)">세벌식 3-90</a>
-          <a ref="key2" @click="keyboardSet(2)">세벌식 최종</a>
+          <a v-if="language === 'KO'" ref="key0" @click="keyboardSet(0)">두벌식</a>
+          <a v-if="language === 'KO'" ref="key1" @click="keyboardSet(1)">세벌식 3-90</a>
+          <a v-if="language === 'KO'" ref="key2" @click="keyboardSet(2)">세벌식 3-91</a>
+          <a v-if="language === 'EN'" ref="key0" @click="keyboardSet(0)">QWERTY</a>
+          <a v-if="language === 'EN'" ref="key1" @click="keyboardSet(1)">DVORAK</a>
+          <a v-if="language === 'EN'" ref="key2" @click="keyboardSet(2)"></a>
+          <!-- <a v-if="language === 'JA'" ref="key0" @click="keyboardSet(0)">かな</a>
+          <a v-if="language === 'JA'" ref="key1" @click="keyboardSet(1)"></a>
+          <a v-if="language === 'JA'" ref="key2" @click="keyboardSet(2)"></a> -->
         </div>
       </div>
       <div class="settingCon">
@@ -86,11 +92,13 @@ export default {
   methods: {
     settingRender: function () { // 초기화 - 설정 값 불러와서 적용
       this.$refs.langKO.style = ''
-      // this.$refs.langEN.style = ''
+      this.$refs.langEN.style = ''
       // this.$refs.langJA.style = ''
-      this.$refs.key0.style = ''
-      this.$refs.key1.style = ''
-      this.$refs.key2.style = ''
+      if (this.language !== '') {
+        this.$refs.key0.style = ''
+        this.$refs.key1.style = ''
+        this.$refs.key2.style = ''
+      }
       this.$refs.cudtrue.style = ''
       this.$refs.cudfalse.style = ''
       this.$refs.wordtrue.style = ''
@@ -134,6 +142,7 @@ export default {
     },
     langSet: function (lang) {
       ipcRenderer.invoke('setStoreValue', 'language', lang)
+      ipcRenderer.invoke('setStoreValue', 'keyboard', 0)
       this.settingRender()
     },
     keyboardSet: function (k) {

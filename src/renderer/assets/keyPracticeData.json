@@ -1,880 +1,1432 @@
 {
     "keys": [
         {
-            "keyType": [
+            "keyLang": [
                 {
-                    "keyTypeName": "두벌식",
-                    "keyLevel": [
+                    "keyLangName": "한국어",
+                    "keyType": [
                         {
-                            "keyData": [
+                            "keyTypeName": "두벌식",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ㅁ",
-                                    "keyCode": "KeyA",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅁ",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄴ",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅇ",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄹ",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅓ",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅏ",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅣ",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ";",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄴ",
-                                    "keyCode": "KeyS",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅂ",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅈ",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄷ",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄱ",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅕ",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅑ",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅐ",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅔ",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅇ",
-                                    "keyCode": "KeyD",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅋ",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅌ",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅊ",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅍ",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅡ",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "Comma",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ".",
+                                            "keyCode": "Period",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄹ",
-                                    "keyCode": "KeyF",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅅ",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅛ",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅎ",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅜ",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅠ",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅓ",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅃ",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㅉ",
+                                            "keyCode": "KeyW",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㄸ",
+                                            "keyCode": "KeyE",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㄲ",
+                                            "keyCode": "KeyR",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㅆ",
+                                            "keyCode": "KeyT",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㅒ",
+                                            "keyCode": "KeyO",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ㅖ",
+                                            "keyCode": "KeyP",
+                                            "keyShift": true
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅏ",
-                                    "keyCode": "KeyK",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅣ",
-                                    "keyCode": "KeyL",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": ";",
-                                    "keyCode": "Semicolon",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "1",
+                                            "keyCode": "Digit1",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "2",
+                                            "keyCode": "Digit2",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "3",
+                                            "keyCode": "Digit3",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "4",
+                                            "keyCode": "Digit4",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "5",
+                                            "keyCode": "Digit5",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "6",
+                                            "keyCode": "Digit6",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "7",
+                                            "keyCode": "Digit7",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "8",
+                                            "keyCode": "Digit8",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "9",
+                                            "keyCode": "Digit9",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "0",
+                                            "keyCode": "Digit0",
+                                            "keyShift": true
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "keyData": [
+                            "keyTypeName": "세벌식 3-90",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ㅂ",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅇ*",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆫ*",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅣ",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅏ",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅇ",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄱ",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅈ",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅂ",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅈ",
-                                    "keyCode": "KeyW",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ᆺ*",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆯ*",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅕ",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅐ",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅓ",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄹ",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄷ",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅁ",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅊ",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅍ",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄷ",
-                                    "keyCode": "KeyE",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅜ*",
+                                            "keyCode": "Digit9",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅡ",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆷ*",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆨ*",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅔ",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅜ",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ*",
+                                            "keyCode": "Slash",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄱ",
-                                    "keyCode": "KeyR",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㄴ",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅇ",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅅ",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅎ",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅂ",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅌ",
+                                            "keyCode": "Quote",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅕ",
-                                    "keyCode": "KeyU",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ᇂ*",
+                                            "keyCode": "Digit1",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆻ*",
+                                            "keyCode": "Digit2",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆸ*",
+                                            "keyCode": "Digit3",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆺ*",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆯ*",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆼ*",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆫ*",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "-",
+                                            "keyCode": "Minus",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "=",
+                                            "keyCode": "Equal",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅑ",
-                                    "keyCode": "KeyI",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅐ",
-                                    "keyCode": "KeyO",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅔ",
-                                    "keyCode": "KeyP",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ᆾ*",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆹ*",
+                                            "keyCode": "KeyX",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆱ*",
+                                            "keyCode": "KeyC",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆶ*",
+                                            "keyCode": "KeyV",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "/",
+                                            "keyCode": "KeyG",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "'",
+                                            "keyCode": "KeyH",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "4",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "1",
+                                            "keyCode": "KeyM",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "2",
+                                            "keyCode": "Comma",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "?",
+                                            "keyCode": "Slash",
+                                            "keyShift": true
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "keyData": [
+                            "keyTypeName": "세벌식 최종",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ㅋ",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅇ*",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆫ*",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅣ",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅏ",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅇ",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄱ",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅈ",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅂ",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅌ",
-                                    "keyCode": "KeyX",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ᆺ*",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆯ*",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅕ",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅐ",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅓ",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄹ",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄷ",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅁ",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅊ",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅍ",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅊ",
-                                    "keyCode": "KeyC",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅜ*",
+                                            "keyCode": "Digit9",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅋ",
+                                            "keyCode": "Digit0",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅡ",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆷ*",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆨ*",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅔ",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅜ",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ*",
+                                            "keyCode": "Slash",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅍ",
-                                    "keyCode": "KeyV",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㄴ",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅇ",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅅ",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅎ",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅂ",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅌ",
+                                            "keyCode": "Quote",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅡ",
-                                    "keyCode": "KeyM",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "ᇂ*",
+                                            "keyCode": "Digit1",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆻ*",
+                                            "keyCode": "Digit2",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆸ*",
+                                            "keyCode": "Digit3",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆺ*",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆯ*",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "-",
+                                            "keyCode": "Minus",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "=",
+                                            "keyCode": "Equal",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": ",",
-                                    "keyCode": "Comma",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": ".",
-                                    "keyCode": "Period",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㅅ",
-                                    "keyCode": "KeyT",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅛ",
-                                    "keyCode": "KeyY",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅎ",
-                                    "keyCode": "KeyG",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ",
-                                    "keyCode": "KeyH",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅜ",
-                                    "keyCode": "KeyN",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅠ",
-                                    "keyCode": "KeyB",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㅃ",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㅉ",
-                                    "keyCode": "KeyW",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㄸ",
-                                    "keyCode": "KeyE",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㄲ",
-                                    "keyCode": "KeyR",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㅆ",
-                                    "keyCode": "KeyT",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㅒ",
-                                    "keyCode": "KeyO",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ㅖ",
-                                    "keyCode": "KeyP",
-                                    "keyShift": true
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "1",
-                                    "keyCode": "Digit1",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "2",
-                                    "keyCode": "Digit2",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "3",
-                                    "keyCode": "Digit3",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "4",
-                                    "keyCode": "Digit4",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "5",
-                                    "keyCode": "Digit5",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "6",
-                                    "keyCode": "Digit6",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "7",
-                                    "keyCode": "Digit7",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "8",
-                                    "keyCode": "Digit8",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "9",
-                                    "keyCode": "Digit9",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "0",
-                                    "keyCode": "Digit0",
-                                    "keyShift": true
+                                    "keyData": [
+                                        {
+                                            "keyName": "ㅑ",
+                                            "keyCode": "Digit6",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅖ",
+                                            "keyCode": "Digit7",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅢ",
+                                            "keyCode": "Digit8",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㄴ",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "Comma",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆷ*",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆨ*",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅔ",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅗ",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ㅜ",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "ᆾ*",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆹ*",
+                                            "keyCode": "KeyX",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆱ*",
+                                            "keyCode": "KeyC",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "ᆶ*",
+                                            "keyCode": "KeyV",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "?",
+                                            "keyCode": "KeyB",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "0",
+                                            "keyCode": "KeyH",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "=",
+                                            "keyCode": "Digit6",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "“",
+                                            "keyCode": "Digit7",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": "”",
+                                            "keyCode": "Digit8",
+                                            "keyShift": true
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "Comma",
+                                            "keyShift": true
+                                        }
+                                    ]
                                 }
                             ]
                         }
-                    ]
+                    ]  
                 },
                 {
-                    "keyTypeName": "세벌식 3-90",
-                    "keyLevel": [
+                    "keyLangName": "영어",
+                    "keyType": [
                         {
-                            "keyData": [
+                            "keyTypeName": "QWERTY",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ㅇ*",
-                                    "keyCode": "KeyA",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "A",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "S",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "D",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "F",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "J",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "K",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "L",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ";",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ᆫ*",
-                                    "keyCode": "KeyS",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "Q",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "W",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "E",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "R",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅣ",
-                                    "keyCode": "KeyD",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "U",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "I",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "O",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "P",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅏ",
-                                    "keyCode": "KeyF",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "Z",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "X",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "C",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "V",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅇ",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "M",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "Comma",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ".",
+                                            "keyCode": "Period",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "/",
+                                            "keyCode": "Slash",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄱ",
-                                    "keyCode": "KeyK",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅈ",
-                                    "keyCode": "KeyL",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅂ",
-                                    "keyCode": "Semicolon",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "T",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "Y",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "G",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "H",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "N",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "B",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "keyData": [
+                            "keyTypeName": "Dvorak",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ᆺ*",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "A",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "O",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "E",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "U",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "H",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "T",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "N",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "S",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ᆯ*",
-                                    "keyCode": "KeyW",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "'",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ".",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "P",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅕ",
-                                    "keyCode": "KeyE",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "G",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "C",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "R",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "L",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅐ",
-                                    "keyCode": "KeyR",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": ";",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "Q",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "J",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "K",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅓ",
-                                    "keyCode": "KeyT",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "M",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "W",
+                                            "keyCode": "Comma",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "V",
+                                            "keyCode": "Period",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "Z",
+                                            "keyCode": "Slash",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄹ",
-                                    "keyCode": "KeyY",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㄷ",
-                                    "keyCode": "KeyU",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅁ",
-                                    "keyCode": "KeyI",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅊ",
-                                    "keyCode": "KeyO",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅍ",
-                                    "keyCode": "KeyP",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㅜ*",
-                                    "keyCode": "Digit9",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅡ",
-                                    "keyCode": "KeyG",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆷ*",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆨ*",
-                                    "keyCode": "KeyX",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅔ",
-                                    "keyCode": "KeyC",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ",
-                                    "keyCode": "KeyV",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅜ",
-                                    "keyCode": "KeyB",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ*",
-                                    "keyCode": "Slash",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㄴ",
-                                    "keyCode": "KeyH",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅇ",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅅ",
-                                    "keyCode": "KeyN",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅎ",
-                                    "keyCode": "KeyM",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅂ",
-                                    "keyCode": "Semicolon",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅌ",
-                                    "keyCode": "Quote",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ᇂ*",
-                                    "keyCode": "Digit1",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆻ*",
-                                    "keyCode": "Digit2",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆸ*",
-                                    "keyCode": "Digit3",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆺ*",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆯ*",
-                                    "keyCode": "KeyW",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆼ*",
-                                    "keyCode": "KeyA",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆫ*",
-                                    "keyCode": "KeyS",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "-",
-                                    "keyCode": "Minus",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "=",
-                                    "keyCode": "Equal",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ᆾ*",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆹ*",
-                                    "keyCode": "KeyX",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆱ*",
-                                    "keyCode": "KeyC",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆶ*",
-                                    "keyCode": "KeyV",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "/",
-                                    "keyCode": "KeyG",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "'",
-                                    "keyCode": "KeyH",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "4",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "1",
-                                    "keyCode": "KeyM",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "2",
-                                    "keyCode": "Comma",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "?",
-                                    "keyCode": "Slash",
-                                    "keyShift": true
+                                    "keyData": [
+                                        {
+                                            "keyName": "Y",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "F",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "I",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "D",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "B",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "X",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 }
                             ]
                         }
-                    ]
+                    ]  
                 },
                 {
-                    "keyTypeName": "세벌식 최종",
-                    "keyLevel": [
+                    "keyLangName": "일본어",
+                    "keyType": [
                         {
-                            "keyData": [
+                            "keyTypeName": "QWERTY",
+                            "keyLevel": [
                                 {
-                                    "keyName": "ㅇ*",
-                                    "keyCode": "KeyA",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "A",
+                                            "keyCode": "KeyA",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "S",
+                                            "keyCode": "KeyS",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "D",
+                                            "keyCode": "KeyD",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "F",
+                                            "keyCode": "KeyF",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "J",
+                                            "keyCode": "KeyJ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "K",
+                                            "keyCode": "KeyK",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "L",
+                                            "keyCode": "KeyL",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ";",
+                                            "keyCode": "Semicolon",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ᆫ*",
-                                    "keyCode": "KeyS",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "Q",
+                                            "keyCode": "KeyQ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "W",
+                                            "keyCode": "KeyW",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "E",
+                                            "keyCode": "KeyE",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "R",
+                                            "keyCode": "KeyR",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅣ",
-                                    "keyCode": "KeyD",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "U",
+                                            "keyCode": "KeyU",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "I",
+                                            "keyCode": "KeyI",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "O",
+                                            "keyCode": "KeyO",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "P",
+                                            "keyCode": "KeyP",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅏ",
-                                    "keyCode": "KeyF",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "Z",
+                                            "keyCode": "KeyZ",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "X",
+                                            "keyCode": "KeyX",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "C",
+                                            "keyCode": "KeyC",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "V",
+                                            "keyCode": "KeyV",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㅇ",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": false
+                                    "keyData": [
+                                        {
+                                            "keyName": "M",
+                                            "keyCode": "KeyM",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ",",
+                                            "keyCode": "Comma",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": ".",
+                                            "keyCode": "Period",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "/",
+                                            "keyCode": "Slash",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 },
                                 {
-                                    "keyName": "ㄱ",
-                                    "keyCode": "KeyK",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅈ",
-                                    "keyCode": "KeyL",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅂ",
-                                    "keyCode": "Semicolon",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ᆺ*",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆯ*",
-                                    "keyCode": "KeyW",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅕ",
-                                    "keyCode": "KeyE",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅐ",
-                                    "keyCode": "KeyR",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅓ",
-                                    "keyCode": "KeyT",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㄹ",
-                                    "keyCode": "KeyY",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㄷ",
-                                    "keyCode": "KeyU",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅁ",
-                                    "keyCode": "KeyI",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅊ",
-                                    "keyCode": "KeyO",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅍ",
-                                    "keyCode": "KeyP",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㅜ*",
-                                    "keyCode": "Digit9",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅋ",
-                                    "keyCode": "Digit0",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅡ",
-                                    "keyCode": "KeyG",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆷ*",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆨ*",
-                                    "keyCode": "KeyX",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅔ",
-                                    "keyCode": "KeyC",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ",
-                                    "keyCode": "KeyV",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅜ",
-                                    "keyCode": "KeyB",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ*",
-                                    "keyCode": "Slash",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㄴ",
-                                    "keyCode": "KeyH",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅇ",
-                                    "keyCode": "KeyJ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅅ",
-                                    "keyCode": "KeyN",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅎ",
-                                    "keyCode": "KeyM",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅂ",
-                                    "keyCode": "Semicolon",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅌ",
-                                    "keyCode": "Quote",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ᇂ*",
-                                    "keyCode": "Digit1",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆻ*",
-                                    "keyCode": "Digit2",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆸ*",
-                                    "keyCode": "Digit3",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆺ*",
-                                    "keyCode": "KeyQ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆯ*",
-                                    "keyCode": "KeyW",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "-",
-                                    "keyCode": "Minus",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "=",
-                                    "keyCode": "Equal",
-                                    "keyShift": false
-                                }
-                            ]
-                        },
-                        {
-                            "keyData": [
-                                {
-                                    "keyName": "ㅑ",
-                                    "keyCode": "Digit6",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅖ",
-                                    "keyCode": "Digit7",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅢ",
-                                    "keyCode": "Digit8",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㄴ",
-                                    "keyCode": "KeyH",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": ",",
-                                    "keyCode": "Comma",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆷ*",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆨ*",
-                                    "keyCode": "KeyX",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅔ",
-                                    "keyCode": "KeyC",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅗ",
-                                    "keyCode": "KeyV",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ㅜ",
-                                    "keyCode": "KeyB",
-                                    "keyShift": false
-                                },
-                                {
-                                    "keyName": "ᆾ*",
-                                    "keyCode": "KeyZ",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆹ*",
-                                    "keyCode": "KeyX",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆱ*",
-                                    "keyCode": "KeyC",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "ᆶ*",
-                                    "keyCode": "KeyV",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "?",
-                                    "keyCode": "KeyB",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "0",
-                                    "keyCode": "KeyH",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "=",
-                                    "keyCode": "Digit6",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "“",
-                                    "keyCode": "Digit7",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": "”",
-                                    "keyCode": "Digit8",
-                                    "keyShift": true
-                                },
-                                {
-                                    "keyName": ",",
-                                    "keyCode": "Comma",
-                                    "keyShift": true
+                                    "keyData": [
+                                        {
+                                            "keyName": "T",
+                                            "keyCode": "KeyT",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "Y",
+                                            "keyCode": "KeyY",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "G",
+                                            "keyCode": "KeyG",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "H",
+                                            "keyCode": "KeyH",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "N",
+                                            "keyCode": "KeyN",
+                                            "keyShift": false
+                                        },
+                                        {
+                                            "keyName": "B",
+                                            "keyCode": "KeyB",
+                                            "keyShift": false
+                                        }
+                                    ]
                                 }
                             ]
                         }
-                    ]
+                    ]  
                 }
-            ]  
+            ]
         }
     ]
 }

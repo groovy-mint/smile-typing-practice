@@ -14,9 +14,12 @@
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" max="100" v-bind:value="accuracy"></progress></div>
     </div>
     <div class="typeKeyboardBox">
-      <KeyboardLayout0 v-if="kbdLayout===0" :keyToPress="nowCode" :isShift="nowShift"/>
-      <KeyboardLayout1 v-if="kbdLayout===1" :keyToPress="nowCode" :isShift="nowShift"/>
-      <KeyboardLayout2 v-if="kbdLayout===2" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout0 v-if="kbdLayout===0 && language === 0" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout1 v-if="kbdLayout===1 && language === 0" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout2 v-if="kbdLayout===2 && language === 0" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout3 v-if="kbdLayout===0 && language === 1" :keyToPress="nowCode" :isShift="nowShift"/>
+      <KeyboardLayout4 v-if="kbdLayout===1 && language === 1" :keyToPress="nowCode" :isShift="nowShift"/>
+      <!-- <KeyboardLayout5 v-if="kbdLayout===0 && language === 2" :keyToPress="nowCode" :isShift="nowShift"/> -->
     </div>
   </div>
 </template>
@@ -26,8 +29,11 @@ import keysData from '@/assets/keyPracticeData.json'
 import KeyboardLayout0 from './keyboardDubeol.vue'
 import KeyboardLayout1 from './keyboardSebeol.vue'
 import KeyboardLayout2 from './keyboardSebeolLast.vue'
+import KeyboardLayout3 from './keyboardQwerty.vue'
+import KeyboardLayout4 from './keyboardDvorak.vue'
+import KeyboardLayout5 from './keyboardKana.vue'
 export default {
-  components: { KeyboardLayout0, KeyboardLayout1, KeyboardLayout2 },
+  components: { KeyboardLayout0, KeyboardLayout1, KeyboardLayout2, KeyboardLayout3, KeyboardLayout4, KeyboardLayout5 },
   props: {
     level: {
       type: String,
@@ -40,6 +46,7 @@ export default {
   },
   data () {
     return {
+      language: -1,
       kbdLayout: -1,
       prev1: '',
       prev2: '',
@@ -69,51 +76,54 @@ export default {
       ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => { // 최대 키 설정 가져오기
         this.maxkeys = result
       })
-      ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => { // 키보드 레이아웃 설정 가져오기
-        this.kbdLayout = result
-        var allkeys = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData.length
+      ipcRenderer.invoke('getStoreValue', 'language').then((result0) => { // 언어 설정 가져오기
+        this.language = (result0 === 'KO') ? 0 : (result0 === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => { // 키보드 레이아웃 설정 가져오기
+          this.kbdLayout = result
+          var allkeys = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData.length
+          })
+          var keysCount = allkeys
+          var x = Math.floor(Math.random() * (keysCount))
+          var key1 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+          })
+          var code1 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+          })
+          var shift1 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+          })
+          x = Math.floor(Math.random() * (keysCount))
+          var key2 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+          })
+          var code2 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+          })
+          var shift2 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+          })
+          x = Math.floor(Math.random() * (keysCount))
+          var key3 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+          })
+          var code3 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+          })
+          var shift3 = keysData.keys.map((item) => {
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+          }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
+          this.now = key1[0]
+          this.next1 = key2[0]
+          this.next2 = key3[0]
+          this.nowCode = code1[0]
+          this.nextCode1 = code2[0]
+          this.nextCode2 = code3[0]
+          this.nowShift = shift1[0]
+          this.nextShift1 = shift2[0]
+          this.nextShift2 = shift3[0]
         })
-        var keysCount = allkeys
-        var x = Math.floor(Math.random() * (keysCount))
-        var key1 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
-        })
-        var code1 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
-        })
-        var shift1 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
-        })
-        x = Math.floor(Math.random() * (keysCount))
-        var key2 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
-        })
-        var code2 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
-        })
-        var shift2 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
-        })
-        x = Math.floor(Math.random() * (keysCount))
-        var key3 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
-        })
-        var code3 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
-        })
-        var shift3 = keysData.keys.map((item) => {
-          return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
-        }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
-        this.now = key1[0]
-        this.next1 = key2[0]
-        this.next2 = key3[0]
-        this.nowCode = code1[0]
-        this.nextCode1 = code2[0]
-        this.nextCode2 = code3[0]
-        this.nowShift = shift1[0]
-        this.nextShift1 = shift2[0]
-        this.nextShift2 = shift3[0]
       })
     },
     keyPressed: function (ev) {
@@ -128,18 +138,18 @@ export default {
             this.$router.push('/key-practice/end?acr=' + this.accuracy + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.min + ':' + this.secDisplay)
           }
           var allkeys = keysData.keys.map((item) => {
-            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData.length
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData.length
           })
           var keysCount = allkeys
           var x = Math.floor(Math.random() * (keysCount))
           var nextKey = keysData.keys.map((item) => {
-            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyName
           })
           var nextCode = keysData.keys.map((item) => {
-            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyCode
           })
           var nextShift = keysData.keys.map((item) => {
-            return item.keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
+            return item.keyLang[this.language].keyType[this.kbdLayout].keyLevel[this.level].keyData[x].keyShift
           })
 
           this.prev2 = this.prev1
