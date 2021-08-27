@@ -143,7 +143,6 @@ export default {
           return item.articleLang[this.language].articleLevel[this.level].sentenceData[j].sentence
         })
         this.nowSource = sourceSentence[0]
-        console.log(this.nowSource)
         this.answerInput0 = 'block'
       })
     },

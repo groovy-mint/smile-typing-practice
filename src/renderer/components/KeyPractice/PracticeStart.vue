@@ -127,7 +127,6 @@ export default {
       })
     },
     keyPressed: function (ev) {
-      console.log(ev)
       if (ev.key === 'Shift' || ev.key === 'Enter' || ev.key === 'CapsLock' || ev.key === 'Alt' || ev.key === 'Control' || ev.key === 'Meta' || ev.code === 'Space' || ev.code === 'Tab') {
         // 실수할 수 있는 시스템키 거름망
       } else { // 키 누름 판정

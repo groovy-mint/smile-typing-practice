@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import { remote, ipcRenderer } from 'electron'
+  import { remote } from 'electron'
   /* eslint-disable no-new */
   export default {
     name: 'smile-typing-practice',
@@ -50,11 +50,6 @@
         maximize: true,
         minimize: false
       }
-    },
-    mounted () {
-      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => {
-        console.log(result)
-      })
     }
   }
 </script>

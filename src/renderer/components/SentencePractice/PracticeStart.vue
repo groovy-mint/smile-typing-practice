@@ -186,8 +186,6 @@ export default {
     },
     nextRound: function () { // 다음 라운드: 엔터를 눌렀을 때의 행동
       this.typePerMinTotal = this.typePerMinTotal + parseInt(this.typePerMin)
-      console.log((this.typePerMinTotal / this.maxsentences))
-      console.log(this.typePerMin)
       clearInterval(this.intervalVar)
       var answer = this.$refs.answer.value
       answer = answer.trimEnd()
@@ -283,7 +281,6 @@ export default {
       }
       var tempAnswer = this.$refs.answer.value.split('')
       var tempAnswer2 = Hangul.d(this.$refs.answer.value).length
-      console.log(this.language)
       if (this.language === 0) {
         tempAnswer.pop()
         var leng = this.now.length - 1

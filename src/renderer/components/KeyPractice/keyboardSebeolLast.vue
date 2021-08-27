@@ -118,7 +118,7 @@ export default {
   methods: {
     keyboardFingerChange: function (k) {
       // console.log(k + 'finger change')
-      console.log(this.shoulderLeft)
+      // console.log(this.shoulderLeft)
       var pressFeedback = '#ff555590'
       var idleFeedback = 'rgba(102, 205, 171, 0.603)'
       ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD
@@ -223,8 +223,8 @@ export default {
       this.keyboardFingerChange(key)
     },
     keyboardPressed: function (key) {
-      console.log(this.shoulderLeft + 'asdfasdf')
-      console.log('next order: ' + this.keyToPress + ', ' + key.code + ' pressed')
+      // console.log(this.shoulderLeft + 'asdfasdf')
+      // console.log('next order: ' + this.keyToPress + ', ' + key.code + ' pressed')
 
       setTimeout(() => this.keyboardFingerChange(this.keyToPress), 1)
       if (this.shoulderLeft === 'KeyA' || this.shoulderLeft === 'KeyS' || this.shoulderLeft === 'KeyD' || this.shoulderLeft === 'KeyF' || this.shoulderLeft === 'KeyJ' || this.shoulderLeft === 'KeyK' || this.shoulderLeft === 'KeyL' || this.shoulderLeft === 'Semicolon') {

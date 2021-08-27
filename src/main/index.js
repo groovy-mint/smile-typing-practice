@@ -113,8 +113,6 @@ function createWindow () {
     return store.set(key, value)
   })
 
-  console.log(store.get('sentenceReports'))
-
   mainWindow.loadURL(winURL)
 
   mainWindow.on('closed', () => {

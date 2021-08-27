@@ -41,8 +41,6 @@ export default {
       var knd = this.category === 0 ? 'keyReports' : this.category === 1 ? 'wordReports' : this.category === 2 ? 'sentenceReports' : 'articleReports'
       ipcRenderer.invoke('getStoreValue', knd).then((result) => {
         this.report = result
-        console.log(knd)
-        console.log(result)
       })
     }
   },

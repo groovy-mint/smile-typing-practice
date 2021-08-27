@@ -57,7 +57,6 @@ export default{
       ipcRenderer.invoke('getStoreValue', 'wordReports').then((result) => {
         var leng = result.length
         result.push({ id: leng, title: this.title, accuracy: this.accuracy, typnum: this.typnum, time: this.time })
-        console.log(result)
         ipcRenderer.invoke('setStoreValue', 'wordReports', result)
       })
     }

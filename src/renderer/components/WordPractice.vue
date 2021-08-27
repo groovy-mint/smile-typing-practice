@@ -23,7 +23,6 @@ export default{
   methods: {
     initialSetting: function () {
       ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
-        console.log(result)
         var language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
         var menuLeng = wordsData.words.map((item) => {
           return item.wordLang[language].wordLevel.length
