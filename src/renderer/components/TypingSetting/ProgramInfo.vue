@@ -6,10 +6,16 @@
     <h3>서포트</h3>
     <span>Smile Creative Lab.・2021<br>admin@ntws.kr<br>http://sclab.ntws.kr</span>
     <h3>단어 자료 출처 및 라이센스</h3>
+      <br><span>한국어 단어</span>
       <li>표준어: 표준국어대사전 (CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0/kr/)<br>https://stdict.korean.go.kr/ 누리집 일부 발췌 - 2021.7.27</li>
       <li>경상도 사투리: 위키낱말사전 (CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.ko)<br>분류:한국어 경상도 사투리 문서 및 하위문서 일부 발췌 - 2021.7.28</li>
       <li>끄투 한방단어: 끄코위키 (CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/)<br>한방단어/한국어 하위문서 일부 발췌 - 2021.7.30</li>
+      <br><span>한국어 문장</span>
       <li>속담: 리브레위키 (CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/) 속담/목록 하위문서 일부 발췌 - 2021.8.7</li>
+      <li>필적확인란: 티스토리 규장각 (CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.ko) https://john0075.tistory.com/26 글 일부 발췌 - 2021.8.27</li>
+      <br><span>영어 문장</span>
+      <li>속담: 티스토리 샬롱한 영어와 일상 (CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.ko) https://simplelife77.tistory.com/436 글 일부 발췌 - 2021.8.27</li>
+      <br><span>오픈소스 명시</span>
       <li>NPM 모듈 라이센스: https://sclab.ntws.kr/smile_typing/licenses.html 참조</li>
     <h3>소프트웨어 라이센스</h3>
 <span>

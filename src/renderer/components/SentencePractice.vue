@@ -9,18 +9,36 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron'
+import sentencesData from '@/assets/sentencePracticeData.json'
 export default{
-  name: 'key-practice-menu',
+  name: 'sentence-practice-menu',
   data () {
     return {
       lvlList: [
-        { id: 0, title: '속담', route: '/sentence-practice/start?lvl=0&title=속담' },
-        // { id: 1, title: '끄투 긴단어', route: '/sentence-practice/start?lvl=1&title=끄투 긴단어' },
-        // { id: 2, title: '팬그램', route: '/sentence-practice/start?lvl=2&title=팬그램' },
-        // { id: 3, title: '필적확인란', route: '/sentence-practice/start?lvl=3&title=필적확인란' },
-        { id: 5, title: '뒤로', route: '*' }
+        { id: 99, title: '뒤로', route: '*' }
       ]
     }
+  },
+  methods: {
+    initialSetting: function () {
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        console.log(result)
+        var language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        var menuLeng = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[language].sentenceLevel.length
+        })
+        for (var i = 0; i < menuLeng; ++i) {
+          var menuName = sentencesData.sentences.map((item) => {
+            return item.sentenceLang[language].sentenceLevel[i].sentenceLevelName
+          })
+          this.lvlList.splice(i, 0, { id: i, title: menuName[0], route: '/sentence-practice/start?lvl=' + i + '&title=' + menuName[0] })
+        }
+      })
+    }
+  },
+  beforeMount () {
+    this.initialSetting()
   }
 }
 </script>

@@ -1,1153 +1,1598 @@
 {
     "sentences": [
         { 
-            "sentenceLevel": [
+            "sentenceLang": [
                 {
-                    "sentenceLevelName": "속담",
-                    "sentenceData": [
-                        {
-                            "sentence": "가난 구제는 나랏님도 못한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가난한 집 제사 돌아오듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가는 날이 장날",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가는 말에 채찍질",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가는 말이 고와야 오는 말이 곱다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가랑비에 옷 젖는 줄 모른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가랑잎에 불붙듯 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가물에 도랑친다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가뭄에 콩나듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가재는 게 편",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가지 많은 나무에 바람 잘 날 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "간에 붙었다 쓸개에 붙었다 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "갈수록 태산",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "감기 고뿔도 남 안준다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "갓 쓰고 자전거 타기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "강물도 쓰면 준다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "강원도 안 가도 삼척",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "같은 값이면 다홍치마",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개가 웃을 일",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "가난한 집 제사 돌아오듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개구리 낯짝에 물 붓기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개구리 올챙이 적 생각 못한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개 꼬리 삼 년 묵혀도 황모 되지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개도 주인을 알아본다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개똥도 약에 쓰려면 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개똥도 약에 쓴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개똥밭에 굴러도 이승이 좋다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개미구멍이 큰 방죽을 무너뜨린다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개 발에 주석 편자",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개밥에 도토리",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "개 잡는 데 소 잡는 칼을 쓴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "고생 끝에 낙이 온다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "고양이에게 생선가게 맡긴 격",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "긁어 부스럼",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "길 닦아 놓으니 개가 먼저 지나간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "까마귀 날자 배 떨어진다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "꿩 먹고 알 먹는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "나는 새도 떨어뜨린다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "나라 없는 백성은 상가집 개만도 못하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "나 먹자니 싫고 개 주자니 아깝다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "나무를 보고 숲을 보지 못한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "낙숫물이 댓돌을 뚫는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "남의 떡이 커 보인다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "남이야 전봇대로 이를 쑤시건 말건",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "낫 놓고 기역자도 모른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "낮말은 새가 듣고 밤말은 쥐가 듣는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "노루 꼬리가 길면 얼마나 길까",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "노름은 본전에 망한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "놓친 고기가 더 커 보인다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "누울 자리 봐 가며 다리를 뻗어라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "누이 좋고 매부 좋다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "눈 가리고 아웅한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "눈 감으면 코 베어가는 세상",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "눈썹에 불 붙는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "눈에는 눈, 이에는 이",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "눈에 콩깍지가 씌었다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "다 된 죽에 코 풀기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "달걀로 바위 치기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "달걀에도 뼈가 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "달도 차면 기운다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "달면 삼키고 쓰면 뱉는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "닭 잡아먹고 오리발 내민다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "닭 쫓던 개 지붕 쳐다보듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "더도 덜도 말고 한가위만 같아라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도끼로 제 발등 찍는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도둑을 맞으려면 개도 안 짖는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도둑이 매를 든다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도둑이 제 발 저린다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도랑치고 가재 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "도토리 키 재기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "돌다리도 두들겨 보고 건너라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "동냥은 못 줘도 쪽박은 깨지 마라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "되로 주고 말로 받는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "될성부른 나무는 떡잎부터 알아본다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "등에 업은 아이 삼 년 찾는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "등잔 밑이 어둡다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "땅 짚고 헤엄치기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "떡 본김에 제사지낸다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "때리는 시어머니보다 말리는 시누이가 더 밉다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "똥 묻은 개가 겨 묻은 개 나무란다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "똥이 무서워서 피하나 더러워서 피하지",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "뛰는 놈 위에 나는 놈 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "뛰어야 벼룩이다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "마른 나무를 태우면 생나무도 탄다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "마른 하늘에 날벼락",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "마파람에 게 눈 감추듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "말 안 하면 귀신도 모른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "말은 제주도로 보내고 사람은 서울로 보내라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "말이 씨가 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "말 타면 경마 잡히고 싶다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "말 한마디에 천 냥 빚도 갚는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "머리 검은 짐승은 구제를 말랬다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "먹고 죽자 해도 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "며느리 사랑은 시아버지 사위 사랑은 장모",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "모난 돌이 정 맞는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "모래 위의 누각",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "모로 가도 서울만 가면 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "모르는 게 약, 아는 게 병",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "모진 놈 옆에 있다가 벼락 맞는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "목구멍이 포도청",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "목마른 놈이 우물 판다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "목수가 많으면 집이 무너진다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "못된 송아지 엉덩이에 뿔난다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "못 먹는 감 찔러나 본다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "무는 개는 짖지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "무소식이 희소식",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "무자식이 상팔자",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "물에 빠지면 지푸라기라도 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "물은 건너 보아야 알고 사람은 지내보아야 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "물은 트는 대로 흐른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "물이 너무 맑으면 고기가 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "미꾸라지 한 마리가 온 물을 흐리게 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "미주알고주알 밑두리콧두리 캔다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "믿는 도끼에 발등 찍힌다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "밑구멍으로 호박씨 깐다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "밑져야 본전",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "바늘 가는데 실 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "바늘구멍으로 황소바람 들어온다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "바늘 도둑이 소도둑 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "바다는 메워도 사람의 욕심은 못 채운다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "바람 앞의 등불",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "발 없는 말이 천 리 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "방귀가 잦으면 똥이 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "방귀 뀐 놈이 성낸다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "배부른 고양이는 쥐를 잡지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "백 번 듣는 것이 한 번 보는 것만 못하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "뱁새가 황새를 따라가면 다리가 찢어진다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "번개가 잦으면 천둥이 친다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "번갯불에 콩 볶아 먹는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "범이 날고기 먹을 줄 모르랴",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "벙어리 속은 벙어리가 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "벼룩도 낯짝이 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "벼룩의 간을 내어 먹는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "벼는 익을수록 고개를 숙인다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "보기 좋은 떡이 먹기에도 좋다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "보릿고개가 태산보다 높다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "봇짐 내어주며 앉으라고 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "부뚜막의 소금도 넣어야 짜다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "부부싸움은 칼로 물 베기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "부자는 망해도 삼 년은 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "불난 집에 부채질한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "비렁뱅이가 하늘을 불쌍히 여긴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "비 온 뒤에 땅이 굳어진다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "빈대 잡으려다 초가삼간 태운다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "빈 수레가 요란하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사공이 많으면 배가 산으로 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사공이 많으면 배가 산으로 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사돈 남 나무란다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사돈은 부처님 팔촌보다 못하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사돈집과 뒷간은 멀수록 좋다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사또 덕에 나팔 분다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사또 행사에는 비장이 죽어난다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사람 나고 돈 났지 돈 나고 사람 났나",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사람은 작게 낳아서 크게 길러야 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사람은 죽으면 이름을 남기고 범은 죽으면 가죽을 남긴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사람은 지내봐야 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사위는 백년손님",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사촌이 땅을 사면 배가 아프다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "사흘 굶어 도둑질 아니할 놈 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "산 사람 입에 거미줄 치랴",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "살아가면 고향",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "새 발의 피",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "새우로 잉어를 낚는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "생일날 잘 먹으려고 이레를 굶는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "서당개 삼 년이면 풍월을 읊는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "서울 가서 김서방 찾기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "선무당이 사람 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "선생의 똥은 개도 안 먹는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "설마가 사람 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "세 살 버릇 여든까지 간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "세월은 사람을 기다려 주지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "소 닭보듯 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "소 뒷걸음질 치다 쥐 잡기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "소문난 잔치에 먹을 것 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "소 잃고 외양간 고친다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "손가락에 장을 지지겠다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "손톱 밑의 가시",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "솥은 검어도 밥은 검지 않다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쇠 귀에 경 읽기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쇠뿔도 단김에 빼라",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쇠뿔 잡다가 소 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "수박 겉 핥기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "순풍에 돛을 달다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "술에 술 탄 듯 물에 물 탄 듯",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "숭어가 뛰니까 망둥이도 뛴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "숯이 검정 나무란다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쉽기가 손바닥 뒤집기다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "시누이는 고추보다 맵다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "시원찮은 귀신이 사람 잡아간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "시작이 반이다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "신선놀음에 도낏자루 썩는 줄 모른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "십 년 공부 도로 아미타불",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "십 년이면 강산도 변한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "십 리 밖에 있어도 오리나무",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쓸개 빠진 놈",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아끼다 똥 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아는 게 병",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아니 땐 굴뚝에 연기 날까",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아닌 밤중에 홍두깨",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아랫돌 빼서 윗돌 괴고 윗돌 빼서 아랫돌 괴기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아이 싸움이 어른 싸움 된다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "아홉 마리 소에 터럭 하나",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "알아야 면장을 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "약방에 감초",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "양반은 물에 빠져도 개헤엄은 안 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "언 발에 오줌 누기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "엎드려 절 받기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "엎어지면 코 닿을 데",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "자다가 봉창을 두드린다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "자식을 길러봐야 부모 사랑을 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "잘 나가다 삼천포로 빠지다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "장미꽃에는 가시가 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "장부의 한 말이 천금같이 무겁다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "장수가 엄하면 군사가 강하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "장수 나자 용마 났다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "장수를 잡으려면 말부터 쏘아야 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "재주는 곰이 넘고 돈은 되놈이 번다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "접시 물에 코를 박다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "제 논에 물 대기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "제 버릇 개 줄까",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "좋은 일에 마가 든다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "죄짓고 못 산다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "주머니 속의 송곳",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "죽 쒀서 개 줬다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "소 잃고 외양간 고친다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "절이 싫으면 중이 떠나야 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "중이 고기 맛을 알면 절에 빈대가 안 남는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쥐구멍에도 볕 들 날 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "쥐 못 잡는 고양이",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "지는 것이 이기는 것",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "지렁이도 밟으면 꿈틀한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "지성이면 감천",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "짚신도 짝이 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "찬물도 위 아래가 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "찬물도 위 아래가 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "참새가 방앗간을 그냥 지나치랴",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "참새가 아무리 떠들어도 구렁이는 움직이지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "참새가 작아도 일만 잘한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "참새가 죽어도 짹한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "참새 굴레 씌우겠다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "천 리 길도 한 걸음부터",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "첫 술에 배부르랴",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "초록은 동색",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "충신이 죽으면 대나무가 난다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "친구따라 강남간다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "칼로 물 베기",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "칼로 흥한 자 칼로 망한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "콩 심은 데 콩 나고 팥 심은 데 팥 난다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "콩을 팥이라고 우긴다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "콩으로 메주를 쑨다 하여도 곧이듣지 않는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "큰 방죽도 개미구멍으로 무너진다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "타고난 팔자",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "터를 닦아야 집을 짓는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "털도 안 뜯고 먹겠다 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "토끼 둘을 잡으려다 하나도 못 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "티끌 모아 태산",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "팔도에 솥 걸어 놓았다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "팥으로 메주를 쑨대도 곧이듣는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "평안 감사도 저 싫으면 그만이다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "폭풍 전의 고요",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "피는 물보다 진하다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "핑계 없는 무덤이 없다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "하나를 듣고 열을 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "하나를 보고 열을 안다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "하늘 아래 첫 동네",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "하늘이 무너져도 솟아날 구멍이 있다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "하룻강아지 범 무서운 줄 모른다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호랑이 굴에 들어가야 호랑이 새끼를 잡는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호랑이 담배 피울 적",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호랑이 없는 골에 토끼가 왕 노릇 한다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호랑이도 제 말 하면 온다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호랑이에게 물려 가도 정신만 차리면 산다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호미로 막을 것을 가래로 막는다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "호박이 넝쿨째 굴러왔다.",
-                            "sentenceNote": ""
-                        },
-                        {
-                            "sentence": "혹 떼러 갔다 혹 붙여 온다.",
-                            "sentenceNote": ""
+                    "sentenceLangName": "한국어",
+                    "sentenceLevel": [
+                        {
+                            "sentenceLevelName": "속담",
+                            "sentenceData": [
+                                {
+                                    "sentence": "가난 구제는 나랏님도 못한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가난한 집 제사 돌아오듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가는 날이 장날",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가는 말에 채찍질",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가는 말이 고와야 오는 말이 곱다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가랑비에 옷 젖는 줄 모른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가랑잎에 불붙듯 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가물에 도랑친다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가뭄에 콩나듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가재는 게 편",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가지 많은 나무에 바람 잘 날 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "간에 붙었다 쓸개에 붙었다 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "갈수록 태산",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "감기 고뿔도 남 안준다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "갓 쓰고 자전거 타기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "강물도 쓰면 준다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "강원도 안 가도 삼척",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "같은 값이면 다홍치마",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개가 웃을 일",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "가난한 집 제사 돌아오듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개구리 낯짝에 물 붓기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개구리 올챙이 적 생각 못한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개 꼬리 삼 년 묵혀도 황모 되지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개도 주인을 알아본다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개똥도 약에 쓰려면 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개똥도 약에 쓴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개똥밭에 굴러도 이승이 좋다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개미구멍이 큰 방죽을 무너뜨린다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개 발에 주석 편자",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개밥에 도토리",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "개 잡는 데 소 잡는 칼을 쓴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "고생 끝에 낙이 온다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "고양이에게 생선가게 맡긴 격",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "긁어 부스럼",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "길 닦아 놓으니 개가 먼저 지나간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "까마귀 날자 배 떨어진다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "꿩 먹고 알 먹는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "나는 새도 떨어뜨린다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "나라 없는 백성은 상가집 개만도 못하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "나 먹자니 싫고 개 주자니 아깝다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "나무를 보고 숲을 보지 못한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "낙숫물이 댓돌을 뚫는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "남의 떡이 커 보인다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "남이야 전봇대로 이를 쑤시건 말건",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "낫 놓고 기역자도 모른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "낮말은 새가 듣고 밤말은 쥐가 듣는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "노루 꼬리가 길면 얼마나 길까",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "노름은 본전에 망한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "놓친 고기가 더 커 보인다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "누울 자리 봐 가며 다리를 뻗어라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "누이 좋고 매부 좋다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "눈 가리고 아웅한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "눈 감으면 코 베어가는 세상",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "눈썹에 불 붙는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "눈에는 눈, 이에는 이",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "눈에 콩깍지가 씌었다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "다 된 죽에 코 풀기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "달걀로 바위 치기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "달걀에도 뼈가 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "달도 차면 기운다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "달면 삼키고 쓰면 뱉는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "닭 잡아먹고 오리발 내민다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "닭 쫓던 개 지붕 쳐다보듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "더도 덜도 말고 한가위만 같아라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도끼로 제 발등 찍는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도둑을 맞으려면 개도 안 짖는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도둑이 매를 든다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도둑이 제 발 저린다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도랑치고 가재 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "도토리 키 재기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "돌다리도 두들겨 보고 건너라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "동냥은 못 줘도 쪽박은 깨지 마라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "되로 주고 말로 받는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "될성부른 나무는 떡잎부터 알아본다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "등에 업은 아이 삼 년 찾는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "등잔 밑이 어둡다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "땅 짚고 헤엄치기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "떡 본김에 제사지낸다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "때리는 시어머니보다 말리는 시누이가 더 밉다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "똥 묻은 개가 겨 묻은 개 나무란다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "똥이 무서워서 피하나 더러워서 피하지",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "뛰는 놈 위에 나는 놈 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "뛰어야 벼룩이다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "마른 나무를 태우면 생나무도 탄다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "마른 하늘에 날벼락",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "마파람에 게 눈 감추듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "말 안 하면 귀신도 모른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "말은 제주도로 보내고 사람은 서울로 보내라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "말이 씨가 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "말 타면 경마 잡히고 싶다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "말 한마디에 천 냥 빚도 갚는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "머리 검은 짐승은 구제를 말랬다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "먹고 죽자 해도 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "며느리 사랑은 시아버지 사위 사랑은 장모",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "모난 돌이 정 맞는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "모래 위의 누각",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "모로 가도 서울만 가면 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "모르는 게 약, 아는 게 병",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "모진 놈 옆에 있다가 벼락 맞는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "목구멍이 포도청",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "목마른 놈이 우물 판다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "목수가 많으면 집이 무너진다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "못된 송아지 엉덩이에 뿔난다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "못 먹는 감 찔러나 본다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "무는 개는 짖지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "무소식이 희소식",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "무자식이 상팔자",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "물에 빠지면 지푸라기라도 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "물은 건너 보아야 알고 사람은 지내보아야 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "물은 트는 대로 흐른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "물이 너무 맑으면 고기가 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "미꾸라지 한 마리가 온 물을 흐리게 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "미주알고주알 밑두리콧두리 캔다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "믿는 도끼에 발등 찍힌다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "밑구멍으로 호박씨 깐다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "밑져야 본전",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "바늘 가는데 실 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "바늘구멍으로 황소바람 들어온다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "바늘 도둑이 소도둑 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "바다는 메워도 사람의 욕심은 못 채운다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "바람 앞의 등불",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "발 없는 말이 천 리 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "방귀가 잦으면 똥이 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "방귀 뀐 놈이 성낸다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "배부른 고양이는 쥐를 잡지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "백 번 듣는 것이 한 번 보는 것만 못하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "뱁새가 황새를 따라가면 다리가 찢어진다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "번개가 잦으면 천둥이 친다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "번갯불에 콩 볶아 먹는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "범이 날고기 먹을 줄 모르랴",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "벙어리 속은 벙어리가 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "벼룩도 낯짝이 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "벼룩의 간을 내어 먹는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "벼는 익을수록 고개를 숙인다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "보기 좋은 떡이 먹기에도 좋다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "보릿고개가 태산보다 높다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "봇짐 내어주며 앉으라고 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "부뚜막의 소금도 넣어야 짜다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "부부싸움은 칼로 물 베기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "부자는 망해도 삼 년은 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "불난 집에 부채질한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "비렁뱅이가 하늘을 불쌍히 여긴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "비 온 뒤에 땅이 굳어진다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "빈대 잡으려다 초가삼간 태운다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "빈 수레가 요란하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사공이 많으면 배가 산으로 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사공이 많으면 배가 산으로 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사돈 남 나무란다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사돈은 부처님 팔촌보다 못하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사돈집과 뒷간은 멀수록 좋다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사또 덕에 나팔 분다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사또 행사에는 비장이 죽어난다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사람 나고 돈 났지 돈 나고 사람 났나",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사람은 작게 낳아서 크게 길러야 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사람은 죽으면 이름을 남기고 범은 죽으면 가죽을 남긴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사람은 지내봐야 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사위는 백년손님",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사촌이 땅을 사면 배가 아프다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "사흘 굶어 도둑질 아니할 놈 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "산 사람 입에 거미줄 치랴",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "살아가면 고향",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "새 발의 피",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "새우로 잉어를 낚는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "생일날 잘 먹으려고 이레를 굶는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "서당개 삼 년이면 풍월을 읊는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "서울 가서 김서방 찾기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "선무당이 사람 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "선생의 똥은 개도 안 먹는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "설마가 사람 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "세 살 버릇 여든까지 간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "세월은 사람을 기다려 주지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "소 닭보듯 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "소 뒷걸음질 치다 쥐 잡기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "소문난 잔치에 먹을 것 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "소 잃고 외양간 고친다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "손가락에 장을 지지겠다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "손톱 밑의 가시",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "솥은 검어도 밥은 검지 않다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쇠 귀에 경 읽기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쇠뿔도 단김에 빼라",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쇠뿔 잡다가 소 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "수박 겉 핥기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "순풍에 돛을 달다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "술에 술 탄 듯 물에 물 탄 듯",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "숭어가 뛰니까 망둥이도 뛴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "숯이 검정 나무란다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쉽기가 손바닥 뒤집기다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "시누이는 고추보다 맵다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "시원찮은 귀신이 사람 잡아간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "시작이 반이다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "신선놀음에 도낏자루 썩는 줄 모른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "십 년 공부 도로 아미타불",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "십 년이면 강산도 변한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "십 리 밖에 있어도 오리나무",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쓸개 빠진 놈",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아끼다 똥 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아는 게 병",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아니 땐 굴뚝에 연기 날까",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아닌 밤중에 홍두깨",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아랫돌 빼서 윗돌 괴고 윗돌 빼서 아랫돌 괴기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아이 싸움이 어른 싸움 된다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "아홉 마리 소에 터럭 하나",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "알아야 면장을 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "약방에 감초",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "양반은 물에 빠져도 개헤엄은 안 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "언 발에 오줌 누기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "엎드려 절 받기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "엎어지면 코 닿을 데",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "자다가 봉창을 두드린다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "자식을 길러봐야 부모 사랑을 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "잘 나가다 삼천포로 빠지다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "장미꽃에는 가시가 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "장부의 한 말이 천금같이 무겁다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "장수가 엄하면 군사가 강하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "장수 나자 용마 났다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "장수를 잡으려면 말부터 쏘아야 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "재주는 곰이 넘고 돈은 되놈이 번다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "접시 물에 코를 박다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "제 논에 물 대기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "제 버릇 개 줄까",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "좋은 일에 마가 든다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "죄짓고 못 산다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "주머니 속의 송곳",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "죽 쒀서 개 줬다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "소 잃고 외양간 고친다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "절이 싫으면 중이 떠나야 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "중이 고기 맛을 알면 절에 빈대가 안 남는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쥐구멍에도 볕 들 날 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "쥐 못 잡는 고양이",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "지는 것이 이기는 것",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "지렁이도 밟으면 꿈틀한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "지성이면 감천",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "짚신도 짝이 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "찬물도 위 아래가 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "찬물도 위 아래가 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "참새가 방앗간을 그냥 지나치랴",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "참새가 아무리 떠들어도 구렁이는 움직이지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "참새가 작아도 일만 잘한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "참새가 죽어도 짹한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "참새 굴레 씌우겠다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "천 리 길도 한 걸음부터",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "첫 술에 배부르랴",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "초록은 동색",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "충신이 죽으면 대나무가 난다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "친구따라 강남간다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "칼로 물 베기",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "칼로 흥한 자 칼로 망한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "콩 심은 데 콩 나고 팥 심은 데 팥 난다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "콩을 팥이라고 우긴다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "콩으로 메주를 쑨다 하여도 곧이듣지 않는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "큰 방죽도 개미구멍으로 무너진다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "타고난 팔자",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "터를 닦아야 집을 짓는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "털도 안 뜯고 먹겠다 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "토끼 둘을 잡으려다 하나도 못 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "티끌 모아 태산",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "팔도에 솥 걸어 놓았다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "팥으로 메주를 쑨대도 곧이듣는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "평안 감사도 저 싫으면 그만이다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "폭풍 전의 고요",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "피는 물보다 진하다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "핑계 없는 무덤이 없다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "하나를 듣고 열을 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "하나를 보고 열을 안다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "하늘 아래 첫 동네",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "하늘이 무너져도 솟아날 구멍이 있다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "하룻강아지 범 무서운 줄 모른다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호랑이 굴에 들어가야 호랑이 새끼를 잡는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호랑이 담배 피울 적",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호랑이 없는 골에 토끼가 왕 노릇 한다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호랑이도 제 말 하면 온다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호랑이에게 물려 가도 정신만 차리면 산다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호미로 막을 것을 가래로 막는다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "호박이 넝쿨째 굴러왔다.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "혹 떼러 갔다 혹 붙여 온다.",
+                                    "sentenceNote": ""
+                                }
+                            ]
+                        },
+                        {
+                            "sentenceLevelName": "끄투 긴단어",
+                            "sentenceData": [
+                                {
+                                    "sentence": "",
+                                    "sentenceNote": ""
+                                }
+                            ]
+                        },
+                        {
+                            "sentenceLevelName": "필적확인란",
+                            "sentenceData": [
+                                {
+                                    "sentence": "흙에서 자란 내 마음 파란 하늘빛",
+                                    "sentenceNote": "정지용 - 향수"
+                                },
+                                {
+                                    "sentence": "넓은 벌 동쪽 끝으로",
+                                    "sentenceNote": "정지용 - 향수"
+                                },
+                                {
+                                    "sentence": "손금에 맑은 강물이 흐르고",
+                                    "sentenceNote": "윤동주 - 소년"
+                                },
+                                {
+                                    "sentence": "이 많은 별빛이 내린 언덕 위에",
+                                    "sentenceNote": "윤동주 - 별 헤는 밤"
+                                },
+                                {
+                                    "sentence": "맑은 강물처럼 조용하고 은근하며",
+                                    "sentenceNote": "유안진 - 지란지교를 꿈꾸며"
+                                },
+                                {
+                                    "sentence": "날마다 새로우며 깊어지고 넓어진다",
+                                    "sentenceNote": "정채봉 - 첫 마음"
+                                },
+                                {
+                                    "sentence": "진실로 내가 그대를 사랑하는 까닭은",
+                                    "sentenceNote": "황동규 - 즐거운 편지"
+                                },
+                                {
+                                    "sentence": "맑은 햇빛으로 반짝반짝 물들이며",
+                                    "sentenceNote": "정한모 - 가을에"
+                                },
+                                {
+                                    "sentence": "꽃초롱 불 밝히듯 눈을 밝힐까",
+                                    "sentenceNote": "박정만 - 작은 연가"
+                                },
+                                {
+                                    "sentence": "햇살도 둥글둥글하게 뭉치는 맑은 날",
+                                    "sentenceNote": "문태주 - 돌의 배"
+                                },
+                                {
+                                    "sentence": "넓음과 깊음을 가슴에 채우며",
+                                    "sentenceNote": "주요한 - 청년이여 노래하다"
+                                },
+                                {
+                                    "sentence": "흙에서 자란 내 마음 파아란 하늘빛",
+                                    "sentenceNote": "정지용 - 향수"
+                                },
+                                {
+                                    "sentence": "큰 바다 넓은 하늘을 우리는 가졌노라",
+                                    "sentenceNote": "김영랑 - 바다로 가자"
+                                },
+                                {
+                                    "sentence": "그대만큼 사랑스러운 사람을 본 일이 없다",
+                                    "sentenceNote": "김남조 - 편지"
+                                },
+                                {
+                                    "sentence": "너무 맑고 초롱한 그 중 하나 별이여",
+                                    "sentenceNote": "박두진 - 별밭에 누워"
+                                },
+                                {
+                                    "sentence": "많고 많은 사람 중에 그대 한 사람",
+                                    "sentenceNote": "나태주 - 들길을 걸으며"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "sentenceLevelName": "끄투 긴단어",
-                    "sentenceData": [
+                    "sentenceLangName": "영어",
+                    "sentenceLevel": [
                         {
-                            "sentence": "",
-                            "sentenceNote": ""
-                        }
-                    ]
-                },
-                {
-                    "sentenceLevelName": "팬그램",
-                    "sentenceData": [
-                        {
-                            "sentence": "",
-                            "sentenceNote": ""
-                        }
-                    ]
-                },
-                {
-                    "sentenceLevelName": "필적확인란",
-                    "sentenceData": [
-                        {
-                            "sentence": "",
-                            "sentenceNote": ""
-                        }
-                    ]
-                },
-                {
-                    "sentenceLevelName": "더미",
-                    "sentenceData": [
-                        {
-                            "sentence": "가",
-                            "sentenceNote": "(명사) 1. 그 아이. 2. '가지다'의 활용형인 '가지고'의 변형. 보조동사 쓰임의 '가지고'도 포함된다."
-                        },
-                        {
-                            "sentence": "가개",
-                            "sentenceNote": "(명사) 1. '홍역'의 경상도 사투리."
+                            "sentenceLevelName": "속담",
+                            "sentenceData": [
+                                {
+                                    "sentence": "The grass is always greener.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Kill two birds with one stone.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't count the chickens before they hatch.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Rome was not built in a day.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "No pain, no gain.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Blood is thicker than water.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "The more, the better.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Between a rock and a hard place.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Haste makes waste.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Walls have ears.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't judge a book by its cover.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "When in Rome, do as the Romans do.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Practice makes perfect.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Better late than never.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't bite off more than you can chew.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Put yourself in someone's shoes.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Actions speak louder than words.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "It's no use crying over spilled milk.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Money doesn't grow on trees.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Out of sight, out of mind.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Easy come, easy go.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Every cloud has a silver lining.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "No news is good news.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Time is money.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Easier said than done.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Let sleeping dog lie.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "As you sow, so shall you reap.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Birds of a feather flock together.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Do to others as you would be done by.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't bury your head in the sand.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Even a worm will turn.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Every Jack has his Jill.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "It never rains but it pours.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Innocence is bliss.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Well begun is half done.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "What's done is done.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "First come, first served.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Like father, like son.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Go home and kick the dog.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Talking to the wall.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Come empty, return empty.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Money talks.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "After a storm comes a calm.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "It's a pie in the sky.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Knowledge is power.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Little and often fills the purse.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Blood will tell.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A rat in a trap.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A big fish in a small pond.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Cloths make the man.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Empty vessels make the most sound.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "It's the tip of the iceberg.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Two heads are better than one.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "He that will steal a pin steal an ox.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "It takes two to tango.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A sound mind in a sound body.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "What goes around comes around.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Time heals all wounds.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Speak of the devil.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "The truth will out.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Finders keepers.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Money begets money.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "All is well that ends well.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "The early bird catches the worm.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Life is not all beer and skittles.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Until death, It's all life.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Live as if you were to die tomorrow.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Life is voyage.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "When the well is full, it will run over.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A good medicine tastes bitter.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A watched pot never boils.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "An eye for an eye.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Easy as rolling off a log.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Boys will be boys.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Company in distress makes distress less.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "The brave get the beauty.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Cut off your nose to spite your face.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Every rose has its thorn.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't cry before you are hurt.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Everything has a beginning.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Reading makes a full man.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Luck comes to those who look after it.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A bad workman blames his tools.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A little knowledge is dangerous.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "One good turn desserves another.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Life admits not of delays.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A bold attempt is a half success.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "He is lifeless that is faultless.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A tiger can't change its stripes.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Don't put all your eggs in one basket.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "A friend is not so soon got as lost.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "After the death, to call the doctor.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Art is long, life is short.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "At a good bargain think twice.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Credit is better than gold.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Asking costs nothing.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Once bitten, twice shy.",
+                                    "sentenceNote": ""
+                                },
+                                {
+                                    "sentence": "Laughter is the best medicine.",
+                                    "sentenceNote": ""
+                                }
+                            ]
                         }
                     ]
                 }
             ]
-        }       
+        }
     ]       
 }       

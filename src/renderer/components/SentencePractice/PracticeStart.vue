@@ -77,7 +77,8 @@ export default {
       failed: 0, // 틀린 문장
       failPerMax: 0, // 틀린 문장과 최대 문장 (프로그레스바 전용)
       accuracy: 100, // 정확도
-      redOption: 'red' // CUD 대응 오타 표시 옵션
+      redOption: 'red', // CUD 대응 오타 표시 옵션
+      language: -1
     }
   },
   methods: {
@@ -90,77 +91,80 @@ export default {
           this.redOption = 'underline'
         }
       })
-      var allSentences = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData.length
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        this.language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        var allSentences = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData.length
+        })
+        var sentencesCount = allSentences
+        var x = Math.floor(Math.random() * (sentencesCount))
+        var sentence1 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note1 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence2 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note2 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence3 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note3 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence4 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note4 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence5 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note5 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence6 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note6 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        })
+        x = Math.floor(Math.random() * (sentencesCount))
+        var sentence7 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence
+        })
+        var note7 = sentencesData.sentences.map((item) => {
+          return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote
+        }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
+        var tempSplit = sentence1[0].split('')
+        for (var i = 0; i < tempSplit.length; i++) {
+          this.now.push({ id: i, style: 'black', char: tempSplit[i] })
+        }
+        this.nowSource = sentence1[0]
+        this.next1 = sentence2[0]
+        this.next2 = sentence3[0]
+        this.next3 = sentence4[0]
+        this.next4 = sentence5[0]
+        this.next5 = sentence6[0]
+        this.next6 = sentence7[0]
+        this.note = note1[0]
+        this.noteNext1 = note2[0]
+        this.noteNext2 = note3[0]
+        this.noteNext3 = note4[0]
+        this.noteNext4 = note5[0]
+        this.noteNext5 = note6[0]
+        this.noteNext6 = note7[0] // vue data 변수에 각 요소를 집어넣음.
       })
-      var sentencesCount = allSentences
-      var x = Math.floor(Math.random() * (sentencesCount))
-      var sentence1 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note1 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence2 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note2 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence3 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note3 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence4 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note4 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence5 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note5 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence6 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note6 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      })
-      x = Math.floor(Math.random() * (sentencesCount))
-      var sentence7 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentence
-      })
-      var note7 = sentencesData.sentences.map((item) => {
-        return item.sentenceLevel[this.level].sentenceData[x].sentenceNote
-      }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
-      var tempSplit = sentence1[0].split('')
-      for (var i = 0; i < tempSplit.length; i++) {
-        this.now.push({ id: i, style: 'black', char: tempSplit[i] })
-      }
-      this.nowSource = sentence1[0]
-      this.next1 = sentence2[0]
-      this.next2 = sentence3[0]
-      this.next3 = sentence4[0]
-      this.next4 = sentence5[0]
-      this.next5 = sentence6[0]
-      this.next6 = sentence7[0]
-      this.note = note1[0]
-      this.noteNext1 = note2[0]
-      this.noteNext2 = note3[0]
-      this.noteNext3 = note4[0]
-      this.noteNext4 = note5[0]
-      this.noteNext5 = note6[0]
-      this.noteNext6 = note7[0] // vue data 변수에 각 요소를 집어넣음.
     },
     arraysEqual: function (a, b) { // 배열이 서로 일치하는지 확인하는 함수
       if (a === b) return true
@@ -193,15 +197,15 @@ export default {
         // 문장 리젠 섹션
         if (this.maxsentences > this.passed + 7) { // 문장 리젠이 더이상 필요 없을 경우 리젠 중단하도록 함
           var allSentences = sentencesData.sentences.map((item) => {
-            return item.sentenceLevel[this.level].sentenceData.length
+            return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData.length
           })
           var sentencesCount = allSentences // 전체 단어 수 가져오기
           var x = Math.floor(Math.random() * (sentencesCount)) // 랜덤 단어 배열 번호
           var nextSentence = sentencesData.sentences.map((item) => {
-            return item.sentenceLevel[this.level].sentenceData[x].sentence // 단어 리젠
+            return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentence // 단어 리젠
           })
           var noteNext = sentencesData.sentences.map((item) => {
-            return item.sentenceLevel[this.level].sentenceData[x].sentenceNote // 각주 리젠
+            return item.sentenceLang[this.language].sentenceLevel[this.level].sentenceData[x].sentenceNote // 각주 리젠
           })
         } else {
           nextSentence = ''
@@ -279,9 +283,18 @@ export default {
       }
       var tempAnswer = this.$refs.answer.value.split('')
       var tempAnswer2 = Hangul.d(this.$refs.answer.value).length
-      tempAnswer.pop()
-      var leng = this.now.length - 1
-      if (this.now.length < (tempAnswer.length + 1)) { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김
+      console.log(this.language)
+      if (this.language === 0) {
+        tempAnswer.pop()
+        var leng = this.now.length - 1
+        var tempAnswerLeng = tempAnswer.length + 1
+        var plus1 = 1
+      } else {
+        leng = this.now.length
+        tempAnswerLeng = tempAnswer.length
+        plus1 = 0
+      }
+      if (this.now.length < (tempAnswerLeng)) { // 스페이스 혹은 마지막에서 사고가 났으면 다음으로 넘김
         this.nextRound()
       } else {
         this.intervalVar = setInterval(() => {
@@ -296,7 +309,7 @@ export default {
               this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
             }
           } else {
-            this.now.splice((i + 1), 1, { id: (i + 1), style: 'black', char: this.now[(i + 1)].char })
+            this.now.splice((i + plus1), 1, { id: (i + plus1), style: 'black', char: this.now[(i + plus1)].char })
           }
         }
       }
