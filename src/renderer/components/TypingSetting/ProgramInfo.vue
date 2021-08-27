@@ -12,6 +12,7 @@
       <li>끄투 한방단어: 끄코위키 (CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/)<br>한방단어/한국어 하위문서 일부 발췌 - 2021.7.30</li>
       <br><span>한국어 문장</span>
       <li>속담: 리브레위키 (CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/) 속담/목록 하위문서 일부 발췌 - 2021.8.7</li>
+      <li>끄투 긴 단어: 끄코위키 (CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/)<br>긴 단어/한국어/ㄱ 문서 일부 발췌 - 2021.7.30</li>
       <li>필적확인란: 티스토리 규장각 (CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.ko) https://john0075.tistory.com/26 글 일부 발췌 - 2021.8.27</li>
       <br><span>영어 문장</span>
       <li>속담: 티스토리 샬롱한 영어와 일상 (CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.ko) https://simplelife77.tistory.com/436 글 일부 발췌 - 2021.8.27</li>
