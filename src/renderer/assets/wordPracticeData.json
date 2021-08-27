@@ -1,888 +1,1748 @@
 {
     "words": [
         { 
-            "wordLevel": [
+            "wordLang": [
                 {
-                    "wordLevelName": "표준어",
-                    "wordData": [
+                    "wordLevel": [
                         {
-                            "wordName": "나날이",
-                            "wordDict": "(부사) 1. 매일매일. 2. 매일매일 조금씩."
+                            "wordLevelName": "표준어",
+                            "wordData": [
+                                {
+                                    "wordName": "나날이",
+                                    "wordDict": "(부사) 1. 매일매일. 2. 매일매일 조금씩."
+                                },
+                                {
+                                    "wordName": "나라",
+                                    "wordDict": "(명사) 일정한 영토와 거기에 사는 사람들로 구성되고, 주권(主權)에 의한 하나의 통치 조직을 가지고 있는 사회 집단."
+                                },
+                                {
+                                    "wordName": "널리",
+                                    "wordDict": "(부사) 범위가 넓게."
+                                },
+                                {
+                                    "wordName": "마앙",
+                                    "wordDict": "(명사) 마소의 안장이나 길마를 얹을 때에 배에 걸쳐서 졸라매는 줄.=뱃대끈."
+                                },
+                                {
+                                    "wordName": "머리",
+                                    "wordDict": "(명사) 사람이나 동물의 목 위의 부분. 눈, 코, 입 따위가 있는 얼굴을 포함하며 머리털이 있는 부분을 이름."
+                                },
+                                {
+                                    "wordName": "말랑말랑",
+                                    "wordDict": "(부사) 매우 또는 여기저기가 야들야들하게 보드랍고 무른 느낌."
+                                },
+                                {
+                                    "wordName": "멍",
+                                    "wordDict": "(명사) 심하게 맞거나 부딪쳐서 살갗 속에 퍼렇게 맺힌 피."
+                                },
+                                {
+                                    "wordName": "미리",
+                                    "wordDict": "(부사) 어떤 일이 생기기 전에. 또는 어떤 일을 하기에 앞서."
+                                },
+                                {
+                                    "wordName": "미안",
+                                    "wordDict": "(명사) 남에게 대하여 마음이 편치 못하고 부끄러움."
+                                },
+                                {
+                                    "wordName": "아랑",
+                                    "wordDict": "(명사) 1. 소주를 곤 뒤에 남은 찌꺼기. 한자-2. 굶주린 이리라는 뜻으로, 무엇에나 탐을 내는 사람을 이르는 말."
+                                },
+                                {
+                                    "wordName": "앙앙",
+                                    "wordDict": "(부사) 1. 어린아이가 크게 우는 소리. 또는 그 모양. 2. 앙탈을 부리며 자꾸 보채는 소리. 또는 그 모양."
+                                },
+                                {
+                                    "wordName": "어머니",
+                                    "wordDict": "(명사) 자기를 낳아 준 여자를 이르거나 부르는 말."
+                                },
+                                {
+                                    "wordName": "이마나",
+                                    "wordDict": "(명사) 아프리카 신화에 나오는 바니아르완다 족의 창조신."
+                                },
+                                {
+                                    "wordName": "잉어",
+                                    "wordDict": "(명사) 잉엇과의 민물고기."
+                                },
+                                {
+                                    "wordName": "라마",
+                                    "wordDict": "(명사) 낙타과의 포유류."
+                                },
+                                {
+                                    "wordName": "라임",
+                                    "wordDict": "(명사) 식물-1. 운향과의 상록 관목. 문학-2. 시가에서, 시행의 일정한 자리에 같은 운을 규칙적으로 다는 일. 또는 그 운."
+                                },
+                                {
+                                    "wordName": "랄라리",
+                                    "wordDict": "(명사) ‘태평소’의 옛말."
+                                },
+                                {
+                                    "wordName": "러닝",
+                                    "wordDict": "(명사) 운동 경기할 때 선수들이 입는 소매 없는 셔츠. 또는 그런 모양의 속옷."
+                                }
+                            ]
                         },
                         {
-                            "wordName": "나라",
-                            "wordDict": "(명사) 일정한 영토와 거기에 사는 사람들로 구성되고, 주권(主權)에 의한 하나의 통치 조직을 가지고 있는 사회 집단."
+                            "wordLevelName": "경상도 사투리",
+                            "wordData": [
+                                {
+                                    "wordName": "가",
+                                    "wordDict": "(명사) 1. 그 아이. 2. '가지다'의 활용형인 '가지고'의 변형. 보조동사 쓰임의 '가지고'도 포함된다."
+                                },
+                                {
+                                    "wordName": "가개",
+                                    "wordDict": "(명사) 1. '홍역'의 경상도 사투리."
+                                },
+                                {
+                                    "wordName": "가그랑비",
+                                    "wordDict": "(명사) 1. '가랑비'의 경상도 사투리"
+                                },
+                                {
+                                    "wordName": "가늘라",
+                                    "wordDict": "(명사) 1. '갓난아이'의 경상도 사투리"
+                                },
+                                {
+                                    "wordName": "가새",
+                                    "wordDict": "(명사) 1. '가위'의 연변말 및 경기도, 경상도, 전라도, 충청도 사투리."
+                                },
+                                {
+                                    "wordName": "가시나",
+                                    "wordDict": "(명사) 1. '계집아이'의 경상도 사투리."
+                                },
+                                {
+                                    "wordName": "거렁뱅이",
+                                    "wordDict": "(명사) 1. '거지'의 강원, 경남, 전남, 평안, 함경, 황해 사투리."
+                                },
+                                {
+                                    "wordName": "고냉이",
+                                    "wordDict": "(명사) 1. '고양이'의 강원도, 경상도, 평안북도, 함경도 사투리."
+                                },
+                                {
+                                    "wordName": "곱신곱신",
+                                    "wordDict": "(부사) 1. '곱실곱실'의 경상남도 사투리."
+                                },
+                                {
+                                    "wordName": "공구",
+                                    "wordDict": "(명사) 1. '식구(食口)'의 경상북도 사투리."
+                                },
+                                {
+                                    "wordName": "구녕",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "궁디",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "근대",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "금마",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "깔미",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꼽다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "끼",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나락",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나사지다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "남구",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "노",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "눈까리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "능글밪다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "니",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "단디",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "대추벌",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도리여",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도치",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "때기",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "땡삐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "마이",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "매매",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "맹글다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무수",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문디",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "물리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미구도적",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "바당",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "발통",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "방구",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "버리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "버큼",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "벌이",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "부삽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "부스깨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "빌",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뼉다구",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "사나",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "살다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "삽짝",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "소래고동",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "수굼포",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "시지부지",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "신나까리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "씻나락",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아구",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아근",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아래",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아바이",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아인교",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "아지매",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "앙이다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "어무이",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "올리다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "우시개",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "우야",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "인차",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "임마",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "잘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "절",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "점마",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "주구",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "주디",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "질겁다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "쪽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "찌득",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "찰지다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "춤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "터리",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "통시",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "파이다",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                }
+                            ]
                         },
                         {
-                            "wordName": "널리",
-                            "wordDict": "(부사) 범위가 넓게."
-                        },
-                        {
-                            "wordName": "마앙",
-                            "wordDict": "(명사) 마소의 안장이나 길마를 얹을 때에 배에 걸쳐서 졸라매는 줄.=뱃대끈."
-                        },
-                        {
-                            "wordName": "머리",
-                            "wordDict": "(명사) 사람이나 동물의 목 위의 부분. 눈, 코, 입 따위가 있는 얼굴을 포함하며 머리털이 있는 부분을 이름."
-                        },
-                        {
-                            "wordName": "말랑말랑",
-                            "wordDict": "(부사) 매우 또는 여기저기가 야들야들하게 보드랍고 무른 느낌."
-                        },
-                        {
-                            "wordName": "멍",
-                            "wordDict": "(명사) 심하게 맞거나 부딪쳐서 살갗 속에 퍼렇게 맺힌 피."
-                        },
-                        {
-                            "wordName": "미리",
-                            "wordDict": "(부사) 어떤 일이 생기기 전에. 또는 어떤 일을 하기에 앞서."
-                        },
-                        {
-                            "wordName": "미안",
-                            "wordDict": "(명사) 남에게 대하여 마음이 편치 못하고 부끄러움."
-                        },
-                        {
-                            "wordName": "아랑",
-                            "wordDict": "(명사) 1. 소주를 곤 뒤에 남은 찌꺼기. 한자-2. 굶주린 이리라는 뜻으로, 무엇에나 탐을 내는 사람을 이르는 말."
-                        },
-                        {
-                            "wordName": "앙앙",
-                            "wordDict": "(부사) 1. 어린아이가 크게 우는 소리. 또는 그 모양. 2. 앙탈을 부리며 자꾸 보채는 소리. 또는 그 모양."
-                        },
-                        {
-                            "wordName": "어머니",
-                            "wordDict": "(명사) 자기를 낳아 준 여자를 이르거나 부르는 말."
-                        },
-                        {
-                            "wordName": "이마나",
-                            "wordDict": "(명사) 아프리카 신화에 나오는 바니아르완다 족의 창조신."
-                        },
-                        {
-                            "wordName": "잉어",
-                            "wordDict": "(명사) 잉엇과의 민물고기."
-                        },
-                        {
-                            "wordName": "라마",
-                            "wordDict": "(명사) 낙타과의 포유류."
-                        },
-                        {
-                            "wordName": "라임",
-                            "wordDict": "(명사) 식물-1. 운향과의 상록 관목. 문학-2. 시가에서, 시행의 일정한 자리에 같은 운을 규칙적으로 다는 일. 또는 그 운."
-                        },
-                        {
-                            "wordName": "랄라리",
-                            "wordDict": "(명사) ‘태평소’의 옛말."
-                        },
-                        {
-                            "wordName": "러닝",
-                            "wordDict": "(명사) 운동 경기할 때 선수들이 입는 소매 없는 셔츠. 또는 그런 모양의 속옷."
+                            "wordLevelName": "끄투 한방단어",
+                            "wordData": [
+                                {
+                                    "wordName": "가녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뜩가뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가린긿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가마후렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가만사뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뿐가뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뿟",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가뿟가뿟",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가읅",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가짓부렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가쯘가쯘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "가스포켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "간두렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "갈구렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "갓세븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "강녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "개녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "개리슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "개울녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "갤쯤갤쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "갯불녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "걀쑴걀쑴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "걀쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "걀쯤걀쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거듦",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거렁거렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거르렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거먕",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거뿐거뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거뿟",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거뿟거뿟",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거욷",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "거짓부렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "건드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "걸그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "검은기쁨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "결련태껸",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "결혼해줘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고기시렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고마깥",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고븜",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고싶",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고읋",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "고체로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "곡뒿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "골쑴골쑴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "곳않",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "과실쨤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "관싕",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "광자로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "광파로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구듫",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구부렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구시렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구읫잫",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "구해줘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "귀붏",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "귀아픔",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "귀틤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그글픠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그뜩그뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그렁그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그렁저렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그레이슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그려줘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그르렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그릏",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그믐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그저긃픠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "그릐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "근드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "귿곻",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "글그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "글렁졀렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "글픠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "긔츌",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기동돓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기버슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기빱",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기쁨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기억해줘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기픠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "기릐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "길쑴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "길쑴길쑴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "길쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "길쯤길쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "길녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "까르똔",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꺼시렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "껄그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "껄렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "껄렁껄렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꼬꾜",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꼬냑",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꽃첼럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꾸부렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꿀렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꿀렁꿀렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "꿜꿜",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "끄렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "끄룽텝",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "끅끅",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "끌그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나이오븀",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나준녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "나선로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "날옺",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "남녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "남유럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "남고덕뿐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "네오디뮴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "넬슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "넵튠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "노스텝",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "노듈",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "노스럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "노휵",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "논두렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "논드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "논우렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "누렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "누렁누렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "누에시렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "눈도궃",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "느렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "느렁느렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "느냔",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "느슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "느냘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "늘흿늘흿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "니오븀",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "니맣",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "니벨슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "니컬슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닉슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닐슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "님잫",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "다우슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "다이디뮴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "다들모엻",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "다크오픈",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "다봊",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닥서렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닥울녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "단도렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "단미시럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닫아줘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "달구렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "달로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "닭울녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "당밀시럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "당근마켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "대잠로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "대숳",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "당맣",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "당짖",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "더블넬슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "더블마켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "던드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덜렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덜렁덜렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덜그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덩그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덩굴시렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "데이비슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "데카라켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "데엋",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "덴드로븀",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뎅그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뎌렁이렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도린꼍",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도텹",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "도톨왐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "독무럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "독서클럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "돌꼇",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "돌싱클럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "동녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "동유럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "동솣",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "된디읃",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "된지읒",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "된히읗",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "두렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "두듥",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "둘훕",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "돌암탉",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뒤꼍",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뒤마클럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "드렁드렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "드르렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "드레이븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "드릏",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "들녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "들옄",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "들렁들렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "들쭉쨤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "디디뮴",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "디킨슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "디스켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "디지캐럿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "딥지즑",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "땅뗌",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "떠렁떠렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "떨렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "떨렁떨렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "떨그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뗑그렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뚤렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "뚤렁뚤렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "라듐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "라켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "라바펍",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "램로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "러키세븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "러버라켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "럭키세븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "레슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "레이븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "레드자켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로듐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로빈슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로버트슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "로마클럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "롤린슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "루비듐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "루테튬",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "리튬",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "리븐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "리노잭슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "리처드슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "리츨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "마이컬슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "마뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "마음탓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "말쯤",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "말왐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "맞춤부엌",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "매럿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "매디슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "매츳매츳",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "메이슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "메소마켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "멘델레븀",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "며츨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "모리슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "모켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "모듈",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "모밇",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "모얗",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "몸픠",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "묏긑",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "묏긿",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "묏얺",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무뤂",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무슨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무렁무렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무뜩무뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무한티켓",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "무럽",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "묵은지앝",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문뜩문뜩",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문칮",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "문칮문칮",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "물렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "물녘",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "물렁물렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "물구렁",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미라시듐",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미쁨",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미랋",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "미츳미츳",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "민빋",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "민틋",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "wordLevelName": "경상도 사투리",
-                    "wordData": [
-                        {
-                            "wordName": "가",
-                            "wordDict": "(명사) 1. 그 아이. 2. '가지다'의 활용형인 '가지고'의 변형. 보조동사 쓰임의 '가지고'도 포함된다."
-                        },
-                        {
-                            "wordName": "가개",
-                            "wordDict": "(명사) 1. '홍역'의 경상도 사투리."
-                        },
-                        {
-                            "wordName": "가그랑비",
-                            "wordDict": "(명사) 1. '가랑비'의 경상도 사투리"
-                        },
-                        {
-                            "wordName": "가늘라",
-                            "wordDict": "(명사) 1. '갓난아이'의 경상도 사투리"
-                        },
-                        {
-                            "wordName": "가새",
-                            "wordDict": "(명사) 1. '가위'의 연변말 및 경기도, 경상도, 전라도, 충청도 사투리."
-                        },
-                        {
-                            "wordName": "가시나",
-                            "wordDict": "(명사) 1. '계집아이'의 경상도 사투리."
-                        },
-                        {
-                            "wordName": "거렁뱅이",
-                            "wordDict": "(명사) 1. '거지'의 강원, 경남, 전남, 평안, 함경, 황해 사투리."
-                        },
-                        {
-                            "wordName": "고냉이",
-                            "wordDict": "(명사) 1. '고양이'의 강원도, 경상도, 평안북도, 함경도 사투리."
-                        },
-                        {
-                            "wordName": "곱신곱신",
-                            "wordDict": "(부사) 1. '곱실곱실'의 경상남도 사투리."
-                        },
-                        {
-                            "wordName": "공구",
-                            "wordDict": "(명사) 1. '식구(食口)'의 경상북도 사투리."
-                        },
-                        {
-                            "wordName": "구녕",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "궁디",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "근대",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "금마",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "깔미",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꼽다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "끼",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "나",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "나락",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "나사지다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "남구",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "노",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "눈까리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "능글밪다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "니",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "단디",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "대추벌",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "도리여",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "도치",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "때기",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "땡삐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "마이",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "매매",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "맹글다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "무수",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "문디",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "물리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "미구도적",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "미리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "바당",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "발통",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "방구",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "버리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "버큼",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "벌이",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "부삽",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "부스깨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "빌",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "뼉다구",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "사나",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "살다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "삽짝",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "소래고동",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "수굼포",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "시지부지",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "신나까리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "씻나락",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아구",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아근",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아래",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아바이",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아인교",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "아지매",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "앙이다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "어무이",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "올리다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "우시개",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "우야",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "인차",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "임마",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "잘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "절",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "점마",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "주구",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "주디",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "질겁다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "쪽",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "찌득",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "찰지다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "춤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "터리",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "통시",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "파이다",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        }
-                    ]
-                },
-                {
-                    "wordLevelName": "끄투 한방단어",
-                    "wordData": [
-                        {
-                            "wordName": "가녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뜩",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뜩가뜩",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가린긿",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가마후렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가만사뿐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뿐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뿐가뿐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뿟",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가뿟가뿟",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가읅",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가짓부렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가쯘가쯘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "가스포켓",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "간두렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "갈구렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "갓세븐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "강녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "개녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "개리슨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "개울녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "갤쯤갤쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "갯불녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "걀쑴걀쑴",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "걀쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "걀쯤걀쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거듦",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거렁거렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거르렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거먕",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거뿐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거뿐거뿐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거뿟",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거뿟거뿟",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거욷",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "거짓부렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "건드렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "걸그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "검은기쁨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "결련태껸",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "결혼해줘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고기시렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고마깥",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고븜",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고싶",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고읋",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "고체로켓",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "곡뒿",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "골쑴골쑴",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "곳않",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "과실쨤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "관싕",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "광자로켓",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "광파로켓",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구듫",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구부렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구시렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구읫잫",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "구해줘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "귀붏",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "귀아픔",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "귀틤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그글픠",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그뜩",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그뜩그뜩",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그렁그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그렁저렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그레이슨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그려줘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그르렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그릏",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그믐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그저긃픠",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "그릐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "근드렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "귿곻",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "글그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "글렁졀렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "글픠",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "긔츌",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기동돓",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기버슨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기븐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기빱",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기쁨",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기억해줘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기픠",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "기릐",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "길쑴",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "길쑴길쑴",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "길쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "길쯤길쯤",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "길녘",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "까르똔",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꺼시렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "껄그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "껄렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "껄렁껄렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꼬꾜",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꼬냑",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꽃첼럽",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꾸부렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꿀렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꿀렁꿀렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "꿜꿜",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "끄렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "끄룽텝",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "끅끅",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        },
-                        {
-                            "wordName": "끌그렁",
-                            "wordDict": "낱말 뜻 데이터가 없습니다."
-                        }
-                    ]
-                },
-                {
-                    "wordLevelName": "비속어/욕설",
-                    "wordData": [
-                        {
-                            "wordName": "준비중",
-                            "wordDict": "아직 다 안 만들었어요."
+                    "wordLevel": [
+                        {
+                            "wordLevelName": "표준어",
+                            "wordData": [
+                                {
+                                    "wordName": "debate",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "concern",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "priority",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "assume",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "universal",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "domain",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "kinship",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "spectific",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "aspect",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "reject",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "notion",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "willingly",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "demon",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "gender",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "stance",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "society",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "entrance",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "spirited",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "racial",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "ethnic",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "border",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "envision",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "visionary",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "argument",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "urgent",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "address",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "literacy",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "selection",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "utilize",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "track",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "fitness",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "measure",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "birthrate",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "flourish",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                },
+                                {
+                                    "wordName": "initially",
+                                    "wordDict": "낱말 뜻 데이터가 없습니다."
+                                }
+                            ]
                         }
                     ]
                 }
