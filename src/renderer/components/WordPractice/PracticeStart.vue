@@ -96,41 +96,44 @@ export default {
           this.redOption = 'underline'
         }
       })
-      var allWords = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData.length
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        this.language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        var allWords = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData.length
+        })
+        var wordsCount = allWords
+        var x = Math.floor(Math.random() * (wordsCount))
+        var word1 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordName
+        })
+        var dict1 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordDict
+        })
+        x = Math.floor(Math.random() * (wordsCount))
+        var word2 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordName
+        })
+        var dict2 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordDict
+        })
+        x = Math.floor(Math.random() * (wordsCount))
+        var word3 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordName
+        })
+        var dict3 = wordsData.words.map((item) => {
+          return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordDict
+        }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
+        var tempSplit = word1[0].split('')
+        for (var i = 0; i < tempSplit.length; i++) {
+          this.now.push({ id: i, style: 'black', char: tempSplit[i] })
+        }
+        this.nowSource = word1[0]
+        this.next1 = word2[0]
+        this.next2 = word3[0]
+        this.dict = dict1[0]
+        this.dictNext1 = dict2[0]
+        this.dictNext2 = dict3[0] // vue data 변수에 각 요소를 집어넣음.
       })
-      var wordsCount = allWords
-      var x = Math.floor(Math.random() * (wordsCount))
-      var word1 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordName
-      })
-      var dict1 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordDict
-      })
-      x = Math.floor(Math.random() * (wordsCount))
-      var word2 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordName
-      })
-      var dict2 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordDict
-      })
-      x = Math.floor(Math.random() * (wordsCount))
-      var word3 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordName
-      })
-      var dict3 = wordsData.words.map((item) => {
-        return item.wordLevel[this.level].wordData[x].wordDict
-      }) // 이 뭉탱이는 좀 비효율적인 것 같은데 나중에 손보는걸로
-      var tempSplit = word1[0].split('')
-      for (var i = 0; i < tempSplit.length; i++) {
-        this.now.push({ id: i, style: 'black', char: tempSplit[i] })
-      }
-      this.nowSource = word1[0]
-      this.next1 = word2[0]
-      this.next2 = word3[0]
-      this.dict = dict1[0]
-      this.dictNext1 = dict2[0]
-      this.dictNext2 = dict3[0] // vue data 변수에 각 요소를 집어넣음.
     },
     arraysEqual: function (a, b) { // 배열이 서로 일치하는지 확인하는 함수
       if (a === b) return true
@@ -159,15 +162,15 @@ export default {
         // 단어 리젠 섹션
         if (this.maxwords > this.passed + 3) {
           var allWords = wordsData.words.map((item) => {
-            return item.wordLevel[this.level].wordData.length
+            return item.wordLang[this.language].wordLevel[this.level].wordData.length
           })
           var wordsCount = allWords // 전체 단어 수 가져오기
           var x = Math.floor(Math.random() * (wordsCount)) // 랜덤 단어 배열 번호
           var nextWord = wordsData.words.map((item) => {
-            return item.wordLevel[this.level].wordData[x].wordName // 단어 리젠
+            return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordName // 단어 리젠
           })
           var dictNext = wordsData.words.map((item) => {
-            return item.wordLevel[this.level].wordData[x].wordDict // 낱말 뜻 리젠
+            return item.wordLang[this.language].wordLevel[this.level].wordData[x].wordDict // 낱말 뜻 리젠
           })
         } else {
           nextWord = ''

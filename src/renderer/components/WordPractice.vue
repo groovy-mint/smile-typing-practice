@@ -9,19 +9,36 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron'
+import wordsData from '@/assets/wordPracticeData.json'
 export default{
   name: 'word-practice-menu',
   data () {
     return {
       lvlList: [
-        { id: 0, title: '표준어', route: '/word-practice/start?lvl=0&title=표준어' },
-        { id: 1, title: '경상도 사투리', route: '/word-practice/start?lvl=1&title=경상도 사투리' },
-        // { id: 2, title: '유행어/밈', route: '/word-practice/start?lvl=2&title=유행어/밈' },
-        { id: 3, title: '끄투 한방단어', route: '/word-practice/start?lvl=2&title=끄투 한방단어' },
-        // { id: 4, title: '비속어/욕설', route: '/word-practice/start?lvl=4&title=비속어/욕설' },
-        { id: 6, title: '뒤로', route: '*' }
+        { id: 99, title: '뒤로', route: '*' }
       ]
     }
+  },
+  methods: {
+    initialSetting: function () {
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        console.log(result)
+        var language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        var menuLeng = wordsData.words.map((item) => {
+          return item.wordLang[language].wordLevel.length
+        })
+        for (var i = 0; i < menuLeng; ++i) {
+          var menuName = wordsData.words.map((item) => {
+            return item.wordLang[language].wordLevel[i].wordLevelName
+          })
+          this.lvlList.splice(i, 0, { id: i, title: menuName[0], route: '/word-practice/start?lvl=' + i + '&title=' + menuName[0] })
+        }
+      })
+    }
+  },
+  beforeMount () {
+    this.initialSetting()
   }
 }
 </script>
