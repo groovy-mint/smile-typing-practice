@@ -15,7 +15,7 @@
 </template>
 
 <script>
-
+import { ipcRenderer } from 'electron'
 export default{
 
   props: {
@@ -52,11 +52,21 @@ export default{
           : this.accuracy >= '80' ? this.accuracyRate = '조금만 더 정확히!'
             : this.accuracyRate = '자리 연습부터 다시 하는 게 어떨까요?'
       }
+    },
+    writeReport: function () {
+      ipcRenderer.invoke('getStoreValue', 'wordReports').then((result) => {
+        var leng = result.length
+        result.push({ id: leng, title: this.title, accuracy: this.accuracy, typnum: this.typnum, time: this.time })
+        console.log(result)
+        ipcRenderer.invoke('setStoreValue', 'wordReports', result)
+      })
     }
   },
   beforeMount () {
     this.showResult()
-    console.log(this.level)
+  },
+  mounted () {
+    this.writeReport()
   }
 }
 </script>

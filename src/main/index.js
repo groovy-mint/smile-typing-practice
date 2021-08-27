@@ -85,6 +85,22 @@ function createWindow () {
     sentenceMax: {
       type: 'integer',
       default: 40
+    },
+    keyReports: {
+      type: 'array',
+      default: []
+    },
+    wordReports: {
+      type: 'array',
+      default: []
+    },
+    sentenceReports: {
+      type: 'array',
+      default: []
+    },
+    articleReports: {
+      type: 'array',
+      default: []
     }
   }
 
@@ -97,7 +113,7 @@ function createWindow () {
     return store.set(key, value)
   })
 
-  console.log(store.get('wordCenter'))
+  console.log(store.get('sentenceReports'))
 
   mainWindow.loadURL(winURL)
 

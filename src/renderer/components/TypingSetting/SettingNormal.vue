@@ -245,7 +245,8 @@ a{
   border-bottom: 0px;
 }
 .settingCon div:last-child a{
-  color: #999
+  color: #999;
+  transition: all 0.15s;
 }
 .settingCon div:last-child a:hover{
   color: black
