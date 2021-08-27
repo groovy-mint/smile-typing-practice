@@ -9,22 +9,38 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron'
+import articlesData from '@/assets/articlePracticeData.json'
 export default{
   name: 'key-practice-menu',
   data () {
     return {
       lvlList: [
-        { id: 0, title: '애국가', route: '/article-practice/start?lvl=0&title=애국가' },
-        { id: 1, title: '별 헤는 밤', route: '/article-practice/start?lvl=1&title=별 헤는 밤' },
-        { id: 2, title: '서시', route: '/article-practice/start?lvl=2&title=서시' },
-        { id: 3, title: '쉽게 쓰여진 시', route: '/article-practice/start?lvl=3&title=쉽게 쓰여진 시' },
         // { id: 4, title: '동백꽃', route: '/article-practice/start?lvl=4&title=동백꽃' },
-        { id: 5, title: '님의 침묵', route: '/article-practice/start?lvl=5&title=님의 침묵' },
-        { id: 6, title: '대한민국 헌법', route: '/article-practice/start?lvl=6&title=대한민국 헌법' },
         // { id: 7, title: '사용자 정의', route: '*' },
-        { id: 7, title: '뒤로', route: '*' }
+        { id: 99, title: '뒤로', route: '*' }
       ]
     }
+  },
+  methods: {
+    initialSetting: function () {
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        console.log(result)
+        var language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        var menuLeng = articlesData.articles.map((item) => {
+          return item.articleLang[language].articleLevel.length
+        })
+        for (var i = 0; i < menuLeng; ++i) {
+          var menuName = articlesData.articles.map((item) => {
+            return item.articleLang[language].articleLevel[i].articleLevelName
+          })
+          this.lvlList.splice(i, 0, { id: i, title: menuName[0], route: '/article-practice/start?lvl=' + i + '&title=' + menuName[0] })
+        }
+      })
+    }
+  },
+  beforeMount () {
+    this.initialSetting()
   }
 }
 </script>

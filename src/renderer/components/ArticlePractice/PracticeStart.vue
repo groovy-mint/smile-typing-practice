@@ -85,7 +85,8 @@ export default {
       answer1: '',
       answer2: '',
       answer3: '',
-      redOption: 'red' // CUD 대응 오타 표시 변수
+      redOption: 'red', // CUD 대응 오타 표시 변수
+      language: -1
     }
   },
   methods: {
@@ -95,53 +96,56 @@ export default {
           this.redOption = 'underline'
         }
       })
-      this.line0 = []
-      this.line1 = []
-      this.line2 = []
-      this.line3 = []
-      this.answer0 = ''
-      this.answer1 = ''
-      this.answer2 = ''
-      this.answer3 = ''
-      var j = this.passed
-      var sentencesCount = articlesData.articles.map((item) => {
-        return item.articleLevel[this.level].sentenceData
-      })
-      this.maxSentence = sentencesCount[0].length // 최대 문장 개수
-      var line
-      for (var x = j; x < (j + 4); x++) { // 라인 별 문장 리젠 반복문
-        var tempSentence = articlesData.articles.map((item) => {
-          return item.articleLevel[this.level].sentenceData[x].sentence
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져오기
+        this.language = (result === 'KO') ? 0 : (result === 'EN') ? 1 : 2 // 언어 종류 정수로 변환
+        this.line0 = []
+        this.line1 = []
+        this.line2 = []
+        this.line3 = []
+        this.answer0 = ''
+        this.answer1 = ''
+        this.answer2 = ''
+        this.answer3 = ''
+        var j = this.passed
+        var sentencesCount = articlesData.articles.map((item) => {
+          return item.articleLang[this.language].articleLevel[this.level].sentenceData
         })
-        var tempSplit = tempSentence[0].split('')
-        switch (x % 4) { // 집어넣을 위치 결정
-          case 0:
-            line = this.line0
-            this.style0 = 'black'
-            break
-          case 1:
-            line = this.line1
-            this.style1 = 'gray'
-            break
-          case 2:
-            line = this.line2
-            this.style2 = 'gray'
-            break
-          case 3:
-            line = this.line3
-            this.style3 = 'gray'
-            break
+        this.maxSentence = sentencesCount[0].length // 최대 문장 개수
+        var line
+        for (var x = j; x < (j + 4); x++) { // 라인 별 문장 리젠 반복문
+          var tempSentence = articlesData.articles.map((item) => {
+            return item.articleLang[this.language].articleLevel[this.level].sentenceData[x].sentence
+          })
+          var tempSplit = tempSentence[0].split('')
+          switch (x % 4) { // 집어넣을 위치 결정
+            case 0:
+              line = this.line0
+              this.style0 = 'black'
+              break
+            case 1:
+              line = this.line1
+              this.style1 = 'gray'
+              break
+            case 2:
+              line = this.line2
+              this.style2 = 'gray'
+              break
+            case 3:
+              line = this.line3
+              this.style3 = 'gray'
+              break
+          }
+          for (var i = 0; i < tempSplit.length; i++) { // 라인에 글자 하나씩 집어넣음
+            line.push({ id: i, style: 'black', char: tempSplit[i] })
+          }
         }
-        for (var i = 0; i < tempSplit.length; i++) { // 라인에 글자 하나씩 집어넣음
-          line.push({ id: i, style: 'black', char: tempSplit[i] })
-        }
-      }
-      var sourceSentence = articlesData.articles.map((item) => { // 현재 문장 원본 가져옴
-        return item.articleLevel[this.level].sentenceData[j].sentence
+        var sourceSentence = articlesData.articles.map((item) => { // 현재 문장 원본 가져옴
+          return item.articleLang[this.language].articleLevel[this.level].sentenceData[j].sentence
+        })
+        this.nowSource = sourceSentence[0]
+        console.log(this.nowSource)
+        this.answerInput0 = 'block'
       })
-      this.nowSource = sourceSentence[0]
-      console.log(this.nowSource)
-      this.answerInput0 = 'block'
     },
     arraysEqual: function (a, b) { // 배열이 서로 일치하는지 확인하는 함수
       if (a === b) return true
@@ -207,7 +211,7 @@ export default {
           this.$router.push('/article-practice/end?acr=' + this.accuracy + '&typnum=' + this.typePerMin + '&title=' + this.title + '&lvl=' + this.level + '&time=' + this.minDisplay + ':' + this.secDisplay)
         } else {
           var nextSource = articlesData.articles.map((item) => { // 다음 문장 원본 가져옴
-            return item.articleLevel[this.level].sentenceData[(this.passed + 1)].sentence
+            return item.articleLang[this.language].articleLevel[this.level].sentenceData[(this.passed + 1)].sentence
           })
           this.nowSource = nextSource[0]
           this.passed = this.passed + 1
