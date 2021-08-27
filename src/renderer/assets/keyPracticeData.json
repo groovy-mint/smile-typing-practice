@@ -213,52 +213,52 @@
                                         {
                                             "keyName": "1",
                                             "keyCode": "Digit1",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "2",
                                             "keyCode": "Digit2",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "3",
                                             "keyCode": "Digit3",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "4",
                                             "keyCode": "Digit4",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "5",
                                             "keyCode": "Digit5",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "6",
                                             "keyCode": "Digit6",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "7",
                                             "keyCode": "Digit7",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "8",
                                             "keyCode": "Digit8",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "9",
                                             "keyCode": "Digit9",
-                                            "keyShift": true
+                                            "keyShift": false
                                         },
                                         {
                                             "keyName": "0",
                                             "keyCode": "Digit0",
-                                            "keyShift": true
+                                            "keyShift": false
                                         }
                                     ]
                                 }
