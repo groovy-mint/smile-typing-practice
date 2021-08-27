@@ -47,10 +47,6 @@ export default{
         this.accuracy === '100' ? this.accuracyRate = '참말로 잘했심더!'
           : this.accuracy >= '80' ? this.accuracyRate = '쫌 몬해도 괘안타!'
             : this.accuracyRate = '니 머꼬? 사람이 아이가?'
-      } else if (this.level === '2') {
-        this.accuracy === '100' ? this.accuracyRate = '잘했음'
-          : this.accuracy >= '80' ? this.accuracyRate = '쫌 치네 ㅋㅋ'
-            : this.accuracyRate = '버근가?'
       } else {
         this.accuracy === '100' ? this.accuracyRate = '참 잘했어요!'
           : this.accuracy >= '80' ? this.accuracyRate = '조금만 더 정확히!'
