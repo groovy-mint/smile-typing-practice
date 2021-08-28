@@ -141,6 +141,7 @@
 @media (prefers-color-scheme: dark) {
   /* body{background: linear-gradient( to right, #011016, #000);} */
   body{background: linear-gradient( to right, #131414, #191b1f);}
+  #windowControl button{filter: invert(100%);}
   #windowControl button:hover{background: darkgray;}
   a{color:white}
 }
