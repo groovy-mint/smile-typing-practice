@@ -1,5 +1,5 @@
 <template>
-  <div id="typeWrapper">
+  <div id="typeWrapper" @click="focusOnForm()">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><img src="~@/assets/back.svg" alt="Back"></router-link>단어 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeReqBox" ref="isCenter0">
       <div><span id="prev2" v-for="item in prev2" v-bind:key="item.id" v-bind:class="item.style">{{ item.char }}</span></div>

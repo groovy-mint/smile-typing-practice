@@ -1,5 +1,5 @@
 <template>
-  <div id="typeWrapper">
+  <div id="typeWrapper" @click="focusOnForm()">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="*"><img src="~@/assets/back.svg" alt="Back"></router-link>문장 연습</p><p class="subMenuTitle">{{ title }}</p>
     <div class="typeInnerWrapper">
         <div class="typePrevBox">
