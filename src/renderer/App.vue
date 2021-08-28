@@ -83,8 +83,8 @@
   #windowControl{display:flex;z-index: 7;padding:5px;text-align: right;position: fixed;width:100%;top:0;height: 30px;}
   #windowControl div:nth-child(1){width:100%}
   #windowControl div:nth-child(2){margin-right:10px;min-width: 100px;}
-  #windowControl button{background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
-  button img{padding:1px;width:20px;height:20px;margin:0 2.5px}
+  #windowControl button{width:30px;height:30px;background-color: rgba(0, 0, 0, 0);border:none;border-radius: 100%;padding: 1px;transition:background-color 0.15s;}
+  button img{padding:3px;width:20px;height:20px;}
   button:focus{ 	
     border: none;
     outline:none;
