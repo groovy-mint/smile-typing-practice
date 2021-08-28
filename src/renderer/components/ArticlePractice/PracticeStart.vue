@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="typeInfoBox">
-      <div><div><span>진행도</span><span id="passed">{{ passed }}</span>/<span>{{ maxSentence }}</span></div><progress class="progress" :max="maxSentence" :value="passed"></progress></div>
+      <div><div><span>진행도</span><span id="passed">{{ passed }}</span><span>/</span><span>{{ maxSentence }}</span></div><progress class="progress" :max="maxSentence" :value="passed"></progress></div>
       <div><div><span>타수</span><span id="passed">{{ typePerMin }}</span><span>타/분</span></div><progress class="progress" max="1500" :value="typePerMin"></progress></div>
       <div><div><span>정확도</span><span id="failed">{{ accuracy }}</span><span>%</span></div><progress class="progress" :max="accuracyChars" :value="accuracyChars - failed"></progress></div>
       <div><div><span>{{ minDisplay }}:{{ secDisplay }}</span></div></div>

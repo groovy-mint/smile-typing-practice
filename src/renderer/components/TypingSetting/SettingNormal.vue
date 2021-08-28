@@ -143,14 +143,23 @@ export default {
     langSet: function (lang) {
       ipcRenderer.invoke('setStoreValue', 'language', lang)
       ipcRenderer.invoke('setStoreValue', 'keyboard', 0)
+      this.keyMaxSet()
+      this.wordMaxSet()
+      this.sentenceMaxSet()
       this.settingRender()
     },
     keyboardSet: function (k) {
       ipcRenderer.invoke('setStoreValue', 'keyboard', k)
+      this.keyMaxSet()
+      this.wordMaxSet()
+      this.sentenceMaxSet()
       this.settingRender()
     },
     cudSet: function (bool) {
       ipcRenderer.invoke('setStoreValue', 'cud', bool)
+      this.keyMaxSet()
+      this.wordMaxSet()
+      this.sentenceMaxSet()
       this.settingRender()
     },
     keyMaxSet: function () {
@@ -171,6 +180,9 @@ export default {
     },
     wordCenterSet: function (bool) {
       ipcRenderer.invoke('setStoreValue', 'wordCenter', bool)
+      this.keyMaxSet()
+      this.wordMaxSet()
+      this.sentenceMaxSet()
       this.settingRender()
     },
     sentenceMaxSet: function () {
