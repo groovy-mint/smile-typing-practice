@@ -139,5 +139,7 @@ thead th:nth-child(5) {
   b, span, p, input, h3, li{color:#eee}
   .mainMenuTitle img{filter: invert(100%);}
   .mainMenuTitle a:hover img{background:#bbb}
+  table{color:#eee}
+  .category>a:hover{color: #eee;}
 }
 </style>
