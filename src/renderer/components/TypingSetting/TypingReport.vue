@@ -2,10 +2,14 @@
   <div id="typeWrapper">
     <p class="mainMenuTitle"><router-link ondragstart="return false" to="/typing-setting"><img src="~@/assets/back.svg" alt="Back"></router-link>환경설정</p><p class="subMenuTitle">기록</p>
     <div class="category">
-      <a @click="category = 0;importReport()">자리 연습</a>
-      <a @click="category = 1;importReport()">단어 연습</a>
-      <a @click="category = 2;importReport()">문장 연습</a>
-      <a @click="category = 3;importReport()">긴 글 연습</a>
+      <a v-if="category === 0" class="activated">자리 연습</a>
+      <a v-if="category !== 0" @click="category = 0;importReport()">자리 연습</a>
+      <a v-if="category === 1" class="activated">단어 연습</a>
+      <a v-if="category !== 1" @click="category = 1;importReport()">단어 연습</a>
+      <a v-if="category === 2" class="activated">문장 연습</a>
+      <a v-if="category !== 2" @click="category = 2;importReport()">문장 연습</a>
+      <a v-if="category === 3" class="activated">긴 글 연습</a>
+      <a v-if="category !== 3" @click="category = 3;importReport()">긴 글 연습</a>
     </div>
     <div>
       <table style="width:100%">
@@ -13,7 +17,7 @@
           <th>번호</th>
           <th>종류</th>
           <th>정확도</th>		
-          <th>타수</th>
+          <th>타수 (타/분)</th>
           <th>경과시간</th>
         </tr>
         <tr v-for="item in report" v-bind:key="item.id">
@@ -96,6 +100,10 @@ export default {
 }
 .category>a:hover{
   color: #000;
+}
+.activated{
+  color:black;
+  text-decoration: underline;
 }
 table {
   table-layout: fixed;
