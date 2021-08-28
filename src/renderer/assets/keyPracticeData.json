@@ -211,54 +211,54 @@
                                 {
                                     "keyData": [
                                         {
-                                            "keyName": "1",
+                                            "keyName": "!",
                                             "keyCode": "Digit1",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "2",
+                                            "keyName": "@",
                                             "keyCode": "Digit2",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "3",
+                                            "keyName": "#",
                                             "keyCode": "Digit3",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "4",
+                                            "keyName": "$",
                                             "keyCode": "Digit4",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "5",
+                                            "keyName": "%",
                                             "keyCode": "Digit5",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "6",
+                                            "keyName": "^",
                                             "keyCode": "Digit6",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "7",
+                                            "keyName": "&",
                                             "keyCode": "Digit7",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "8",
+                                            "keyName": "*",
                                             "keyCode": "Digit8",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "9",
+                                            "keyName": "(",
                                             "keyCode": "Digit9",
-                                            "keyShift": false
+                                            "keyShift": true
                                         },
                                         {
-                                            "keyName": "0",
+                                            "keyName": ")",
                                             "keyCode": "Digit0",
-                                            "keyShift": false
+                                            "keyShift": true
                                         }
                                     ]
                                 }
