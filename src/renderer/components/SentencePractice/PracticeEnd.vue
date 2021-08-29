@@ -50,8 +50,8 @@ export default{
   },
   methods: {
     showResult: function () {
-      this.accuracy === '100' ? this.accuracyRate = '아주 정확해요!'
-        : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 정확하게!'
+      this.accuracy === '100' ? this.accuracyRate = '참 잘했어요!'
+        : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 정확히!'
           : this.accuracy <= '0' ? this.accuracyRate = '타자연습으로 장난치지 말아요..'
             : this.accuracyRate = '늦어도 좋으니 천천히..'
     },
