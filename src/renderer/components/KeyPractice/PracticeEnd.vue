@@ -43,9 +43,9 @@ export default{
   },
   methods: {
     showResult: function () {
-      this.accuracy === '100' && this.level === '4' ? this.accuracyRate = '좋아요! 단어 연습을 해보는 게 어떨까요?'
+      this.accuracy === '100' && this.level === '5' ? this.accuracyRate = '좋아요! 단어 연습을 해보는 게 어떨까요?'
         : this.accuracy === '100' ? this.accuracyRate = '잘했어요! 다음 단계로 넘어가도 좋아요.'
-          : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 노력해봐요!'
+          : this.accuracy >= '90' ? this.accuracyRate = '아깝다! 조금만 더 연습해보아요!'
             // : this.accuracy <= '-3000' ? this.accuracyRate = '오타의 신이 되셨습니다. 축하해요.'
             // : this.accuracy <= '-2000' ? this.accuracyRate = '진짜 뭐하세요ㅋㅋ 키보드 닳겠네'
             // : this.accuracy <= '-1000' ? this.accuracyRate = '뭐가 불만이에요 도대체ㅠㅠ'

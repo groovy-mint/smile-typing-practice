@@ -49,7 +49,7 @@ export default{
             : this.accuracyRate = '니 머꼬? 사람이 아이가?'
       } else {
         this.accuracy === '100' ? this.accuracyRate = '참 잘했어요!'
-          : this.accuracy >= '80' ? this.accuracyRate = '조금만 더 정확히!'
+          : this.accuracy >= '80' ? this.accuracyRate = '아깝다! 조금만 더 정확히!'
             : this.accuracyRate = '자리 연습부터 다시 하는 게 어떨까요?'
       }
     },
