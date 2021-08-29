@@ -34,7 +34,7 @@
     "rebuild": "electron-rebuild -f --arch=arm64 "
   },
   "build": {
-    "productName": "Smile Typing Beta",
+    "productName": "Smile Typing",
     "appId": "com.smilecreativelab.smiletyping",
     "directories": {
       "output": "build"
