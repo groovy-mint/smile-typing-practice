@@ -229,7 +229,7 @@ export default {
       }
       for (var i = 0; i < leng; i++) { // 오타 검사
         if (this.arraysEqual(Hangul.d(this.now[i].char, true)[0], (Hangul.d(tempAnswer[i], true)[0])) === false) {
-          this.now.splice(i, 1, { id: i, style: 'red', char: this.now[i].char })
+          this.now.splice(i, 1, { id: i, style: this.redOption, char: this.now[i].char })
         } else {
           this.now.splice(i, 1, { id: i, style: 'black', char: this.now[i].char })
         }
@@ -372,6 +372,10 @@ input:focus {outline:none;}
 .black{
   color:black;
 }
+.underline{
+  background: black;
+  color:white;
+}
 #next1,#next2{
   color: gray;
 }
@@ -426,6 +430,7 @@ progress::-webkit-progress-value {
   .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
   #next1,#next2{color: #777;}
   #dict{color:#777}
+  .underline{background: #eee;color:black;}
   progress{border: 1px solid #eee;}
   progress::-webkit-progress-value {background: #eee;}
 }

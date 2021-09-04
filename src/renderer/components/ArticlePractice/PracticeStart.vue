@@ -144,6 +144,7 @@ export default {
         })
         this.nowSource = sourceSentence[0]
         this.answerInput0 = 'block'
+        this.focusOnForm('answer0') // answer라는 ref속성을 갖고있는 것에 입력 포커스를 생성
       })
     },
     arraysEqual: function (a, b) { // 배열이 서로 일치하는지 확인하는 함수
@@ -244,7 +245,6 @@ export default {
               this.style0 = 'black'
               this.answerInput3 = ''
               this.answerInput0 = 'block'
-              this.focusOnForm('answer0')
               this.pageRegen()
           }
         }
@@ -320,9 +320,6 @@ export default {
   beforeDestroy () {
     window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너
     clearInterval(this.intervalVar)
-  },
-  created: function () {
-    this.focusOnForm('answer0')
   }
 }
 </script>
@@ -463,6 +460,7 @@ progress::-webkit-progress-value {
   .gray{color:#777 !important}
   .gray .black{color:#777}
   .gray .red ,.gray .red{color:darkred}
+  .underline{background: #eee;color:black;}
   progress{border: 1px solid #eee;}
   progress::-webkit-progress-value {background: #eee;}
 }
