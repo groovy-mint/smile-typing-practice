@@ -313,6 +313,7 @@ progress::-webkit-progress-value {
   .mainMenuTitle a:hover img{background:#bbb}
   #prev1,#prev2{color: #444;}
   .nowCursor{color:#eee;border-left: 2px solid #eee;border-right: 2px solid #eee;}
+  .underline{background: #eee;color:black;}
   #next1,#next2{color: #777;}
   progress{border: 1px solid #eee;}
   progress::-webkit-progress-value {background: #eee;}
