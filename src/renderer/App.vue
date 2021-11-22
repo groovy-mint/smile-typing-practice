@@ -5,8 +5,7 @@
       </div>
       <div v-if="seen">
       <button @click="hideWindow"><img src="~@/assets/minimize.svg" alt="Back"></button>
-      <button @click="setFullScreen" v-if="maximize"><img src="~@/assets/maximize.svg" alt="Back"></button>
-      <button @click="unsetFullScreen" v-if="minimize"><img src="~@/assets/window.svg" alt="Back"></button>
+      <button @click="setFullScreen"><img src="~@/assets/maximize.svg" alt="Back"></button>
       <button @click="closeApp"><img src="~@/assets/close.svg" alt="Back"></button>
       </div>
     </div>
@@ -31,14 +30,11 @@
         remote.getCurrentWindow().close()
       },
       setFullScreen: function () {
-        remote.getCurrentWindow().maximize()
-        this.maximize = false
-        this.minimize = true
-      },
-      unsetFullScreen: function () {
-        remote.getCurrentWindow().unmaximize()
-        this.maximize = true
-        this.minimize = false
+        if (remote.getCurrentWindow().isMaximized()) {
+          remote.getCurrentWindow().unmaximize()
+        } else {
+          remote.getCurrentWindow().maximize()
+        }
       },
       hideWindow: function () {
         remote.getCurrentWindow().minimize()
@@ -47,8 +43,7 @@
     data () {
       return {
         seen: process.platform !== 'darwin', // 맥에서 Windows 창 제어 숨김
-        maximize: true,
-        minimize: false
+        maximize: remote.getCurrentWindow().isMaximized()
       }
     }
   }
