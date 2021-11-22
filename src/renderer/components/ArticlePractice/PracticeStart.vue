@@ -114,7 +114,11 @@ export default {
         var line
         for (var x = j; x < (j + 4); x++) { // 라인 별 문장 리젠 반복문
           var tempSentence = articlesData.articles.map((item) => {
-            return item.articleLang[this.language].articleLevel[this.level].sentenceData[x].sentence
+            try {
+              return item.articleLang[this.language].articleLevel[this.level].sentenceData[x].sentence
+            } catch (error) {
+              return ''
+            }
           })
           var tempSplit = tempSentence[0].split('')
           switch (x % 4) { // 집어넣을 위치 결정
@@ -140,7 +144,11 @@ export default {
           }
         }
         var sourceSentence = articlesData.articles.map((item) => { // 현재 문장 원본 가져옴
-          return item.articleLang[this.language].articleLevel[this.level].sentenceData[j].sentence
+          try {
+            return item.articleLang[this.language].articleLevel[this.level].sentenceData[j].sentence
+          } catch (error) {
+            return ''
+          }
         })
         this.nowSource = sourceSentence[0]
         this.answerInput0 = 'block'
