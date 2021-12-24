@@ -1,8 +1,8 @@
-# CottonCandy
-학급 관리를 편하게 해줄 달콤한 친구
+# Smile Typing Practice
+> 이쁘게 웃으면서 타자연습해요!
 
 ## What is CottonCandy?
-CottonCandy는 학급을 관리하는 데 필요한 기능들을 한 곳에 담아낸 일렉트론 기반 프로그램입니다.
+스마일 타자연습은 친숙한 컨텐츠와 심플한 UI로 사용자가 타자연습에 더욱 몰두할 수 있도록 해줍니다.
 
 ## How can I install?
 Windows - Microsoft store에서 다운로드합니다.
