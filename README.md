@@ -1,27 +1,12 @@
-# smile-typing-practice
+# CottonCandy
+학급 관리를 편하게 해줄 달콤한 친구
 
-> smile taja prototype
+## What is CottonCandy?
+CottonCandy는 학급을 관리하는 데 필요한 기능들을 한 곳에 담아낸 일렉트론 기반 프로그램입니다.
 
-#### Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
-
-# run unit & end-to-end tests
-npm test
-
-
-# lint all JS/Vue component files in `src/`
-npm run lint
-
-```
+## How can I install?
+Windows - Microsoft store에서 다운로드합니다.
+macOS, Linux - Github 내 releases에서 파일을 찾아 다운로드합니다.
 
 ---
 
