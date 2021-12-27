@@ -4,7 +4,7 @@
     <h3>스마일 타자연습 프로그램 버전</h3>
     <span>1.0.2</span>
     <h3>서포트</h3>
-    <span>Smile Creative Lab.・2021<br>admin@ntws.kr<br>http://sclab.ntws.kr</span>
+    <span>Smile Creative Lab.・2021<br>support@ntws.kr<br>http://sclab.ntws.kr</span>
     <h3>단어 자료 출처 및 라이센스</h3>
       <br><span>한국어 단어</span>
       <li>표준어: 표준국어대사전 (CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0/kr/)<br>https://stdict.korean.go.kr/ 누리집 일부 발췌 - 2021.7.27</li>

@@ -1,27 +1,12 @@
-# smile-typing-practice
+# Smile Typing Practice
+> 이쁘게 웃으면서 타자연습해요!
 
-> smile taja prototype
+## What is CottonCandy?
+스마일 타자연습은 친숙한 컨텐츠와 심플한 UI로 사용자가 타자연습에 더욱 몰두할 수 있도록 해줍니다.
 
-#### Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
-
-# run unit & end-to-end tests
-npm test
-
-
-# lint all JS/Vue component files in `src/`
-npm run lint
-
-```
+## How can I install?
+Windows - Microsoft store에서 다운로드합니다.
+macOS, Linux - Github 내 releases에서 파일을 찾아 다운로드합니다.
 
 ---
 
