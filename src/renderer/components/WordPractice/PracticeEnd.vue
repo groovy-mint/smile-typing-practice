@@ -10,7 +10,7 @@
         <span>경과시간</span><br><span>{{ time }}</span>
       </div>
     </div>
-    <p class="center">왼쪽 위의 갈매기표 버튼이나 Esc 키를 누르면 뒤로 갑니다. F5 혹은 {{ darwin }}+R 키를 누르면 처음부터 다시 합니다.</p>
+    <p class="center">왼쪽 위의 갈매기표 버튼이나 Esc 키를 누르면 뒤로 갑니다. F5 혹은 Ctrl+R 키를 누르면 처음부터 다시 합니다.</p>
   </div>
 </template>
 
@@ -38,8 +38,7 @@ export default{
   },
   data () {
     return {
-      accuracyRate: '',
-      darwin: '' // 커맨드인지 컨트롤인지
+      accuracyRate: ''
     }
   },
   methods: {
@@ -53,7 +52,6 @@ export default{
           : this.accuracy >= '80' ? this.accuracyRate = '아깝다! 조금만 더 정확히!'
             : this.accuracyRate = '자리 연습부터 다시 하는 게 어떨까요?'
       }
-      process.platform !== 'darwin' ? this.darwin = 'Ctrl' : this.darwin = 'Command'
     },
     writeReport: function () {
       ipcRenderer.invoke('getStoreValue', 'wordReports').then((result) => {
