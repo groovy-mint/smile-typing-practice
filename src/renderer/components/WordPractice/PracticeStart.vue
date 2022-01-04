@@ -220,7 +220,13 @@ export default {
         this.passPerMax = this.passed * 100 / this.maxwords // 진행도 계산
       }
     },
-    keyPressed: function () {
+    keyPressed: function (ev) {
+      if (ev.key === 'Escape') { // 메뉴로 돌아가는 키
+        this.$router.push('*')
+      }
+      if (ev.key === 'F5' || (ev.key === 'r' && ev.metaKey === true) || (ev.key === 'r' && ev.ctrlKey === true)) {
+        this.$router.go()
+      }
       var tempAnswer = this.$refs.answer.value.split('')
       tempAnswer.pop()
       var leng = tempAnswer.length

@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow, Menu, ipcMain } from 'electron'
+import { app, BrowserWindow, Menu, ipcMain, globalShortcut } from 'electron'
 import '../renderer/store'
 import Store from 'electron-store'
 
@@ -119,6 +119,15 @@ function createWindow () {
     mainWindow = null
   })
 }
+app.whenReady().then(() => {
+  globalShortcut.register('F5', () => {})
+  globalShortcut.register('CommandOrControl+R', () => {})
+  globalShortcut.register('CommandOrControl+Shift+R', () => {}) // 개발자가 매우 멍청해서 일단 코드 중복시킴, 단축키로 리로드 못하게 만듦
+})
+
+app.on('will-quit', () => {
+  globalShortcut.unregisterAll()
+})
 
 app.on('ready', createWindow)
 

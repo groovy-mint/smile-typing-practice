@@ -10,7 +10,7 @@
         <span>경과시간</span><br><span>{{ time }}</span>
       </div>
     </div>
-    <p class="center">왼쪽 위의 갈매기표를 누르면 뒤로 갑니다.</p>
+    <p class="center">왼쪽 위의 갈매기표 버튼이나 Esc 키를 누르면 뒤로 갑니다. F5 혹은 {{ darwin }}+R 키를 누르면 처음부터 다시 합니다.</p>
   </div>
 </template>
 
@@ -38,7 +38,8 @@ export default{
   },
   data () {
     return {
-      accuracyRate: ''
+      accuracyRate: '',
+      darwin: '' // 커맨드인지 컨트롤인지
     }
   },
   methods: {
@@ -52,6 +53,7 @@ export default{
             // : this.accuracy <= '-500' ? this.accuracyRate = '진심이세요?'
             : this.accuracy <= '0' ? this.accuracyRate = '타자연습으로 장난치지 말아요..'
               : this.accuracyRate = '늦어도 좋으니 천천히..'
+      process.platform !== 'darwin' ? this.darwin = 'Ctrl' : this.darwin = 'Command'
     },
     writeReport: function () {
       ipcRenderer.invoke('getStoreValue', 'keyReports').then((result) => {
@@ -59,6 +61,14 @@ export default{
         result.push({ id: leng, title: this.title, accuracy: this.accuracy, typnum: this.typnum, time: this.time })
         ipcRenderer.invoke('setStoreValue', 'keyReports', result)
       })
+    },
+    keyPressed: function (ev) {
+      if (ev.key === 'Escape') { // 메뉴로 돌아가는 키
+        this.$router.push('*')
+      }
+      if (ev.key === 'F5' || (ev.key === 'r' && ev.metaKey === true) || (ev.key === 'r' && ev.ctrlKey === true)) {
+        this.$router.push('/key-practice/start?lvl=' + this.level + '&title=' + this.title)
+      }
     }
   },
   beforeMount () {
@@ -66,6 +76,10 @@ export default{
   },
   mounted () {
     this.writeReport()
+    window.addEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너 생성
+  },
+  beforeDestroy () {
+    window.removeEventListener('keyup', this.keyPressed, true) // 키보드 이벤트 리스너 제거
   }
 }
 </script>

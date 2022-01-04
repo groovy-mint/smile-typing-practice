@@ -129,7 +129,12 @@ export default {
     keyPressed: function (ev) {
       if (ev.key === 'Shift' || ev.key === 'Enter' || ev.key === 'CapsLock' || ev.key === 'Alt' || ev.key === 'Control' || ev.key === 'Meta' || ev.code === 'Space' || ev.code === 'Tab') {
         // 실수할 수 있는 시스템키 거름망
+      } else if (ev.key === 'Escape') { // 메뉴로 돌아가는 키
+        this.$router.push('*')
+      } else if (ev.key === 'F5' || (ev.key === 'r' && ev.metaKey === true) || (ev.key === 'r' && ev.ctrlKey === true)) {
+        this.$router.go()
       } else { // 키 누름 판정
+        console.log(ev)
         if (this.nowCode === ev.code && this.nowShift === ev.shiftKey) {
           this.passed = this.passed + 1 // 진행도 1 올림
           this.nowErr = ''
