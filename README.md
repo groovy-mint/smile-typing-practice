@@ -1,7 +1,7 @@
 # Smile Typing Practice
 > 이쁘게 웃으면서 타자연습해요!
 
-## What is CottonCandy?
+## What is SmileTyping?
 스마일 타자연습은 친숙한 컨텐츠와 심플한 UI로 사용자가 타자연습에 더욱 몰두할 수 있도록 해줍니다.
 
 ## How can I install?
