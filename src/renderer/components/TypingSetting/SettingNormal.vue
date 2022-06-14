@@ -70,6 +70,22 @@
           <input ref="sentenceMax" type="number" step="10" min="0" max="999" :value="sentenceMax" class="activated textinput">
         </div>
       </div>
+      <div class="settingCon">
+        <div>
+          <b>기록 초기화</b><br>
+        </div>
+        <div>
+          <a @click="settingReset(0)">초기화</a>
+        </div>
+      </div>
+      <div class="settingCon">
+        <div>
+          <b>설정 초기화</b><br>
+        </div>
+        <div>
+          <a @click="settingReset(0)">초기화</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -102,41 +118,41 @@ export default {
       this.$refs.cudtrue.style = ''
       this.$refs.cudfalse.style = ''
       this.$refs.wordtrue.style = ''
-      this.$refs.wordfalse.style = ''
+      this.$refs.wordfalse.style = '' // 각 버튼에 볼드 처리 초기화
       const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       var darklight
-      isDark ? darklight = '#eee' : darklight = 'black'
-      ipcRenderer.invoke('getStoreValue', 'language').then((result) => {
+      isDark ? darklight = '#eee' : darklight = 'black' // 다크모드 여부에 따라 글자의 색깔을 변경
+      ipcRenderer.invoke('getStoreValue', 'language').then((result) => { // 언어 설정 가져와서 버튼 강조처리
         this.language = result
         this.$refs['lang' + result].style.cursor = 'default'
         this.$refs['lang' + result].style.color = darklight
         this.$refs['lang' + result].style.textDecoration = 'underline'
       })
-      ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'keyboard').then((result) => { // 키보드 배열 설정 가져와서 버튼 강조처리
         this.keyboard = result
         this.$refs['key' + result].style.cursor = 'default'
         this.$refs['key' + result].style.color = darklight
         this.$refs['key' + result].style.textDecoration = 'underline'
       })
-      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'cud').then((result) => { // CUD 설정 가져와서 버튼 강조처리
         this.cud = result
         this.$refs['cud' + result].style.cursor = 'default'
         this.$refs['cud' + result].style.color = darklight
         this.$refs['cud' + result].style.textDecoration = 'underline'
       })
-      ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'keyMax').then((result) => { // 최대 키 개수 가져와서 입력칸에 삽입
         this.keyMax = result
       })
-      ipcRenderer.invoke('getStoreValue', 'wordMax').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'wordMax').then((result) => { // 최대 단어 개수 가져와서 입력칸에 삽입
         this.wordMax = result
       })
-      ipcRenderer.invoke('getStoreValue', 'wordCenter').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'wordCenter').then((result) => { // 단어 가운데 정렬 설정 가져와서 버튼 강조처리
         this.wordCenter = result
         this.$refs['word' + result].style.cursor = 'default'
         this.$refs['word' + result].style.color = darklight
         this.$refs['word' + result].style.textDecoration = 'underline'
       })
-      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => {
+      ipcRenderer.invoke('getStoreValue', 'sentenceMax').then((result) => { // 최대 문장 개수 가져와서 입력칸에 삽입
         this.sentenceMax = result
       })
     },
